@@ -16,6 +16,8 @@
 		559080151BB8F13500BEAD4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559080141BB8F13500BEAD4B /* User.swift */; settings = {ASSET_TAGS = (); }; };
 		559080171BB8F3E200BEAD4B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559080161BB8F3E200BEAD4B /* Settings.swift */; settings = {ASSET_TAGS = (); }; };
 		559080191BB8F71900BEAD4B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559080181BB8F71900BEAD4B /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		55CDE1BA1BC0293E00FAF74B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1B91BC0293E00FAF74B /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		55CDE1BC1BC02DDD00FAF74B /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1BB1BC02DDD00FAF74B /* SurveyViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9ABA551DC383E69C75B79B6D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301924EFDCFAB5F76804FC60 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		559080141BB8F13500BEAD4B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		559080161BB8F3E200BEAD4B /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		559080181BB8F71900BEAD4B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		55CDE1B91BC0293E00FAF74B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		55CDE1BB1BC02DDD00FAF74B /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		A3ECFAD035BD0488205B1694 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E6D4D398575A3F7E5BD2C25A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				559080181BB8F71900BEAD4B /* LoginViewController.swift */,
+				55CDE1B91BC0293E00FAF74B /* HomeViewController.swift */,
+				55CDE1BB1BC02DDD00FAF74B /* SurveyViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -360,9 +366,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55CDE1BA1BC0293E00FAF74B /* HomeViewController.swift in Sources */,
 				559080191BB8F71900BEAD4B /* LoginViewController.swift in Sources */,
 				55907FE41BB8F06100BEAD4B /* AppDelegate.swift in Sources */,
 				559080171BB8F3E200BEAD4B /* Settings.swift in Sources */,
+				55CDE1BC1BC02DDD00FAF74B /* SurveyViewController.swift in Sources */,
 				559080151BB8F13500BEAD4B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

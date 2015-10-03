@@ -14,7 +14,7 @@ class User {
     
     class func login(userId : String, completeHandler : (response : AnyObject, error : NSError?)->()) {
         
-        Alamofire.request(.POST, "")
+        Alamofire.request(.GET,  "http://52.7.122.129/user/\(userId)/")
             .response{ (_, response, data , error) in
                 if  let reponseHeader = response  {
                     if reponseHeader.statusCode == 200 {

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Magic.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MaterialKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2C19521BC63C61D5A46FBBA1EF1FE966</key>
+		<key>33EAC179C09D01863A76BB5F0BB778AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3998566F2404AA12D72EA810B0827655</key>
+		<key>73D223E5E3274D84586C6BFC14379B22</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8C21039584CD19FB733AD8AE74E76CA0</key>
+		<key>78A837EDC69BA3D2245A2EBCAD676E45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F7748D14243326F20EA3EEBB042BD3FF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

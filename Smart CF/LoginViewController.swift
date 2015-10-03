@@ -8,15 +8,29 @@
 
 import UIKit
 import MaterialKit
+import Magic
 
 class LoginViewController: UIViewController {
 
    
     @IBOutlet weak var userId: MKTextField!
+    var settings : Settings = Settings()
+
     
+    @IBOutlet weak var loginButton: MKButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        userId.floatingPlaceholderEnabled = true
+        userId.cornerRadius = 2.0
+        userId.placeholder = "user id"
+        userId.layer.borderColor = UIColor.MKColor.Green.CGColor
+        userId.rippleLayerColor = UIColor.MKColor.LightGreen
+        userId.tintColor = UIColor.MKColor.LightGreen
+        
+        loginButton.layer.borderColor = UIColor.MKColor.Green.CGColor
+        loginButton.layer.borderWidth = 1.0
+        loginButton.layer.cornerRadius = 2.0
         
 
     }
@@ -29,6 +43,10 @@ class LoginViewController: UIViewController {
                 (response, error) in
                 if error == nil {
                     // Succesfully login
+                    
+                    magic(response)
+                    
+                    magic("Login successfully")
                 }
             })
             

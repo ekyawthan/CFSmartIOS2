@@ -17,46 +17,118 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Phk-En-nQk" customClass="MKTextField" customModule="MaterialKit">
-                                <rect key="frame" x="20" y="127" width="560" height="45"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="user id" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Phk-En-nQk" customClass="MKTextField" customModule="MaterialKit">
+                                <rect key="frame" x="200" y="127" width="200" height="45"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5jT-pE-H2V"/>
                                     <constraint firstAttribute="height" constant="45" id="oY5-dL-fxx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaC-1Y-jrO" customClass="MKButton" customModule="MaterialKit">
                                 <rect key="frame" x="225" y="180" width="150" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="LwD-1d-jZb"/>
                                     <constraint firstAttribute="width" constant="150" id="USF-2V-7LT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Login In">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 </state>
                                 <connections>
                                     <action selector="didClickOnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yTh-1Z-20S"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="copyright © 2015 smart cf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IX-fa-y9B">
+                                <rect key="frame" x="0.0" y="554" width="600" height="46"/>
+                                <color key="backgroundColor" red="0.99946418690000005" green="0.99946418690000005" blue="0.99946418690000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="KPf-Sy-Mbs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Phk-En-nQk" secondAttribute="trailing" id="CdM-FT-qRN"/>
                             <constraint firstItem="Phk-En-nQk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="107" id="JKf-AT-ZOk"/>
                             <constraint firstItem="Phk-En-nQk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N6H-4K-2wg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8IX-fa-y9B" secondAttribute="trailing" constant="-20" id="NN4-p8-tdX"/>
                             <constraint firstItem="XaC-1Y-jrO" firstAttribute="top" secondItem="Phk-En-nQk" secondAttribute="bottom" constant="8" id="OaG-2l-7Go"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Phk-En-nQk" secondAttribute="leading" id="afY-W1-5Vv"/>
+                            <constraint firstItem="8IX-fa-y9B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="aMA-Qp-25b"/>
                             <constraint firstItem="XaC-1Y-jrO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bte-Xz-wqQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8IX-fa-y9B" secondAttribute="bottom" id="jXE-Zj-x6Y"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="XaC-1Y-jrO" id="Q9z-fc-bZj"/>
                         <outlet property="userId" destination="Phk-En-nQk" id="nlg-Q2-wHS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="267"/>
+            <point key="canvasLocation" x="-4" y="27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bCZ-qa-XSi">
+            <objects>
+                <viewController id="aEP-h1-IS5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IvA-cF-1rk"/>
+                        <viewControllerLayoutGuide type="bottom" id="TIZ-jT-X7v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yKR-7j-8uI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="Y5d-u6-aAF" kind="show" id="jVy-Ue-7WI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YBj-4e-jzY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="G98-fp-5Ys">
+            <objects>
+                <viewController id="VcM-Oa-yJW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i0w-b5-Qfo"/>
+                        <viewControllerLayoutGuide type="bottom" id="MqT-BM-8pb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mop-3K-Bbj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="52E-or-58c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zno-h7-qO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2326" y="22"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="346-pC-7lj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y5d-u6-aAF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vgP-L8-Gtk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VcM-Oa-yJW" kind="relationship" relationship="rootViewController" id="yO5-Ui-Pew"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ME8-b1-KAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1514" y="22"/>
         </scene>
     </scenes>
 </document>
