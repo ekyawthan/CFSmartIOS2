@@ -9,14 +9,15 @@
 import UIKit
 import MaterialKit
 import Magic
+import Dodo
 
 class LoginViewController: UIViewController {
 
    
     @IBOutlet weak var userId: MKTextField!
     var settings : Settings = Settings()
-
-    
+    var message = "Smart Cf"
+    var isFirstTime : Bool = false
     @IBOutlet weak var loginButton: MKButton!
     
     override func viewDidLoad() {
@@ -32,9 +33,47 @@ class LoginViewController: UIViewController {
         loginButton.layer.borderWidth = 1.0
         loginButton.layer.cornerRadius = 2.0
         
-
+        loginButton.bounds.origin.x  += self.view.bounds.size.width
+        userId.bounds.origin.x  += self.view.bounds.size.width
+        isFirstTime = true
+        
+        
+        
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+      
+    
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if Settings.sharedInstance.isUserLogin()
+        {
+            magic("Yes User Login")
+            self.performSegueWithIdentifier("home", sender: self)
+        }else
+        {
+            if isFirstTime {
+                isFirstTime = false
+                UIView.animateWithDuration(0.5, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                    self.userId.bounds.origin.x -= self.view.bounds.size.width
+                    }, completion: nil)
+                UIView.animateWithDuration(0.5, delay: 0.3, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.0, options: .CurveEaseInOut, animations: {
+                        self.loginButton.bounds.origin.x -= self.view.bounds.size.width
+                    }, completion: nil)
+                
+            }
+            
+        }
+//        view.dodo.topLayoutGuide = topLayoutGuide
+//        view.dodo.bottomLayoutGuide = bottomLayoutGuide
+//        view.dodo.success("Success is how high you bounce when you hit bottom.")
+        
+    }
+   
    
     @IBAction func didClickOnLogin(sender: AnyObject) {
         
@@ -42,18 +81,16 @@ class LoginViewController: UIViewController {
             User.login(user, completeHandler: {
                 (response, error) in
                 if error == nil {
-                    // Succesfully login
-                    
                     magic(response)
-                    
-                    magic("Login successfully")
+                    if Settings.sharedInstance.isUserLogin() {
+                        self.performSegueWithIdentifier("home", sender: self)
+                    }
+                }else {
+                   
                 }
             })
             
         }
-        
-        
-        
         
     }
     

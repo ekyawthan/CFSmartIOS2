@@ -83,11 +83,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/Dodo.framework"
   install_framework "Pods/Magic.framework"
   install_framework "Pods/MaterialKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/Dodo.framework"
   install_framework "Pods/Magic.framework"
   install_framework "Pods/MaterialKit.framework"
 fi

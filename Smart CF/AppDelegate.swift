@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        
+//        let login : LoginViewController = mainStoryboard.instantiateViewControllerWithIdentifier("loginVC") as! LoginViewController
+//        let home : HomeViewController = mainStoryboard.instantiateViewControllerWithIdentifier("homeVC") as! HomeViewController
+//        UIApplication.sharedApplication().keyWindow?.rootViewController = Settings.sharedInstance.isUserLogin() ? home : login
+       
         return true
     }
 

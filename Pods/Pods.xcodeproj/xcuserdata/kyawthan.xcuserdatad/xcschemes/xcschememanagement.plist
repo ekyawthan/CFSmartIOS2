@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Dodo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Magic.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>33EAC179C09D01863A76BB5F0BB778AE</key>
+		<key>0FAF672A3F3B3D6FBE28D3954E75468B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>73D223E5E3274D84586C6BFC14379B22</key>
+		<key>6BA70AC9910D0A309F0DB27A39911F6A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>78A837EDC69BA3D2245A2EBCAD676E45</key>
+		<key>A8B29C964EC59F20BCC8B72614EB0FBA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F7748D14243326F20EA3EEBB042BD3FF</key>
+		<key>BB62A97A209F5653FB9546AA88A53CE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E09CFD7ABC38BB889AA3EBFCC2D40371</key>
 		<dict>
 			<key>primary</key>
 			<true/>

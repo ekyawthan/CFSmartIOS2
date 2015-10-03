@@ -1,10 +1,12 @@
 PODS:
   - Alamofire (2.0.0)
+  - Dodo (2.0.10)
   - Magic (2.0.0)
   - MaterialKit (0.3.5)
 
 DEPENDENCIES:
   - Alamofire (~> 2.0)
+  - Dodo (~> 2.0)
   - Magic
   - MaterialKit (from `https://github.com/reesemclean/MaterialKit`, branch `swift_2`)
 
@@ -20,6 +22,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 2f13548b29d25a58ecd91c9225fb51493e2b782b
+  Dodo: ac952c82b2180658baccde1ab6d7ec2ac1bec72e
   Magic: f05ea8d27da5413cd780266ff0152bb9c028bfa9
   MaterialKit: 6f1e9382f89593df768bc0c31ded9952a6d8ad46
 

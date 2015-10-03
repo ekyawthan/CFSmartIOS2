@@ -19,8 +19,12 @@ class User {
                 if  let reponseHeader = response  {
                     if reponseHeader.statusCode == 200 {
                         completeHandler(response: "Success", error: nil)
+                        Settings.sharedInstance.setUserLoginStatus(isLogin: true)
+                        Settings.sharedInstance.setUserId(userId)
                     }else {
                         completeHandler(response: "failed", error: nil)
+                        Settings.sharedInstance.setUserLoginStatus(isLogin: false)
+                        Settings.sharedInstance.setUserId(userId)
                     }
                 }
                 
