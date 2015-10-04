@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Smart CF/HomeViewController.swift"
-            timestampString = "465598207.057358"
+            timestampString = "465674994.508332"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "shouldBeginQuestionaire(_:)"
             landmarkType = "5">
          </BreakpointContent>

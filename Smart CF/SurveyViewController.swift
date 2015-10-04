@@ -10,6 +10,7 @@ import UIKit
 import MaterialKit
 import Magic
 
+
 class SurveyViewController: UIViewController {
     
     let SurveyQuestions : [String]  =  [
@@ -51,6 +52,7 @@ class SurveyViewController: UIViewController {
     
     @IBOutlet weak var yesButton: MKButton!
     
+    @IBOutlet weak var dismissSurvey: MKButton!
     
     
     var counter : Int = 0 {
@@ -64,6 +66,9 @@ class SurveyViewController: UIViewController {
         super.viewDidLoad()
         setupMKButton(NoButton)
         setupMKButton(yesButton)
+        setupMKButton(dismissSurvey)
+        dismissSurvey.layer.borderWidth = 1.0
+        dismissSurvey.layer.borderColor = UIColor.MKColor.Orange.CGColor
         
         currentQuestion.userInteractionEnabled = false
         currentQuestion.lineBreakMode = .ByWordWrapping // or NSLineBreakMode.ByWordWrapping
@@ -74,21 +79,18 @@ class SurveyViewController: UIViewController {
         
         self.yesButton.tag = 20
         self.yesButton.addTarget(self, action: "didAnswer:", forControlEvents: UIControlEvents.TouchUpInside)
-        
-        
-        
-
-        // Do any additional setup after loading the view.
+    
     }
     
     private func setupMKButton(button : MKButton) {
-        button.cornerRadius = 40.0
-        button.backgroundLayerCornerRadius = 40.0
+        button.cornerRadius = button.bounds.height / 2
+        button.backgroundLayerCornerRadius = button.bounds.height / 2
         button.maskEnabled = false
         button.ripplePercent = 1.75
         button.rippleLocation = .Center
         
     }
+    
     
     func didAnswer(button : MKButton) {
         if (button.tag == 10){
@@ -103,14 +105,18 @@ class SurveyViewController: UIViewController {
             
             yesButton.userInteractionEnabled = false
             NoButton.userInteractionEnabled = false
+            SwiftSpinner.show("Posting ", animated: true)
             
             User.postSurvey(collectedAnswer, completeHandler: {(res, error)
                 in
                 if let _ = error {
                     // something went wrong
+                    SwiftSpinner.hide()
                 }else {
+                    SwiftSpinner.hide()
+
                     magic("Posting survey successfully")
-                     self.navigationController?.popToRootViewControllerAnimated(true)
+                    self.dismissViewControllerAnimated(true, completion: nil)
                     
                 }
             })
@@ -125,6 +131,13 @@ class SurveyViewController: UIViewController {
         }
     }
 
-  
+}
 
+
+extension SurveyViewController {
+    @IBAction func didClickDismiss(sender: AnyObject) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
 }

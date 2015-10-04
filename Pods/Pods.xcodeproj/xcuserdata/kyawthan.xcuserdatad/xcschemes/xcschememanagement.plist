@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>BubbleTransition.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Dodo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0FAF672A3F3B3D6FBE28D3954E75468B</key>
+		<key>80D7CD86DC0D82B9E7813A4D96E4E805</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6BA70AC9910D0A309F0DB27A39911F6A</key>
+		<key>8FC1A54E9263EA7ADEA443AF6E275C67</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A8B29C964EC59F20BCC8B72614EB0FBA</key>
+		<key>ADEC2FABAE7DF4107497C6EA173846A1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB62A97A209F5653FB9546AA88A53CE3</key>
+		<key>C26C297B9E8C4BEBB4965DFD255BB18D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E09CFD7ABC38BB889AA3EBFCC2D40371</key>
+		<key>CC9812C1B106FC7F9784688291DBD35E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5DFFCE25C205B680BD40296A65945F6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,356 +7,406 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00B49A0CDC857D1F015100BEC52A7B7C /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D6B86D9B781A46DD980644BC90FBF /* ParameterEncoding.swift */; };
-		029109739A3AAA60BC7B35BD9EBC4C92 /* DodoAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876540580BBF85419D8ACE5E92CB8635 /* DodoAnimation.swift */; };
-		1378FF7EE4CA34C1B7EA16DD1A1F5A8F /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F542F87D1471F503D398FC24ABB15403 /* ServerTrustPolicy.swift */; };
-		155C4C5F4291808BA3B7AB011FAEF67B /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47F553C23D0ED280DBC07DA96DD7A9D /* Download.swift */; };
-		16580D4A62DE3BF2AC4D68EFCB040CD0 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA45D1630C4F82F8E9CD4A2172C8A9 /* Request.swift */; };
-		1B34B38C59781EA0EC2ED0981C650FB8 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92A905B143468B7E36BB017632D06AC /* Stream.swift */; };
-		1C5C9E2FC4BA9C4008F804E6613195B3 /* DodoMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8AF96466898AEA24361FC04B3DD86 /* DodoMock.swift */; };
-		3446E9E3E77FD474F31B40C409E9BBBC /* DodoBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0998E46EE64E98F9A0188276079BB4 /* DodoBarStyle.swift */; };
-		3614641FE4DC44167638C7939FE91FE3 /* OnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6971CB35CE7D2CE1074311B4BE460A0A /* OnTap.swift */; };
-		3D760E1B85843DC99A2A9A2D97F51313 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253831B2473428F444EEF7A1332B285 /* Result.swift */; };
-		41CB5FEA719DF4DB57681A34A11DBC2D /* DodoColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFB5D133F75FFA9365266899ECB7997 /* DodoColor.swift */; };
-		4D5307C0061C97D1FA2B036D39AE92F9 /* DodoAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7BDADF5D43A9E774388FB3CC086B50 /* DodoAnimations.swift */; };
-		509114D9ED9B203EE4C2CE828E23B02C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA37CE31E58753C330E5BC58CE4D23C8 /* Foundation.framework */; };
-		58D6B3E331E11C536A4958055658CA83 /* TegAutolayoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EBB827360E7D502277630A9FC29B8E /* TegAutolayoutConstraints.swift */; };
-		5BC1F235304E4DA4E570A475CE255FF2 /* DodoLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556E5B43F7F86E52E3739E9735B7DF6 /* DodoLabelStyle.swift */; };
-		5DA94EC98DEEDB94B3999F5ECDA33CE3 /* Dodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F7FA6A8265EDACA96B7C8A775ECF66 /* Dodo.swift */; };
-		5FCCAAF1FDD776935F98FBF793E3FA42 /* UIView+SwiftAlertBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1B897519FE0DF364BFFC3089C46256 /* UIView+SwiftAlertBar.swift */; };
-		672638E16555B1C75F5C6A5945E6EBF1 /* DodoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B16FC47573AC596495404EC508F232 /* DodoButtonView.swift */; };
-		6984466423046872CF6B83FD0B126066 /* DodoButtonViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2B3E86B94310B945F48E80589E5EA /* DodoButtonViewDelegate.swift */; };
-		6B40F29123236DCF72CF3A95350282EB /* Magic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1769A5A8BF16DD5B2A045C554D71A3CD /* Magic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DA50B805D1E2323DD6DC65BEB080331 /* MaterialKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD8633914E99F87FEBF18EF00BC56801 /* MaterialKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F976FAF9F667A56F3D1CE050FA9AD55 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642EEB1257E0DBBB3E58FF9B436D44BE /* Icons.xcassets */; };
-		72317043273AAEFAEA309EE28C8CA37C /* DodoTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E24003074285E0809B64D79AEAC3E /* DodoTouchTarget.swift */; };
-		74FF4F9D52D7525C76F66A0533A6F803 /* UnderKeyboardDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BC37745CF6754A35DDB02053F167A0 /* UnderKeyboardDistrib.swift */; };
-		75E9B4164F0C86D8B06A5F61B36A2D64 /* SpringAnimationCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50D949BBE6919D9189582947F97E062 /* SpringAnimationCALayer.swift */; };
-		7636080906E130295076BAAB41A2041A /* DodoMockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721CB38BA3CC63FDE68FF9E8D549E6A1 /* DodoMockMessage.swift */; };
-		7B5DDF661075724BC3D5FDA056CB93B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA37CE31E58753C330E5BC58CE4D23C8 /* Foundation.framework */; };
-		7D39FAB88E6326B77E84C91C06996FB9 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB254FB4B75E02725155F04F4DA0F7 /* Manager.swift */; };
-		7D68EF2B3CACF63800B5BE01FB3A15EB /* DodoAnimationsShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F23F9FD164D8CBE3F29E25D7539E568 /* DodoAnimationsShow.swift */; };
-		7E1BD3D1723DE4FBE9301A004F361C47 /* Dodo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD13CE2CB18845A813F7D6AEAE64DB /* Dodo-dummy.m */; };
-		7E670187F5F9489962EB25DC02D2F638 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 105D13F6DF0076D54E6DDE895FADAC7C /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F4E4753D267DC8A26519C3937162232 /* DodoKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC273474EFDD063E321A53FF247C2413 /* DodoKeyboardListener.swift */; };
-		7F995E2AD0437A48273F2E1C59586DEE /* DodoButtonDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571C4EBC4D55B72A18CE2CA3D4E41944 /* DodoButtonDefaultStyles.swift */; };
-		8474CA276BE120C97C706FB4EE45B22A /* DodoStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64DBBB34ACBDDC4CAC229BE01D9E46 /* DodoStyle.swift */; };
-		84841498F5359F914664F4E0FCBB642C /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F7A679F83BB01777E3709071BD5F56 /* MultipartFormData.swift */; };
-		8506EF3F9C859C6163ED7B7BD8A5E8A6 /* MKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F9B052126742C08759778A01021DC6 /* MKTableViewCell.swift */; };
-		85295DC209F978667D692FBC11D8859A /* MoaTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E79D49FCEBC11B87781A468D59D05D /* MoaTimer.swift */; };
-		864C144DD64DB85236095E3768807C22 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5392322FDC2EE4397B91E1CC65655B20 /* Upload.swift */; };
-		87D33C533CADB5FC7643A8BD6C34F9E9 /* MaterialKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A68E07510E7BE22DE1593BE492704DDC /* MaterialKit-dummy.m */; };
-		8DFD8F78CB7CD5C10BA4119ABD1D23BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA37CE31E58753C330E5BC58CE4D23C8 /* Foundation.framework */; };
-		8E8893987702F215C8A71CCB03BEA726 /* DodoBarDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953F9B500033F1F6746BD1B835832674 /* DodoBarDefaultStyles.swift */; };
-		97A59905DD9CEB0B06BFCC2BF0FD89DA /* DodoIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D5B46E8AC7B11E77B406C6A488C526 /* DodoIcons.swift */; };
-		98D5B41F041441DB323CFE8A35CAA4E1 /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF8E0592820F39FF214445E772BD4F /* MKTextField.swift */; };
-		993E5C113635AE65E569CEF896ADB2C1 /* DodoPresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400637897F110B724CB5DF6F113FD310 /* DodoPresets.swift */; };
-		9F363529BEA9E4C894DC4CA29EFD4C80 /* MKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CEE2DA4A9AEEE5073DC50044093C6D /* MKLabel.swift */; };
-		9F550FA5CF67A6838CECE3C43FE99985 /* MKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9053E81E20CC07B38C496E7CBC8EACB2 /* MKImageView.swift */; };
-		9FE72871BCC56860330DFA7E31B7BF6D /* DodoMockResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67037A4DD44E5B35DBE017CC5675D9B1 /* DodoMockResults.swift */; };
-		AF86C98A662B452E63F0AB4C594DE76A /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55ACFD993383D44F7D1F2523DD33343 /* MKColor.swift */; };
-		B8C4AD078A258F4FDE03C385B23CC543 /* DodoToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3D405D1198828C63B999B1C145182F /* DodoToolbar.swift */; };
-		BA4DF4D0DEA0F718336548FDAA3B5248 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C18EE6A21E479DED3CA21992C5F2627 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C114EC1F74685A7BB965FDE5C0BB673E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12145DE9209E1F75F4892B21F4A6ED60 /* Validation.swift */; };
-		C70FDC8FE84B67C986DA2886345E91A9 /* Dodo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A9ED2571D9854675D47F67AFEA2CE7 /* Dodo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8335166A05C7EE7C5FEABE4A556F8F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA37CE31E58753C330E5BC58CE4D23C8 /* Foundation.framework */; };
-		CD6E7B6645AFD4989D25CF4712909BBE /* DodoButtonOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B2164F19F9AE17D0E078634A07AE52 /* DodoButtonOnTap.swift */; };
-		CEB70C20C2303DEE789B29BE8819BE64 /* MKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A5289A43C468E93C74F23F97D7CE0F /* MKButton.swift */; };
-		D2B37CEFF5991E1B590324BA9DA0E11F /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3E4DDC08EC1F5B1A1A19D988BFF187 /* MKLayer.swift */; };
-		D3BB4A00881D17C6CF012D3B648AA42F /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82395DC65F620C3BA151BDE33A75CF9D /* Alamofire-dummy.m */; };
-		DDCE70488F170608ED71598776B57FA3 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD69E816160657959E5F421DA97878D8 /* Alamofire.swift */; };
-		DE133D3A9C2AC2B3DA81F2A25D7986A3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771E14424A113B3FD2626B905086339B /* Error.swift */; };
-		E27AE03F5B8D4B1C67620D12104DA2A8 /* DodoInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABAC851443F63149C0C23B194B7491D /* DodoInterface.swift */; };
-		E399BC9351F999F41C3C126ECF516004 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA37CE31E58753C330E5BC58CE4D23C8 /* Foundation.framework */; };
-		E45EDC6B0674F8982159BF6361F976FB /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF2001BBD6CBF1352D17D7088264C7F /* Pods-dummy.m */; };
-		E8EE4955B67E7A7A21507B2AA618F5FD /* Magic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF603CF2E8C592A16071A510D6B3BF1 /* Magic-dummy.m */; };
-		EB9874A8837D49DC6AD3E40E4399A545 /* DodoAnimationsHide.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2031D9E8893D9D4F455BD8EA36B510 /* DodoAnimationsHide.swift */; };
-		EDE3036236DDA9676CC85E14E6574869 /* DodoButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023D8D94040B72CCE165546CFF148E6 /* DodoButtonStyle.swift */; };
-		F0B8F17F0E2246A193B5A0B7300D6588 /* Magic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4123D910B0502514ED63349C43CC6E /* Magic.swift */; };
-		F695D0EF26B402F437243AF2DED72D9B /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EE05DECDC76C93631CA544479A7DAF /* ResponseSerialization.swift */; };
-		FC7A5986D7C0BD19206639BBC36A9DBC /* DodoLabelDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0202C3BEEF91361621F5E203EFCC256E /* DodoLabelDefaultStyles.swift */; };
+		003D0C8CACC60B308B5784B1D7B12A49 /* TegAutolayoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E4BF856BFD54694F1223E4A02A6E6 /* TegAutolayoutConstraints.swift */; };
+		00A339D74BC2404D33521D4A325A07CE /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A96CD5CC3FA1A2DA126C1B6993EA452D /* Icons.xcassets */; };
+		02AB473EDDA76C8E96A9C7275B50A70C /* DodoPresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF840A8D982A86F427E8739ED6FB545 /* DodoPresets.swift */; };
+		0FD00C2CC5498AC381E11E588AD8BC2F /* DodoMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C9FB815B45DA49023FF449A02DF7F /* DodoMock.swift */; };
+		1185D7976C459241FD19F5486A8A6B7A /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB524B27B53CFA0A40FA96A112FF0A3 /* ParameterEncoding.swift */; };
+		14D25376FFDC3EE1E5660CC306B2E750 /* DodoAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A7C74993C8510AF983C5E7F4A5E788 /* DodoAnimations.swift */; };
+		1A22654666F5A74E3BFB692E5B6126D8 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC5B06CAA35744DB3BD31E862F1AD /* Alamofire.swift */; };
+		20AB2AD827138B5ADB45E2D51ADDDDA9 /* UnderKeyboardDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3117851DEA2F7FDCE5921F409A6BB9 /* UnderKeyboardDistrib.swift */; };
+		20CDE42C2B8D6DA99B30AAC4CDE9BDFD /* DodoTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B20BE125BB38F348125451DC83F13AC /* DodoTouchTarget.swift */; };
+		2262A8D1DE4111EF9A112444117D6CE5 /* MaterialKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC1932B51C4CC409BB8235A6D43518F /* MaterialKit-dummy.m */; };
+		227BE5D08B354E78C1841B5C8F4FD8F8 /* SpringAnimationCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EAA5C1D6408F467852B44322EB7BAD /* SpringAnimationCALayer.swift */; };
+		2410F2FF92248F4F1C05983496345EC4 /* Magic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0C3B37EA5D2E5CC2F696AB086C51E5 /* Magic.swift */; };
+		2B211A4BCEEE48BCF3F804B98920BEEE /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E789BC3B9ED142E53E107BA4F27BAF75 /* Validation.swift */; };
+		2CC1F989E034DE8E2DF4236DCBD6E9B1 /* Magic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDCD7E500E2C9AA896BF838026DEA691 /* Magic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D3FA8924D8D2343BFABB838E5EBE93B /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF9A47D4D64E4DADAE74C3E072835E01 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E3CFB8377D460A2051D9A42EDB30DBF /* DodoBarDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177CE96E53F78C031EA26DE6346F5BA0 /* DodoBarDefaultStyles.swift */; };
+		32E5A8FE7D8BEFB469006EA52501C424 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3632188D6A393EA112D992B4091E86 /* Foundation.framework */; };
+		36E56BAB390F93F4342FE6FBE5E71C0F /* DodoLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B616BFF043D54252244EDDBF2DD152 /* DodoLabelStyle.swift */; };
+		39AF2F680D3BE96CC2B431B483AD353C /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04A120ABD93D1648C94873E2DCB0037 /* Stream.swift */; };
+		4122F98B7CA22E882FF7697FDD11B6E8 /* MKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7458862BBF04017B7E7508018ED8F69 /* MKImageView.swift */; };
+		433E27697A25B71492E9CC96E24943CA /* DodoIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D004F2917C9FE829A759E116226BBD74 /* DodoIcons.swift */; };
+		4630FA6189B002E02CC3EBE102EA97EA /* BubbleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F186F4F2D51C6785435651732A182B44 /* BubbleTransition.swift */; };
+		481A4A130CA7F3F8D041C455CB7AE11C /* DodoButtonDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B280C33284CC357D5D9DC93154CDDD1 /* DodoButtonDefaultStyles.swift */; };
+		4A17980BB0ECAF2C4747771FA5CB432B /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D839760A084BECEF226E8CE8212BC66 /* Manager.swift */; };
+		4FC701DEB9FA55AEE4D5D0290AA2C5E9 /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E453E40CF9EADD1AEB1984D0E2C961B /* MKLayer.swift */; };
+		50428E5DFC452D381A611239A1451352 /* DodoKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E8523C819081DA9F0BB0124FF28312 /* DodoKeyboardListener.swift */; };
+		527BCC8168E0648A4B8C4C62BEF6895A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3632188D6A393EA112D992B4091E86 /* Foundation.framework */; };
+		58D2AD38AB970100925591FCBFEBFB3C /* OnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA34B5F33A3AE2A4C339945ACE8EBA7 /* OnTap.swift */; };
+		5C03C9AD8ED55D8F9CAD9DEAB1824138 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479FE562848F0F87E0ABA32BCF7027E /* Result.swift */; };
+		5D9EB84E8651A5950EF97E6208F8EDD3 /* DodoButtonOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A61811177719BC32E431D6580C12807 /* DodoButtonOnTap.swift */; };
+		5F402AB8FEDE9C7F15C9978C4FE2657F /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B77C4B09254BC14F25F76FDAFCAF958 /* Download.swift */; };
+		5FED69EFF406466A322F97374C393272 /* MKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BD9306C45438A79807A6B9ED5BA02 /* MKButton.swift */; };
+		60767BF2651BD09B7C17577255863A89 /* MoaTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564B1BA4914AD39F8525EBC17C0BEB6E /* MoaTimer.swift */; };
+		63E02AB138964B98151B0085977CCCED /* DodoLabelDefaultStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6942D988B034C6C7812D60DAD75C79 /* DodoLabelDefaultStyles.swift */; };
+		6794991475721FB8656B29A6D4D17B2D /* DodoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82332FE14F10DE99C890D20956B66DB9 /* DodoButtonView.swift */; };
+		6EBCCA66EC190E298FE138345F45C5F4 /* DodoAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95FCEC6214EFB899B9C186284C13CD2 /* DodoAnimation.swift */; };
+		7D402A94FA17DB40C9AACB3AA3DA1F32 /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92E93A8B5A265F15C79719D84068472 /* MKTextField.swift */; };
+		7DBFC6F53C53BC63911B8ABFBC998D39 /* Dodo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0707EE7911903B3F438E5781D4A7FB5 /* Dodo-dummy.m */; };
+		7E801CFFC0BC0629854B78CE419441F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3632188D6A393EA112D992B4091E86 /* Foundation.framework */; };
+		7FF8F43690346DE75C35B440D3AF2757 /* DodoToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560C4F0D47ABDDBC405DC3EC4793F57 /* DodoToolbar.swift */; };
+		8006670C72E1620263D46CC10CF8C2DE /* MaterialKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1406756DDC56A754E6E86B824FC02E79 /* MaterialKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8075A8DAC14516F575D89CE9695519AD /* DodoStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1399CD13810966A46E3B7B8B8CB2EB /* DodoStyle.swift */; };
+		82A1F692FA63C2CA41D52169479314AA /* MKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA470BB4860082EF6CA59002D471E195 /* MKLabel.swift */; };
+		8AF8AF1B7597061D2F9F234778A2E5C9 /* Dodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A86E8D75EAE9B7E2F0B193426E0834 /* Dodo.swift */; };
+		8C779AE241442009A1BBC74EB841838F /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEEF3B88FA3FD4427D46EB4AD20CDDB9 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90995371239A3332D529389B125615E1 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79164B29A5F98E63938A375328B5815E /* Alamofire-dummy.m */; };
+		93A9A976FF339FECDB2A60969340E23A /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D340FA53CC57AEC5335398D6E5831DB /* MKColor.swift */; };
+		97BF9D889B37BB9C530ED97BE1C27C7A /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA5D95C65BC0CF828E21AF418AF4C91 /* ResponseSerialization.swift */; };
+		98AE26A837EDE30424C5A2FCFAE9B2DE /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BC17ABADA20F70D70128E910BB7702 /* ServerTrustPolicy.swift */; };
+		A5B00DC0875EB5C2886D873554CC4B44 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2670D8285D60E38479EF54668A465D /* Request.swift */; };
+		A5D49257151920E39A9165CB5F45096C /* Magic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BA43D403BF2C5A8426D7E7C00465D2 /* Magic-dummy.m */; };
+		A855B34524D84D1A48B48FD045CB433C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3632188D6A393EA112D992B4091E86 /* Foundation.framework */; };
+		B05251230EEF449CBC6ACAD048A75402 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3632188D6A393EA112D992B4091E86 /* Foundation.framework */; };
+		B293FFBE732AD3362EE32045B28DDC22 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4102F5AE007038F18A15A646CAE1890 /* Upload.swift */; };
+		B315C502B1B4ABB63C9BAC0ABFBE9E8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3632188D6A393EA112D992B4091E86 /* Foundation.framework */; };
+		B5D8FD05CC05064D8DEFC658C14BB6B6 /* Dodo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D27831D7F3651FF2B4637BC4FA09B060 /* Dodo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B90D4CA6E1F5EA8587615ECEB7E42DED /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F477FB22073247EBC812B69FB71C4A13 /* Error.swift */; };
+		BA394F33B78D2C77F3287A0AFC31EF86 /* DodoAnimationsHide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD8171585484455F08DADBCAF9BF73 /* DodoAnimationsHide.swift */; };
+		BB3A2FFDF6FAA9E26E5746F9E1B4CC89 /* DodoBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF02E86E6D64E5764F5DF9B25F65A13 /* DodoBarStyle.swift */; };
+		C27DA04D62FB596E98C217C40FBBD727 /* UIView+SwiftAlertBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055F6D90C6B11D7893E5809CDC446A55 /* UIView+SwiftAlertBar.swift */; };
+		C8C4AD7830F5B3480B7F5A577410DB6F /* DodoInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B7A18E4E268CE2AFBDB4AB30E5E63B /* DodoInterface.swift */; };
+		CB1EBF5570F766ECC2623B9762D7C2F0 /* DodoMockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9D43DEDFDD68ED5F7E7F99B19E288 /* DodoMockMessage.swift */; };
+		CB3119BEF917930E6874ABDD230D10CF /* DodoButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DE64E99010592B85C67FA4B9F122BE /* DodoButtonStyle.swift */; };
+		D18940A8F2E59EA736DE900EBFBFBFF5 /* BubbleTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3833BC5AF1F4E3A7D19AE681B9B6890 /* BubbleTransition-dummy.m */; };
+		D5DE9DBD1938604557EEE1863D9B8BA2 /* BubbleTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B55890C7E470385F0F51F659315CC7F6 /* BubbleTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5FE87BD76E4C9D730D7BFE58D077817 /* DodoAnimationsShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B008EB3A63B0322519B0F871918C263C /* DodoAnimationsShow.swift */; };
+		D79A2FF579936587CFC9234FEA4242EA /* DodoButtonViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56FDB384C04B30101D1506810DE4EE0 /* DodoButtonViewDelegate.swift */; };
+		E253B062D79428A67083D858AF6F7DD1 /* MKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3123710AFF9D3BDA83410E1E06C4306 /* MKTableViewCell.swift */; };
+		E6BE8B632E6129565FA3562C4338E018 /* DodoMockResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258BC5916DF99FD5EAF215ECBEF0C7A0 /* DodoMockResults.swift */; };
+		EABF2E9F8DA52465021210648CA8BAF3 /* DodoColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DA72ED9854F0811EF032E8F85D9A27 /* DodoColor.swift */; };
+		F1398AD37CA827A6997D0D173EBC3220 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCCE4A742BFC138C6EA002F8CA75CAD /* MultipartFormData.swift */; };
+		F86AA5254A51F645DE79C069E6DFADCE /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19222AAB1D4D08CEC1D1A37A3EAFE61A /* Pods-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		95A9C3D0A28B2E2602D4E02EB09FD2F3 /* PBXContainerItemProxy */ = {
+		6FD3712001C87C637E1DE1C9C581E49C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E09CFD7ABC38BB889AA3EBFCC2D40371;
-			remoteInfo = MaterialKit;
-		};
-		C01D431A7E665C4D9046E2062276DD23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6BA70AC9910D0A309F0DB27A39911F6A;
-			remoteInfo = Dodo;
-		};
-		D49A403780125C55D4F2D6ED456B11F0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BB62A97A209F5653FB9546AA88A53CE3;
+			remoteGlobalIDString = 80D7CD86DC0D82B9E7813A4D96E4E805;
 			remoteInfo = Magic;
 		};
-		F15F995B70B30E33AE9D7FECFCF6EB1B /* PBXContainerItemProxy */ = {
+		859F69245E9F4C545690F7DCA2F4B21A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0FAF672A3F3B3D6FBE28D3954E75468B;
+			remoteGlobalIDString = D5DFFCE25C205B680BD40296A65945F6;
+			remoteInfo = Dodo;
+		};
+		87DBE479D83BDF6586FDE759E2EE2894 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C26C297B9E8C4BEBB4965DFD255BB18D;
+			remoteInfo = MaterialKit;
+		};
+		AA671195B030142E2B849426F8BC7700 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADEC2FABAE7DF4107497C6EA173846A1;
+			remoteInfo = BubbleTransition;
+		};
+		D7EF01995505120354577388579866A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC9812C1B106FC7F9784688291DBD35E;
 			remoteInfo = Alamofire;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01EBB827360E7D502277630A9FC29B8E /* TegAutolayoutConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegAutolayoutConstraints.swift; path = Dodo/Utils/TegAutolayoutConstraints.swift; sourceTree = "<group>"; };
-		0202C3BEEF91361621F5E203EFCC256E /* DodoLabelDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoLabelDefaultStyles.swift; path = Dodo/Style/DodoLabelDefaultStyles.swift; sourceTree = "<group>"; };
-		0556E5B43F7F86E52E3739E9735B7DF6 /* DodoLabelStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoLabelStyle.swift; path = Dodo/Style/DodoLabelStyle.swift; sourceTree = "<group>"; };
-		063D6B86D9B781A46DD980644BC90FBF /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		0986348762EBED36B91AA003C34654E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E7BDADF5D43A9E774388FB3CC086B50 /* DodoAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoAnimations.swift; path = Dodo/Animators/DodoAnimations.swift; sourceTree = "<group>"; };
-		105D13F6DF0076D54E6DDE895FADAC7C /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		10F100CA39EC23EDD15B5BBB48ECAF4A /* Dodo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Dodo.xcconfig; sourceTree = "<group>"; };
-		12145DE9209E1F75F4892B21F4A6ED60 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		13BA45D1630C4F82F8E9CD4A2172C8A9 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		14354B8D463544E39FE081FB725FF29E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14DB254FB4B75E02725155F04F4DA0F7 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
-		15D5B46E8AC7B11E77B406C6A488C526 /* DodoIcons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoIcons.swift; path = Dodo/Icons/DodoIcons.swift; sourceTree = "<group>"; };
-		1769A5A8BF16DD5B2A045C554D71A3CD /* Magic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Magic-umbrella.h"; sourceTree = "<group>"; };
-		19B2164F19F9AE17D0E078634A07AE52 /* DodoButtonOnTap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoButtonOnTap.swift; path = Dodo/Buttons/DodoButtonOnTap.swift; sourceTree = "<group>"; };
-		1F23F9FD164D8CBE3F29E25D7539E568 /* DodoAnimationsShow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoAnimationsShow.swift; path = Dodo/Animators/DodoAnimationsShow.swift; sourceTree = "<group>"; };
-		2D7E23B7D87B6487FFAD4D8720D0F15C /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		2EB6F0526A8FBB76E0AF6F09558FC740 /* Magic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Magic.modulemap; sourceTree = "<group>"; };
-		2FFB5D133F75FFA9365266899ECB7997 /* DodoColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoColor.swift; path = Dodo/Utils/DodoColor.swift; sourceTree = "<group>"; };
-		3A1586234568B7A35F52DCD96784ADD3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		3A58758D80340ED87A15178507DB50F8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		400637897F110B724CB5DF6F113FD310 /* DodoPresets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoPresets.swift; path = Dodo/Style/DodoPresets.swift; sourceTree = "<group>"; };
-		469CAFAEABA2562E60567AEBDE3DA384 /* Dodo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Dodo.modulemap; sourceTree = "<group>"; };
-		4B3D405D1198828C63B999B1C145182F /* DodoToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoToolbar.swift; path = Dodo/DodoToolbar.swift; sourceTree = "<group>"; };
-		4B5D1248B86E56C03E4ED38EA743C8C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51DD29B11D59E7B797A212FEF6D443CF /* Magic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Magic-prefix.pch"; sourceTree = "<group>"; };
-		52CEE2DA4A9AEEE5073DC50044093C6D /* MKLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKLabel.swift; path = Source/MKLabel.swift; sourceTree = "<group>"; };
-		5392322FDC2EE4397B91E1CC65655B20 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
-		5566BF5F03B5B0124AB3D5C73DD554F0 /* Dodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		571C4EBC4D55B72A18CE2CA3D4E41944 /* DodoButtonDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoButtonDefaultStyles.swift; path = Dodo/Style/DodoButtonDefaultStyles.swift; sourceTree = "<group>"; };
-		57FD13CE2CB18845A813F7D6AEAE64DB /* Dodo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Dodo-dummy.m"; sourceTree = "<group>"; };
-		586A90344BC96EADE3F2B20F9BD7F21B /* MaterialKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MaterialKit.modulemap; sourceTree = "<group>"; };
-		58EE05DECDC76C93631CA544479A7DAF /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		5ABAC851443F63149C0C23B194B7491D /* DodoInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoInterface.swift; path = Dodo/DodoInterface.swift; sourceTree = "<group>"; };
-		5C0E24003074285E0809B64D79AEAC3E /* DodoTouchTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoTouchTarget.swift; path = Dodo/Helpers/DodoTouchTarget.swift; sourceTree = "<group>"; };
-		642EEB1257E0DBBB3E58FF9B436D44BE /* Icons.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Icons.xcassets; path = Dodo/Icons/Icons.xcassets; sourceTree = "<group>"; };
-		67037A4DD44E5B35DBE017CC5675D9B1 /* DodoMockResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoMockResults.swift; path = Dodo/Mock/DodoMockResults.swift; sourceTree = "<group>"; };
-		6971CB35CE7D2CE1074311B4BE460A0A /* OnTap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnTap.swift; path = Dodo/Utils/OnTap.swift; sourceTree = "<group>"; };
-		721CB38BA3CC63FDE68FF9E8D549E6A1 /* DodoMockMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoMockMessage.swift; path = Dodo/Mock/DodoMockMessage.swift; sourceTree = "<group>"; };
-		7664C5E47B0CDD3A0896C8D53BDD478A /* MaterialKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		771E14424A113B3FD2626B905086339B /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		055F6D90C6B11D7893E5809CDC446A55 /* UIView+SwiftAlertBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+SwiftAlertBar.swift"; path = "Dodo/UIView+SwiftAlertBar.swift"; sourceTree = "<group>"; };
+		0CA34B5F33A3AE2A4C339945ACE8EBA7 /* OnTap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnTap.swift; path = Dodo/Utils/OnTap.swift; sourceTree = "<group>"; };
+		0DA9D43DEDFDD68ED5F7E7F99B19E288 /* DodoMockMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoMockMessage.swift; path = Dodo/Mock/DodoMockMessage.swift; sourceTree = "<group>"; };
+		0FF440EA8A2845B8DB7941401D17C431 /* MaterialKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialKit.xcconfig; sourceTree = "<group>"; };
+		1406756DDC56A754E6E86B824FC02E79 /* MaterialKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialKit-umbrella.h"; sourceTree = "<group>"; };
+		1428D0A928AE118824C52CE8EEAD0FFC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		144BD9306C45438A79807A6B9ED5BA02 /* MKButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKButton.swift; path = Source/MKButton.swift; sourceTree = "<group>"; };
+		177CE96E53F78C031EA26DE6346F5BA0 /* DodoBarDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoBarDefaultStyles.swift; path = Dodo/Style/DodoBarDefaultStyles.swift; sourceTree = "<group>"; };
+		19222AAB1D4D08CEC1D1A37A3EAFE61A /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		1A1D007E7DD471DCA1D8BFE97DD0477C /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		1FA5D95C65BC0CF828E21AF418AF4C91 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		235ECDF5D2101BCACDAA4CF288861C0C /* Dodo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dodo-prefix.pch"; sourceTree = "<group>"; };
+		25567B1C6C418388EC000B3CA9E759D0 /* BubbleTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BubbleTransition-prefix.pch"; sourceTree = "<group>"; };
+		258BC5916DF99FD5EAF215ECBEF0C7A0 /* DodoMockResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoMockResults.swift; path = Dodo/Mock/DodoMockResults.swift; sourceTree = "<group>"; };
+		2E453E40CF9EADD1AEB1984D0E2C961B /* MKLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKLayer.swift; path = Source/MKLayer.swift; sourceTree = "<group>"; };
+		2EF840A8D982A86F427E8739ED6FB545 /* DodoPresets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoPresets.swift; path = Dodo/Style/DodoPresets.swift; sourceTree = "<group>"; };
+		303D2EA30F9EBB11E641E69119BAFC59 /* Magic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Magic.xcconfig; sourceTree = "<group>"; };
+		34AE4178AA3104909CC72F4613D49B37 /* Magic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Magic-prefix.pch"; sourceTree = "<group>"; };
+		356575262B68238E68B8DDDAD892652B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		3A61811177719BC32E431D6580C12807 /* DodoButtonOnTap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoButtonOnTap.swift; path = Dodo/Buttons/DodoButtonOnTap.swift; sourceTree = "<group>"; };
+		44DA72ED9854F0811EF032E8F85D9A27 /* DodoColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoColor.swift; path = Dodo/Utils/DodoColor.swift; sourceTree = "<group>"; };
+		45A86E8D75EAE9B7E2F0B193426E0834 /* Dodo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dodo.swift; path = Dodo/Dodo.swift; sourceTree = "<group>"; };
+		4B280C33284CC357D5D9DC93154CDDD1 /* DodoButtonDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoButtonDefaultStyles.swift; path = Dodo/Style/DodoButtonDefaultStyles.swift; sourceTree = "<group>"; };
+		4C3117851DEA2F7FDCE5921F409A6BB9 /* UnderKeyboardDistrib.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnderKeyboardDistrib.swift; path = Dodo/Utils/UnderKeyboardDistrib.swift; sourceTree = "<group>"; };
+		4D340FA53CC57AEC5335398D6E5831DB /* MKColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKColor.swift; path = Source/MKColor.swift; sourceTree = "<group>"; };
+		528FEC5100FE630F50792BE61966DC8B /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		5560C4F0D47ABDDBC405DC3EC4793F57 /* DodoToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoToolbar.swift; path = Dodo/DodoToolbar.swift; sourceTree = "<group>"; };
+		564B1BA4914AD39F8525EBC17C0BEB6E /* MoaTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaTimer.swift; path = Dodo/Utils/MoaTimer.swift; sourceTree = "<group>"; };
+		56DE64E99010592B85C67FA4B9F122BE /* DodoButtonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoButtonStyle.swift; path = Dodo/Style/DodoButtonStyle.swift; sourceTree = "<group>"; };
+		588E4BF856BFD54694F1223E4A02A6E6 /* TegAutolayoutConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegAutolayoutConstraints.swift; path = Dodo/Utils/TegAutolayoutConstraints.swift; sourceTree = "<group>"; };
+		58F79E6BB99A4B5D2DE806C80F238186 /* BubbleTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BubbleTransition.xcconfig; sourceTree = "<group>"; };
+		5A5DA4DCC05755EC075740147CC82447 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BB524B27B53CFA0A40FA96A112FF0A3 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		67B7A18E4E268CE2AFBDB4AB30E5E63B /* DodoInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoInterface.swift; path = Dodo/DodoInterface.swift; sourceTree = "<group>"; };
+		6A1399CD13810966A46E3B7B8B8CB2EB /* DodoStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoStyle.swift; path = Dodo/Style/DodoStyle.swift; sourceTree = "<group>"; };
+		6B77C4B09254BC14F25F76FDAFCAF958 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		6D839760A084BECEF226E8CE8212BC66 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		6E3632188D6A393EA112D992B4091E86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		71F1BF0C57B3604D879A76E31491A9D6 /* Dodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74C94CFC9DBB14992F4D4C64B4E62064 /* BubbleTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BubbleTransition.modulemap; sourceTree = "<group>"; };
+		79164B29A5F98E63938A375328B5815E /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		7BF2001BBD6CBF1352D17D7088264C7F /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		7C18EE6A21E479DED3CA21992C5F2627 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		82395DC65F620C3BA151BDE33A75CF9D /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		8424266ABA1E9468E058E7E331418A9A /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		876540580BBF85419D8ACE5E92CB8635 /* DodoAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoAnimation.swift; path = Dodo/Animators/DodoAnimation.swift; sourceTree = "<group>"; };
+		81B616BFF043D54252244EDDBF2DD152 /* DodoLabelStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoLabelStyle.swift; path = Dodo/Style/DodoLabelStyle.swift; sourceTree = "<group>"; };
+		82332FE14F10DE99C890D20956B66DB9 /* DodoButtonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoButtonView.swift; path = Dodo/Buttons/DodoButtonView.swift; sourceTree = "<group>"; };
 		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		9053E81E20CC07B38C496E7CBC8EACB2 /* MKImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKImageView.swift; path = Source/MKImageView.swift; sourceTree = "<group>"; };
-		90A5289A43C468E93C74F23F97D7CE0F /* MKButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKButton.swift; path = Source/MKButton.swift; sourceTree = "<group>"; };
-		90F7A679F83BB01777E3709071BD5F56 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		94EF8E0592820F39FF214445E772BD4F /* MKTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKTextField.swift; path = Source/MKTextField.swift; sourceTree = "<group>"; };
-		953F9B500033F1F6746BD1B835832674 /* DodoBarDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoBarDefaultStyles.swift; path = Dodo/Style/DodoBarDefaultStyles.swift; sourceTree = "<group>"; };
-		9A3E4DDC08EC1F5B1A1A19D988BFF187 /* MKLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKLayer.swift; path = Source/MKLayer.swift; sourceTree = "<group>"; };
-		9BCBC8A3DAD26CE7D6FD5C3A34F096CE /* Dodo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dodo-prefix.pch"; sourceTree = "<group>"; };
-		9C4123D910B0502514ED63349C43CC6E /* Magic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Magic.swift; sourceTree = "<group>"; };
-		A023D8D94040B72CCE165546CFF148E6 /* DodoButtonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoButtonStyle.swift; path = Dodo/Style/DodoButtonStyle.swift; sourceTree = "<group>"; };
-		A50D949BBE6919D9189582947F97E062 /* SpringAnimationCALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimationCALayer.swift; path = Dodo/Utils/SpringAnimationCALayer.swift; sourceTree = "<group>"; };
-		A68E07510E7BE22DE1593BE492704DDC /* MaterialKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MaterialKit-dummy.m"; sourceTree = "<group>"; };
-		AA37CE31E58753C330E5BC58CE4D23C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		ABC81D22ECD1E3A84AF8649128EAA743 /* MaterialKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialKit-prefix.pch"; sourceTree = "<group>"; };
-		AC273474EFDD063E321A53FF247C2413 /* DodoKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoKeyboardListener.swift; path = Dodo/DodoKeyboardListener.swift; sourceTree = "<group>"; };
-		B92A905B143468B7E36BB017632D06AC /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
+		8BAD8171585484455F08DADBCAF9BF73 /* DodoAnimationsHide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoAnimationsHide.swift; path = Dodo/Animators/DodoAnimationsHide.swift; sourceTree = "<group>"; };
+		8C4A08DF9804276831D5AEC653EA8424 /* MaterialKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialKit-prefix.pch"; sourceTree = "<group>"; };
+		92E8523C819081DA9F0BB0124FF28312 /* DodoKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoKeyboardListener.swift; path = Dodo/DodoKeyboardListener.swift; sourceTree = "<group>"; };
+		9B20BE125BB38F348125451DC83F13AC /* DodoTouchTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoTouchTarget.swift; path = Dodo/Helpers/DodoTouchTarget.swift; sourceTree = "<group>"; };
+		9D1295342C15D90B7B68211430FFEE13 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0BC17ABADA20F70D70128E910BB7702 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		A3833BC5AF1F4E3A7D19AE681B9B6890 /* BubbleTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BubbleTransition-dummy.m"; sourceTree = "<group>"; };
+		A56FDB384C04B30101D1506810DE4EE0 /* DodoButtonViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoButtonViewDelegate.swift; path = Dodo/Buttons/DodoButtonViewDelegate.swift; sourceTree = "<group>"; };
+		A71DC5B06CAA35744DB3BD31E862F1AD /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		A96CD5CC3FA1A2DA126C1B6993EA452D /* Icons.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Icons.xcassets; path = Dodo/Icons/Icons.xcassets; sourceTree = "<group>"; };
+		AA0C3B37EA5D2E5CC2F696AB086C51E5 /* Magic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Magic.swift; sourceTree = "<group>"; };
+		AC6942D988B034C6C7812D60DAD75C79 /* DodoLabelDefaultStyles.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoLabelDefaultStyles.swift; path = Dodo/Style/DodoLabelDefaultStyles.swift; sourceTree = "<group>"; };
+		B008EB3A63B0322519B0F871918C263C /* DodoAnimationsShow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoAnimationsShow.swift; path = Dodo/Animators/DodoAnimationsShow.swift; sourceTree = "<group>"; };
+		B235CAAE82F7B7CBABF2BC9152DB7EB1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B330DEF0BC7E3933A942389DD4A030E9 /* MaterialKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MaterialKit.modulemap; sourceTree = "<group>"; };
+		B55890C7E470385F0F51F659315CC7F6 /* BubbleTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BubbleTransition-umbrella.h"; sourceTree = "<group>"; };
+		B59C9FB815B45DA49023FF449A02DF7F /* DodoMock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoMock.swift; path = Dodo/Mock/DodoMock.swift; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BB59C8E3B0279B761A15835251CEBDFC /* MaterialKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialKit.xcconfig; sourceTree = "<group>"; };
-		BC2031D9E8893D9D4F455BD8EA36B510 /* DodoAnimationsHide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoAnimationsHide.swift; path = Dodo/Animators/DodoAnimationsHide.swift; sourceTree = "<group>"; };
-		C6F7FA6A8265EDACA96B7C8A775ECF66 /* Dodo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dodo.swift; path = Dodo/Dodo.swift; sourceTree = "<group>"; };
-		C85DED5B203F25CD08E0363C4456144D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB81913469D5F128AF7E1CA1A00110B0 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		BE6E97855241CAC7C619448EA342393F /* Magic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Magic.modulemap; sourceTree = "<group>"; };
+		BEC1932B51C4CC409BB8235A6D43518F /* MaterialKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MaterialKit-dummy.m"; sourceTree = "<group>"; };
+		BF8BBB91D9C0AD43C3806A261874B716 /* BubbleTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BubbleTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF02E86E6D64E5764F5DF9B25F65A13 /* DodoBarStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoBarStyle.swift; path = Dodo/Style/DodoBarStyle.swift; sourceTree = "<group>"; };
+		C04A120ABD93D1648C94873E2DCB0037 /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
+		C1F7653EFD3D06C5D6F6DA5401D1B5A9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C800ED7D5E0EBFF9EB8DD905AA3FBB6E /* Dodo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Dodo.xcconfig; sourceTree = "<group>"; };
+		C92E93A8B5A265F15C79719D84068472 /* MKTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKTextField.swift; path = Source/MKTextField.swift; sourceTree = "<group>"; };
+		C95FCEC6214EFB899B9C186284C13CD2 /* DodoAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoAnimation.swift; path = Dodo/Animators/DodoAnimation.swift; sourceTree = "<group>"; };
 		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		CD69E816160657959E5F421DA97878D8 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		CFCCE4A742BFC138C6EA002F8CA75CAD /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		D004F2917C9FE829A759E116226BBD74 /* DodoIcons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoIcons.swift; path = Dodo/Icons/DodoIcons.swift; sourceTree = "<group>"; };
 		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D2A8AF96466898AEA24361FC04B3DD86 /* DodoMock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoMock.swift; path = Dodo/Mock/DodoMock.swift; sourceTree = "<group>"; };
-		D3B16FC47573AC596495404EC508F232 /* DodoButtonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoButtonView.swift; path = Dodo/Buttons/DodoButtonView.swift; sourceTree = "<group>"; };
-		D47F553C23D0ED280DBC07DA96DD7A9D /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
-		D5E79D49FCEBC11B87781A468D59D05D /* MoaTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoaTimer.swift; path = Dodo/Utils/MoaTimer.swift; sourceTree = "<group>"; };
-		DB64DBBB34ACBDDC4CAC229BE01D9E46 /* DodoStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoStyle.swift; path = Dodo/Style/DodoStyle.swift; sourceTree = "<group>"; };
-		DD8633914E99F87FEBF18EF00BC56801 /* MaterialKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialKit-umbrella.h"; sourceTree = "<group>"; };
-		DE0998E46EE64E98F9A0188276079BB4 /* DodoBarStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoBarStyle.swift; path = Dodo/Style/DodoBarStyle.swift; sourceTree = "<group>"; };
-		DE4359B747BDEED38054525CB89799EF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		E0F9B052126742C08759778A01021DC6 /* MKTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKTableViewCell.swift; path = Source/MKTableViewCell.swift; sourceTree = "<group>"; };
-		E22FD630CC0F8D2B96F9845D76FB1EED /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		E55ACFD993383D44F7D1F2523DD33343 /* MKColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKColor.swift; path = Source/MKColor.swift; sourceTree = "<group>"; };
-		E5D320F044D9B601320334EAF569FEE5 /* Magic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Magic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6BC37745CF6754A35DDB02053F167A0 /* UnderKeyboardDistrib.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnderKeyboardDistrib.swift; path = Dodo/Utils/UnderKeyboardDistrib.swift; sourceTree = "<group>"; };
+		D27831D7F3651FF2B4637BC4FA09B060 /* Dodo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dodo-umbrella.h"; sourceTree = "<group>"; };
+		D4102F5AE007038F18A15A646CAE1890 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		D479FE562848F0F87E0ABA32BCF7027E /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		D7458862BBF04017B7E7508018ED8F69 /* MKImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKImageView.swift; path = Source/MKImageView.swift; sourceTree = "<group>"; };
+		DC2670D8285D60E38479EF54668A465D /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		E1EAA5C1D6408F467852B44322EB7BAD /* SpringAnimationCALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimationCALayer.swift; path = Dodo/Utils/SpringAnimationCALayer.swift; sourceTree = "<group>"; };
+		E3123710AFF9D3BDA83410E1E06C4306 /* MKTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKTableViewCell.swift; path = Source/MKTableViewCell.swift; sourceTree = "<group>"; };
+		E789BC3B9ED142E53E107BA4F27BAF75 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
 		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA1B897519FE0DF364BFFC3089C46256 /* UIView+SwiftAlertBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+SwiftAlertBar.swift"; path = "Dodo/UIView+SwiftAlertBar.swift"; sourceTree = "<group>"; };
-		F1D2B3E86B94310B945F48E80589E5EA /* DodoButtonViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoButtonViewDelegate.swift; path = Dodo/Buttons/DodoButtonViewDelegate.swift; sourceTree = "<group>"; };
-		F253831B2473428F444EEF7A1332B285 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		F542F87D1471F503D398FC24ABB15403 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		F7A9ED2571D9854675D47F67AFEA2CE7 /* Dodo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dodo-umbrella.h"; sourceTree = "<group>"; };
-		FA180D1ED5A85C8230619E08FCA82CBF /* Magic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Magic.xcconfig; sourceTree = "<group>"; };
-		FE7556DC73EB1FA3DA45BD13D20D7B60 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FEF603CF2E8C592A16071A510D6B3BF1 /* Magic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Magic-dummy.m"; sourceTree = "<group>"; };
+		E8FB834BD66AC41645AAC5452AA8C76C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB0322B76755F6E270D62B3ADFD8396C /* Dodo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Dodo.modulemap; sourceTree = "<group>"; };
+		ED7723EF2993745453736AFF71092BFD /* Magic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Magic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDCD7E500E2C9AA896BF838026DEA691 /* Magic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Magic-umbrella.h"; sourceTree = "<group>"; };
+		EEB617BD03A451167F801E839DFD46AA /* MaterialKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEEF3B88FA3FD4427D46EB4AD20CDDB9 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		EF9A47D4D64E4DADAE74C3E072835E01 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		F0707EE7911903B3F438E5781D4A7FB5 /* Dodo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Dodo-dummy.m"; sourceTree = "<group>"; };
+		F186F4F2D51C6785435651732A182B44 /* BubbleTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleTransition.swift; path = Source/BubbleTransition.swift; sourceTree = "<group>"; };
+		F3A7C74993C8510AF983C5E7F4A5E788 /* DodoAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DodoAnimations.swift; path = Dodo/Animators/DodoAnimations.swift; sourceTree = "<group>"; };
+		F477FB22073247EBC812B69FB71C4A13 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		F8BA43D403BF2C5A8426D7E7C00465D2 /* Magic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Magic-dummy.m"; sourceTree = "<group>"; };
+		FA470BB4860082EF6CA59002D471E195 /* MKLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKLabel.swift; path = Source/MKLabel.swift; sourceTree = "<group>"; };
+		FEA94262229FE35AB0BF96C10DB57A58 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEE5204CE546CCC50E4B2C3698515C8E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		401E5B0AB190BC46BDD3918F64D6AEB6 /* Frameworks */ = {
+		321AB7D81D44E9BE1200379A1AC23A98 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B5DDF661075724BC3D5FDA056CB93B0 /* Foundation.framework in Frameworks */,
+				527BCC8168E0648A4B8C4C62BEF6895A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45780DF9890ECB2B0F0413F48010F1A1 /* Frameworks */ = {
+		565E91DC64B243710149614ACACCBFC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				509114D9ED9B203EE4C2CE828E23B02C /* Foundation.framework in Frameworks */,
+				7E801CFFC0BC0629854B78CE419441F6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45F3D17235F4CADFBF8762A107928A38 /* Frameworks */ = {
+		764B23B368944CB53372F92D1CAE30C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E399BC9351F999F41C3C126ECF516004 /* Foundation.framework in Frameworks */,
+				B05251230EEF449CBC6ACAD048A75402 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4F3BEBC40DFBBFD6673F2C2EE643318C /* Frameworks */ = {
+		8ADBF2E052FF5971A1C1EEFC9F9F6249 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DFD8F78CB7CD5C10BA4119ABD1D23BB /* Foundation.framework in Frameworks */,
+				32E5A8FE7D8BEFB469006EA52501C424 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA3742712D1F1A5821C151A725B8018C /* Frameworks */ = {
+		94FFD9A10EEFF20692F9B6A2DFF3F364 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8335166A05C7EE7C5FEABE4A556F8F9 /* Foundation.framework in Frameworks */,
+				A855B34524D84D1A48B48FD045CB433C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5735F0A9876CE1F519D7557E04C6127 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B315C502B1B4ABB63C9BAC0ABFBE9E8F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		29D2EC9D340686CD3861BE57BEC4784A /* Dodo */ = {
+		1A080503DF848981725962ABECBF960F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C6F7FA6A8265EDACA96B7C8A775ECF66 /* Dodo.swift */,
-				876540580BBF85419D8ACE5E92CB8635 /* DodoAnimation.swift */,
-				0E7BDADF5D43A9E774388FB3CC086B50 /* DodoAnimations.swift */,
-				BC2031D9E8893D9D4F455BD8EA36B510 /* DodoAnimationsHide.swift */,
-				1F23F9FD164D8CBE3F29E25D7539E568 /* DodoAnimationsShow.swift */,
-				953F9B500033F1F6746BD1B835832674 /* DodoBarDefaultStyles.swift */,
-				DE0998E46EE64E98F9A0188276079BB4 /* DodoBarStyle.swift */,
-				571C4EBC4D55B72A18CE2CA3D4E41944 /* DodoButtonDefaultStyles.swift */,
-				19B2164F19F9AE17D0E078634A07AE52 /* DodoButtonOnTap.swift */,
-				A023D8D94040B72CCE165546CFF148E6 /* DodoButtonStyle.swift */,
-				D3B16FC47573AC596495404EC508F232 /* DodoButtonView.swift */,
-				F1D2B3E86B94310B945F48E80589E5EA /* DodoButtonViewDelegate.swift */,
-				2FFB5D133F75FFA9365266899ECB7997 /* DodoColor.swift */,
-				15D5B46E8AC7B11E77B406C6A488C526 /* DodoIcons.swift */,
-				5ABAC851443F63149C0C23B194B7491D /* DodoInterface.swift */,
-				AC273474EFDD063E321A53FF247C2413 /* DodoKeyboardListener.swift */,
-				0202C3BEEF91361621F5E203EFCC256E /* DodoLabelDefaultStyles.swift */,
-				0556E5B43F7F86E52E3739E9735B7DF6 /* DodoLabelStyle.swift */,
-				D2A8AF96466898AEA24361FC04B3DD86 /* DodoMock.swift */,
-				721CB38BA3CC63FDE68FF9E8D549E6A1 /* DodoMockMessage.swift */,
-				67037A4DD44E5B35DBE017CC5675D9B1 /* DodoMockResults.swift */,
-				400637897F110B724CB5DF6F113FD310 /* DodoPresets.swift */,
-				DB64DBBB34ACBDDC4CAC229BE01D9E46 /* DodoStyle.swift */,
-				4B3D405D1198828C63B999B1C145182F /* DodoToolbar.swift */,
-				5C0E24003074285E0809B64D79AEAC3E /* DodoTouchTarget.swift */,
-				D5E79D49FCEBC11B87781A468D59D05D /* MoaTimer.swift */,
-				6971CB35CE7D2CE1074311B4BE460A0A /* OnTap.swift */,
-				A50D949BBE6919D9189582947F97E062 /* SpringAnimationCALayer.swift */,
-				01EBB827360E7D502277630A9FC29B8E /* TegAutolayoutConstraints.swift */,
-				EA1B897519FE0DF364BFFC3089C46256 /* UIView+SwiftAlertBar.swift */,
-				E6BC37745CF6754A35DDB02053F167A0 /* UnderKeyboardDistrib.swift */,
-				3B56F2324D12F63BDEC5A0F13A88EFA4 /* Resources */,
-				58877567503959A953A63A9746665649 /* Support Files */,
-			);
-			path = Dodo;
-			sourceTree = "<group>";
-		};
-		2A36A851243F1F9C4BD03522CBA0CD0E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0986348762EBED36B91AA003C34654E5 /* Info.plist */,
-				2EB6F0526A8FBB76E0AF6F09558FC740 /* Magic.modulemap */,
-				FA180D1ED5A85C8230619E08FCA82CBF /* Magic.xcconfig */,
-				FEF603CF2E8C592A16071A510D6B3BF1 /* Magic-dummy.m */,
-				51DD29B11D59E7B797A212FEF6D443CF /* Magic-prefix.pch */,
-				1769A5A8BF16DD5B2A045C554D71A3CD /* Magic-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Magic";
-			sourceTree = "<group>";
-		};
-		3B56F2324D12F63BDEC5A0F13A88EFA4 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				642EEB1257E0DBBB3E58FF9B436D44BE /* Icons.xcassets */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		4B44066C9C44FB798691EE4F91ACCA86 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AA4A5DE9DAF8D7C764AEFBA239239A17 /* Alamofire */,
-				29D2EC9D340686CD3861BE57BEC4784A /* Dodo */,
-				EDAA016BA5B84B643B5CF13269A910D3 /* Magic */,
-				6D5ECAF7986C13B8C8B488A8161B88C0 /* MaterialKit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				AA37CE31E58753C330E5BC58CE4D23C8 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		58877567503959A953A63A9746665649 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				469CAFAEABA2562E60567AEBDE3DA384 /* Dodo.modulemap */,
-				10F100CA39EC23EDD15B5BBB48ECAF4A /* Dodo.xcconfig */,
-				57FD13CE2CB18845A813F7D6AEAE64DB /* Dodo-dummy.m */,
-				9BCBC8A3DAD26CE7D6FD5C3A34F096CE /* Dodo-prefix.pch */,
-				F7A9ED2571D9854675D47F67AFEA2CE7 /* Dodo-umbrella.h */,
-				4B5D1248B86E56C03E4ED38EA743C8C3 /* Info.plist */,
+				EB0322B76755F6E270D62B3ADFD8396C /* Dodo.modulemap */,
+				C800ED7D5E0EBFF9EB8DD905AA3FBB6E /* Dodo.xcconfig */,
+				F0707EE7911903B3F438E5781D4A7FB5 /* Dodo-dummy.m */,
+				235ECDF5D2101BCACDAA4CF288861C0C /* Dodo-prefix.pch */,
+				D27831D7F3651FF2B4637BC4FA09B060 /* Dodo-umbrella.h */,
+				FEA94262229FE35AB0BF96C10DB57A58 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Dodo";
 			sourceTree = "<group>";
 		};
-		6D5ECAF7986C13B8C8B488A8161B88C0 /* MaterialKit */ = {
+		1C635EF63361AD05C7706A74C7D0C7C1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				90A5289A43C468E93C74F23F97D7CE0F /* MKButton.swift */,
-				E55ACFD993383D44F7D1F2523DD33343 /* MKColor.swift */,
-				9053E81E20CC07B38C496E7CBC8EACB2 /* MKImageView.swift */,
-				52CEE2DA4A9AEEE5073DC50044093C6D /* MKLabel.swift */,
-				9A3E4DDC08EC1F5B1A1A19D988BFF187 /* MKLayer.swift */,
-				E0F9B052126742C08759778A01021DC6 /* MKTableViewCell.swift */,
-				94EF8E0592820F39FF214445E772BD4F /* MKTextField.swift */,
-				99E6FC046D9488008FAD8DB2EDC4EE5B /* Support Files */,
+				B235CAAE82F7B7CBABF2BC9152DB7EB1 /* Info.plist */,
+				BE6E97855241CAC7C619448EA342393F /* Magic.modulemap */,
+				303D2EA30F9EBB11E641E69119BAFC59 /* Magic.xcconfig */,
+				F8BA43D403BF2C5A8426D7E7C00465D2 /* Magic-dummy.m */,
+				34AE4178AA3104909CC72F4613D49B37 /* Magic-prefix.pch */,
+				EDCD7E500E2C9AA896BF838026DEA691 /* Magic-umbrella.h */,
 			);
-			path = MaterialKit;
+			name = "Support Files";
+			path = "../Target Support Files/Magic";
+			sourceTree = "<group>";
+		};
+		2751336103A56855C27FEBE43408CBB3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8FB834BD66AC41645AAC5452AA8C76C /* Info.plist */,
+				B330DEF0BC7E3933A942389DD4A030E9 /* MaterialKit.modulemap */,
+				0FF440EA8A2845B8DB7941401D17C431 /* MaterialKit.xcconfig */,
+				BEC1932B51C4CC409BB8235A6D43518F /* MaterialKit-dummy.m */,
+				8C4A08DF9804276831D5AEC653EA8424 /* MaterialKit-prefix.pch */,
+				1406756DDC56A754E6E86B824FC02E79 /* MaterialKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MaterialKit";
+			sourceTree = "<group>";
+		};
+		3B4BF3F40E3828769F8E5B43877D42A2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A1D007E7DD471DCA1D8BFE97DD0477C /* Alamofire.modulemap */,
+				528FEC5100FE630F50792BE61966DC8B /* Alamofire.xcconfig */,
+				79164B29A5F98E63938A375328B5815E /* Alamofire-dummy.m */,
+				BB81913469D5F128AF7E1CA1A00110B0 /* Alamofire-prefix.pch */,
+				EF9A47D4D64E4DADAE74C3E072835E01 /* Alamofire-umbrella.h */,
+				C1F7653EFD3D06C5D6F6DA5401D1B5A9 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6E3632188D6A393EA112D992B4091E86 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		53FE80CEA61441AEB15791FE7FAE2749 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				A71DC5B06CAA35744DB3BD31E862F1AD /* Alamofire.swift */,
+				6B77C4B09254BC14F25F76FDAFCAF958 /* Download.swift */,
+				F477FB22073247EBC812B69FB71C4A13 /* Error.swift */,
+				6D839760A084BECEF226E8CE8212BC66 /* Manager.swift */,
+				CFCCE4A742BFC138C6EA002F8CA75CAD /* MultipartFormData.swift */,
+				5BB524B27B53CFA0A40FA96A112FF0A3 /* ParameterEncoding.swift */,
+				DC2670D8285D60E38479EF54668A465D /* Request.swift */,
+				1FA5D95C65BC0CF828E21AF418AF4C91 /* ResponseSerialization.swift */,
+				D479FE562848F0F87E0ABA32BCF7027E /* Result.swift */,
+				A0BC17ABADA20F70D70128E910BB7702 /* ServerTrustPolicy.swift */,
+				C04A120ABD93D1648C94873E2DCB0037 /* Stream.swift */,
+				D4102F5AE007038F18A15A646CAE1890 /* Upload.swift */,
+				E789BC3B9ED142E53E107BA4F27BAF75 /* Validation.swift */,
+				3B4BF3F40E3828769F8E5B43877D42A2 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		5A85E4CAA96965148A4BB33E75A63C92 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A96CD5CC3FA1A2DA126C1B6993EA452D /* Icons.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		69B602258229087506B265C382E43632 /* Dodo */ = {
+			isa = PBXGroup;
+			children = (
+				45A86E8D75EAE9B7E2F0B193426E0834 /* Dodo.swift */,
+				C95FCEC6214EFB899B9C186284C13CD2 /* DodoAnimation.swift */,
+				F3A7C74993C8510AF983C5E7F4A5E788 /* DodoAnimations.swift */,
+				8BAD8171585484455F08DADBCAF9BF73 /* DodoAnimationsHide.swift */,
+				B008EB3A63B0322519B0F871918C263C /* DodoAnimationsShow.swift */,
+				177CE96E53F78C031EA26DE6346F5BA0 /* DodoBarDefaultStyles.swift */,
+				BFF02E86E6D64E5764F5DF9B25F65A13 /* DodoBarStyle.swift */,
+				4B280C33284CC357D5D9DC93154CDDD1 /* DodoButtonDefaultStyles.swift */,
+				3A61811177719BC32E431D6580C12807 /* DodoButtonOnTap.swift */,
+				56DE64E99010592B85C67FA4B9F122BE /* DodoButtonStyle.swift */,
+				82332FE14F10DE99C890D20956B66DB9 /* DodoButtonView.swift */,
+				A56FDB384C04B30101D1506810DE4EE0 /* DodoButtonViewDelegate.swift */,
+				44DA72ED9854F0811EF032E8F85D9A27 /* DodoColor.swift */,
+				D004F2917C9FE829A759E116226BBD74 /* DodoIcons.swift */,
+				67B7A18E4E268CE2AFBDB4AB30E5E63B /* DodoInterface.swift */,
+				92E8523C819081DA9F0BB0124FF28312 /* DodoKeyboardListener.swift */,
+				AC6942D988B034C6C7812D60DAD75C79 /* DodoLabelDefaultStyles.swift */,
+				81B616BFF043D54252244EDDBF2DD152 /* DodoLabelStyle.swift */,
+				B59C9FB815B45DA49023FF449A02DF7F /* DodoMock.swift */,
+				0DA9D43DEDFDD68ED5F7E7F99B19E288 /* DodoMockMessage.swift */,
+				258BC5916DF99FD5EAF215ECBEF0C7A0 /* DodoMockResults.swift */,
+				2EF840A8D982A86F427E8739ED6FB545 /* DodoPresets.swift */,
+				6A1399CD13810966A46E3B7B8B8CB2EB /* DodoStyle.swift */,
+				5560C4F0D47ABDDBC405DC3EC4793F57 /* DodoToolbar.swift */,
+				9B20BE125BB38F348125451DC83F13AC /* DodoTouchTarget.swift */,
+				564B1BA4914AD39F8525EBC17C0BEB6E /* MoaTimer.swift */,
+				0CA34B5F33A3AE2A4C339945ACE8EBA7 /* OnTap.swift */,
+				E1EAA5C1D6408F467852B44322EB7BAD /* SpringAnimationCALayer.swift */,
+				588E4BF856BFD54694F1223E4A02A6E6 /* TegAutolayoutConstraints.swift */,
+				055F6D90C6B11D7893E5809CDC446A55 /* UIView+SwiftAlertBar.swift */,
+				4C3117851DEA2F7FDCE5921F409A6BB9 /* UnderKeyboardDistrib.swift */,
+				5A85E4CAA96965148A4BB33E75A63C92 /* Resources */,
+				1A080503DF848981725962ABECBF960F /* Support Files */,
+			);
+			path = Dodo;
 			sourceTree = "<group>";
 		};
 		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
@@ -366,12 +416,12 @@
 				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
 				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
 				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
-				7BF2001BBD6CBF1352D17D7088264C7F /* Pods-dummy.m */,
+				19222AAB1D4D08CEC1D1A37A3EAFE61A /* Pods-dummy.m */,
 				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
 				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
-				105D13F6DF0076D54E6DDE895FADAC7C /* Pods-umbrella.h */,
-				3A1586234568B7A35F52DCD96784ADD3 /* Pods.debug.xcconfig */,
-				DE4359B747BDEED38054525CB89799EF /* Pods.release.xcconfig */,
+				EEEF3B88FA3FD4427D46EB4AD20CDDB9 /* Pods-umbrella.h */,
+				356575262B68238E68B8DDDAD892652B /* Pods.debug.xcconfig */,
+				1428D0A928AE118824C52CE8EEAD0FFC /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
@@ -382,59 +432,44 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4B44066C9C44FB798691EE4F91ACCA86 /* Pods */,
-				FB86810A92FA0A68D070B01982095A58 /* Products */,
+				B340ADB15ECAE23A661E3D4C197856F5 /* Pods */,
+				9A4C7711294638764C53561B74DC0F9E /* Products */,
 				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		99E6FC046D9488008FAD8DB2EDC4EE5B /* Support Files */ = {
+		9A4C7711294638764C53561B74DC0F9E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE7556DC73EB1FA3DA45BD13D20D7B60 /* Info.plist */,
-				586A90344BC96EADE3F2B20F9BD7F21B /* MaterialKit.modulemap */,
-				BB59C8E3B0279B761A15835251CEBDFC /* MaterialKit.xcconfig */,
-				A68E07510E7BE22DE1593BE492704DDC /* MaterialKit-dummy.m */,
-				ABC81D22ECD1E3A84AF8649128EAA743 /* MaterialKit-prefix.pch */,
-				DD8633914E99F87FEBF18EF00BC56801 /* MaterialKit-umbrella.h */,
+				9D1295342C15D90B7B68211430FFEE13 /* Alamofire.framework */,
+				BF8BBB91D9C0AD43C3806A261874B716 /* BubbleTransition.framework */,
+				71F1BF0C57B3604D879A76E31491A9D6 /* Dodo.framework */,
+				ED7723EF2993745453736AFF71092BFD /* Magic.framework */,
+				EEB617BD03A451167F801E839DFD46AA /* MaterialKit.framework */,
+				FEE5204CE546CCC50E4B2C3698515C8E /* Pods.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MaterialKit";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		AA4A5DE9DAF8D7C764AEFBA239239A17 /* Alamofire */ = {
+		9C5CB71706E70609D7CC1D55A2F1224C /* BubbleTransition */ = {
 			isa = PBXGroup;
 			children = (
-				CD69E816160657959E5F421DA97878D8 /* Alamofire.swift */,
-				D47F553C23D0ED280DBC07DA96DD7A9D /* Download.swift */,
-				771E14424A113B3FD2626B905086339B /* Error.swift */,
-				14DB254FB4B75E02725155F04F4DA0F7 /* Manager.swift */,
-				90F7A679F83BB01777E3709071BD5F56 /* MultipartFormData.swift */,
-				063D6B86D9B781A46DD980644BC90FBF /* ParameterEncoding.swift */,
-				13BA45D1630C4F82F8E9CD4A2172C8A9 /* Request.swift */,
-				58EE05DECDC76C93631CA544479A7DAF /* ResponseSerialization.swift */,
-				F253831B2473428F444EEF7A1332B285 /* Result.swift */,
-				F542F87D1471F503D398FC24ABB15403 /* ServerTrustPolicy.swift */,
-				B92A905B143468B7E36BB017632D06AC /* Stream.swift */,
-				5392322FDC2EE4397B91E1CC65655B20 /* Upload.swift */,
-				12145DE9209E1F75F4892B21F4A6ED60 /* Validation.swift */,
-				AD5670C5E02FCCF3F4B8A87834308B50 /* Support Files */,
+				F186F4F2D51C6785435651732A182B44 /* BubbleTransition.swift */,
+				BC2D4FCFD05782A2A94BFE4F3A212B0C /* Support Files */,
 			);
-			path = Alamofire;
+			path = BubbleTransition;
 			sourceTree = "<group>";
 		};
-		AD5670C5E02FCCF3F4B8A87834308B50 /* Support Files */ = {
+		B340ADB15ECAE23A661E3D4C197856F5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2D7E23B7D87B6487FFAD4D8720D0F15C /* Alamofire.modulemap */,
-				8424266ABA1E9468E058E7E331418A9A /* Alamofire.xcconfig */,
-				82395DC65F620C3BA151BDE33A75CF9D /* Alamofire-dummy.m */,
-				E22FD630CC0F8D2B96F9845D76FB1EED /* Alamofire-prefix.pch */,
-				7C18EE6A21E479DED3CA21992C5F2627 /* Alamofire-umbrella.h */,
-				C85DED5B203F25CD08E0363C4456144D /* Info.plist */,
+				53FE80CEA61441AEB15791FE7FAE2749 /* Alamofire */,
+				9C5CB71706E70609D7CC1D55A2F1224C /* BubbleTransition */,
+				69B602258229087506B265C382E43632 /* Dodo */,
+				D601CE0C2398D900D077F2225EEFCF59 /* Magic */,
+				DD1BC337DF1744AB70FD7727F3936B7A /* MaterialKit */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
@@ -445,6 +480,20 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		BC2D4FCFD05782A2A94BFE4F3A212B0C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				74C94CFC9DBB14992F4D4C64B4E62064 /* BubbleTransition.modulemap */,
+				58F79E6BB99A4B5D2DE806C80F238186 /* BubbleTransition.xcconfig */,
+				A3833BC5AF1F4E3A7D19AE681B9B6890 /* BubbleTransition-dummy.m */,
+				25567B1C6C418388EC000B3CA9E759D0 /* BubbleTransition-prefix.pch */,
+				B55890C7E470385F0F51F659315CC7F6 /* BubbleTransition-umbrella.h */,
+				5A5DA4DCC05755EC075740147CC82447 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BubbleTransition";
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,136 +502,91 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EDAA016BA5B84B643B5CF13269A910D3 /* Magic */ = {
+		D601CE0C2398D900D077F2225EEFCF59 /* Magic */ = {
 			isa = PBXGroup;
 			children = (
-				9C4123D910B0502514ED63349C43CC6E /* Magic.swift */,
-				2A36A851243F1F9C4BD03522CBA0CD0E /* Support Files */,
+				AA0C3B37EA5D2E5CC2F696AB086C51E5 /* Magic.swift */,
+				1C635EF63361AD05C7706A74C7D0C7C1 /* Support Files */,
 			);
 			path = Magic;
 			sourceTree = "<group>";
 		};
-		FB86810A92FA0A68D070B01982095A58 /* Products */ = {
+		DD1BC337DF1744AB70FD7727F3936B7A /* MaterialKit */ = {
 			isa = PBXGroup;
 			children = (
-				3A58758D80340ED87A15178507DB50F8 /* Alamofire.framework */,
-				5566BF5F03B5B0124AB3D5C73DD554F0 /* Dodo.framework */,
-				E5D320F044D9B601320334EAF569FEE5 /* Magic.framework */,
-				7664C5E47B0CDD3A0896C8D53BDD478A /* MaterialKit.framework */,
-				14354B8D463544E39FE081FB725FF29E /* Pods.framework */,
+				144BD9306C45438A79807A6B9ED5BA02 /* MKButton.swift */,
+				4D340FA53CC57AEC5335398D6E5831DB /* MKColor.swift */,
+				D7458862BBF04017B7E7508018ED8F69 /* MKImageView.swift */,
+				FA470BB4860082EF6CA59002D471E195 /* MKLabel.swift */,
+				2E453E40CF9EADD1AEB1984D0E2C961B /* MKLayer.swift */,
+				E3123710AFF9D3BDA83410E1E06C4306 /* MKTableViewCell.swift */,
+				C92E93A8B5A265F15C79719D84068472 /* MKTextField.swift */,
+				2751336103A56855C27FEBE43408CBB3 /* Support Files */,
 			);
-			name = Products;
+			path = MaterialKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		680F65B955288AFC3E6A12735229B880 /* Headers */ = {
+		3CC17C538B01043580849D7DE8B6204B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B40F29123236DCF72CF3A95350282EB /* Magic-umbrella.h in Headers */,
+				8C779AE241442009A1BBC74EB841838F /* Pods-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78991CB9BB952773BE26936CA7389948 /* Headers */ = {
+		5DE1C0678D5A609EE9D6C3C2382B3FB5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DA50B805D1E2323DD6DC65BEB080331 /* MaterialKit-umbrella.h in Headers */,
+				2CC1F989E034DE8E2DF4236DCBD6E9B1 /* Magic-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C59717E8ACD8DAB06DFDD8A0A24FF17C /* Headers */ = {
+		6C9E12C061B0647DDF09D389DF77E0AE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C70FDC8FE84B67C986DA2886345E91A9 /* Dodo-umbrella.h in Headers */,
+				2D3FA8924D8D2343BFABB838E5EBE93B /* Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D352D974B0A0E6273AAF2EBF92AB3361 /* Headers */ = {
+		AA129240AA2D99EA1CFCC216C9DE9D2A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA4DF4D0DEA0F718336548FDAA3B5248 /* Alamofire-umbrella.h in Headers */,
+				D5DE9DBD1938604557EEE1863D9B8BA2 /* BubbleTransition-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E77EDF8F965E954C021645AC55D27702 /* Headers */ = {
+		DFB11F76500F3EAA7B4104E757C79613 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E670187F5F9489962EB25DC02D2F638 /* Pods-umbrella.h in Headers */,
+				8006670C72E1620263D46CC10CF8C2DE /* MaterialKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F38D172187F0ED4B7076D2540925BDF3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D8FD05CC05064D8DEFC658C14BB6B6 /* Dodo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0FAF672A3F3B3D6FBE28D3954E75468B /* Alamofire */ = {
+		80D7CD86DC0D82B9E7813A4D96E4E805 /* Magic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 741A4BFB2F450276C3C0E150FDE53CC8 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildConfigurationList = 78EE244BAB8931C4EDAB5223BC9D3A27 /* Build configuration list for PBXNativeTarget "Magic" */;
 			buildPhases = (
-				2273E7152336378D96F864D4F0A0E8CF /* Sources */,
-				45780DF9890ECB2B0F0413F48010F1A1 /* Frameworks */,
-				D352D974B0A0E6273AAF2EBF92AB3361 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Alamofire;
-			productName = Alamofire;
-			productReference = 3A58758D80340ED87A15178507DB50F8 /* Alamofire.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6BA70AC9910D0A309F0DB27A39911F6A /* Dodo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E61C38AB77DE5091672DA4212BAE3400 /* Build configuration list for PBXNativeTarget "Dodo" */;
-			buildPhases = (
-				776A1C2CAB1301AEC750C53F3F40F2D6 /* Sources */,
-				4F3BEBC40DFBBFD6673F2C2EE643318C /* Frameworks */,
-				3CF4E61A318D9DCC432C3C7BA3038A27 /* Resources */,
-				C59717E8ACD8DAB06DFDD8A0A24FF17C /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Dodo;
-			productName = Dodo;
-			productReference = 5566BF5F03B5B0124AB3D5C73DD554F0 /* Dodo.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A8B29C964EC59F20BCC8B72614EB0FBA /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3361C150CD8CA2230B5325B6C6285CBD /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				5FEBFDB9289AE3E0F467CE68855733F9 /* Sources */,
-				45F3D17235F4CADFBF8762A107928A38 /* Frameworks */,
-				E77EDF8F965E954C021645AC55D27702 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B7181E59145849282052012E613C28A0 /* PBXTargetDependency */,
-				53B59E4E2DF4EE90AE3478EF105EC1D3 /* PBXTargetDependency */,
-				00716C2254B6B609C4B9B047769E9BF8 /* PBXTargetDependency */,
-				4A904E95188E94029BF46FC20458E73E /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = 14354B8D463544E39FE081FB725FF29E /* Pods.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BB62A97A209F5653FB9546AA88A53CE3 /* Magic */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 141A83B8D344DC4BAE5482565A339149 /* Build configuration list for PBXNativeTarget "Magic" */;
-			buildPhases = (
-				6EB812ACA393F4E6F0325A5D453C2258 /* Sources */,
-				DA3742712D1F1A5821C151A725B8018C /* Frameworks */,
-				680F65B955288AFC3E6A12735229B880 /* Headers */,
+				FB0DCEEBA71381831EBCB8B62EF88CF6 /* Sources */,
+				8ADBF2E052FF5971A1C1EEFC9F9F6249 /* Frameworks */,
+				5DE1C0678D5A609EE9D6C3C2382B3FB5 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -590,16 +594,55 @@
 			);
 			name = Magic;
 			productName = Magic;
-			productReference = E5D320F044D9B601320334EAF569FEE5 /* Magic.framework */;
+			productReference = ED7723EF2993745453736AFF71092BFD /* Magic.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E09CFD7ABC38BB889AA3EBFCC2D40371 /* MaterialKit */ = {
+		8FC1A54E9263EA7ADEA443AF6E275C67 /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92DFFBAC86EAAA72C45E5A4160C1C3CD /* Build configuration list for PBXNativeTarget "MaterialKit" */;
+			buildConfigurationList = F2D14D9455D01309D213D25E6A4A800A /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				3559AF855602A85D289EA84865229E5B /* Sources */,
-				401E5B0AB190BC46BDD3918F64D6AEB6 /* Frameworks */,
-				78991CB9BB952773BE26936CA7389948 /* Headers */,
+				5DE67BAF1BB4DA4412F08EDD717F1B32 /* Sources */,
+				94FFD9A10EEFF20692F9B6A2DFF3F364 /* Frameworks */,
+				3CC17C538B01043580849D7DE8B6204B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ED7C8D869A0FD38BFF989D697A53574 /* PBXTargetDependency */,
+				77E79869FA36B89D9A0D463EFC6A5DB7 /* PBXTargetDependency */,
+				682502D8ED1BB14569EB0CF02234C076 /* PBXTargetDependency */,
+				9EB0E3422DFA369B5E37BBC0C139DA4C /* PBXTargetDependency */,
+				CAD20DDB8E3B57E56214719D21B7901F /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = FEE5204CE546CCC50E4B2C3698515C8E /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ADEC2FABAE7DF4107497C6EA173846A1 /* BubbleTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA3E667A9C4A7A6A188897008F4E8CE6 /* Build configuration list for PBXNativeTarget "BubbleTransition" */;
+			buildPhases = (
+				C9426CF24D99232DE532F871F2B7B11D /* Sources */,
+				764B23B368944CB53372F92D1CAE30C3 /* Frameworks */,
+				AA129240AA2D99EA1CFCC216C9DE9D2A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BubbleTransition;
+			productName = BubbleTransition;
+			productReference = BF8BBB91D9C0AD43C3806A261874B716 /* BubbleTransition.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C26C297B9E8C4BEBB4965DFD255BB18D /* MaterialKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46A748CA330832186F31B839E5B8EA3C /* Build configuration list for PBXNativeTarget "MaterialKit" */;
+			buildPhases = (
+				26A93A55D33DB265309135DD2503B55F /* Sources */,
+				565E91DC64B243710149614ACACCBFC6 /* Frameworks */,
+				DFB11F76500F3EAA7B4104E757C79613 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -607,7 +650,42 @@
 			);
 			name = MaterialKit;
 			productName = MaterialKit;
-			productReference = 7664C5E47B0CDD3A0896C8D53BDD478A /* MaterialKit.framework */;
+			productReference = EEB617BD03A451167F801E839DFD46AA /* MaterialKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC9812C1B106FC7F9784688291DBD35E /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A6F398B814A3720BDA95CB65FFA1172 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				0A5B870D41057D3B550AACA7F747336E /* Sources */,
+				F5735F0A9876CE1F519D7557E04C6127 /* Frameworks */,
+				6C9E12C061B0647DDF09D389DF77E0AE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 9D1295342C15D90B7B68211430FFEE13 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D5DFFCE25C205B680BD40296A65945F6 /* Dodo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 948DC523DAA5466783CD7035A50BEA77 /* Build configuration list for PBXNativeTarget "Dodo" */;
+			buildPhases = (
+				3BBC81F73208EF98F2984034C1735963 /* Sources */,
+				321AB7D81D44E9BE1200379A1AC23A98 /* Frameworks */,
+				D692417882C3A3A8DC9158C416ADF6B0 /* Resources */,
+				F38D172187F0ED4B7076D2540925BDF3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dodo;
+			productName = Dodo;
+			productReference = 71F1BF0C57B3604D879A76E31491A9D6 /* Dodo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -627,156 +705,285 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FB86810A92FA0A68D070B01982095A58 /* Products */;
+			productRefGroup = 9A4C7711294638764C53561B74DC0F9E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0FAF672A3F3B3D6FBE28D3954E75468B /* Alamofire */,
-				6BA70AC9910D0A309F0DB27A39911F6A /* Dodo */,
-				BB62A97A209F5653FB9546AA88A53CE3 /* Magic */,
-				E09CFD7ABC38BB889AA3EBFCC2D40371 /* MaterialKit */,
-				A8B29C964EC59F20BCC8B72614EB0FBA /* Pods */,
+				CC9812C1B106FC7F9784688291DBD35E /* Alamofire */,
+				ADEC2FABAE7DF4107497C6EA173846A1 /* BubbleTransition */,
+				D5DFFCE25C205B680BD40296A65945F6 /* Dodo */,
+				80D7CD86DC0D82B9E7813A4D96E4E805 /* Magic */,
+				C26C297B9E8C4BEBB4965DFD255BB18D /* MaterialKit */,
+				8FC1A54E9263EA7ADEA443AF6E275C67 /* Pods */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3CF4E61A318D9DCC432C3C7BA3038A27 /* Resources */ = {
+		D692417882C3A3A8DC9158C416ADF6B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F976FAF9F667A56F3D1CE050FA9AD55 /* Icons.xcassets in Resources */,
+				00A339D74BC2404D33521D4A325A07CE /* Icons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2273E7152336378D96F864D4F0A0E8CF /* Sources */ = {
+		0A5B870D41057D3B550AACA7F747336E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3BB4A00881D17C6CF012D3B648AA42F /* Alamofire-dummy.m in Sources */,
-				DDCE70488F170608ED71598776B57FA3 /* Alamofire.swift in Sources */,
-				155C4C5F4291808BA3B7AB011FAEF67B /* Download.swift in Sources */,
-				DE133D3A9C2AC2B3DA81F2A25D7986A3 /* Error.swift in Sources */,
-				7D39FAB88E6326B77E84C91C06996FB9 /* Manager.swift in Sources */,
-				84841498F5359F914664F4E0FCBB642C /* MultipartFormData.swift in Sources */,
-				00B49A0CDC857D1F015100BEC52A7B7C /* ParameterEncoding.swift in Sources */,
-				16580D4A62DE3BF2AC4D68EFCB040CD0 /* Request.swift in Sources */,
-				F695D0EF26B402F437243AF2DED72D9B /* ResponseSerialization.swift in Sources */,
-				3D760E1B85843DC99A2A9A2D97F51313 /* Result.swift in Sources */,
-				1378FF7EE4CA34C1B7EA16DD1A1F5A8F /* ServerTrustPolicy.swift in Sources */,
-				1B34B38C59781EA0EC2ED0981C650FB8 /* Stream.swift in Sources */,
-				864C144DD64DB85236095E3768807C22 /* Upload.swift in Sources */,
-				C114EC1F74685A7BB965FDE5C0BB673E /* Validation.swift in Sources */,
+				90995371239A3332D529389B125615E1 /* Alamofire-dummy.m in Sources */,
+				1A22654666F5A74E3BFB692E5B6126D8 /* Alamofire.swift in Sources */,
+				5F402AB8FEDE9C7F15C9978C4FE2657F /* Download.swift in Sources */,
+				B90D4CA6E1F5EA8587615ECEB7E42DED /* Error.swift in Sources */,
+				4A17980BB0ECAF2C4747771FA5CB432B /* Manager.swift in Sources */,
+				F1398AD37CA827A6997D0D173EBC3220 /* MultipartFormData.swift in Sources */,
+				1185D7976C459241FD19F5486A8A6B7A /* ParameterEncoding.swift in Sources */,
+				A5B00DC0875EB5C2886D873554CC4B44 /* Request.swift in Sources */,
+				97BF9D889B37BB9C530ED97BE1C27C7A /* ResponseSerialization.swift in Sources */,
+				5C03C9AD8ED55D8F9CAD9DEAB1824138 /* Result.swift in Sources */,
+				98AE26A837EDE30424C5A2FCFAE9B2DE /* ServerTrustPolicy.swift in Sources */,
+				39AF2F680D3BE96CC2B431B483AD353C /* Stream.swift in Sources */,
+				B293FFBE732AD3362EE32045B28DDC22 /* Upload.swift in Sources */,
+				2B211A4BCEEE48BCF3F804B98920BEEE /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3559AF855602A85D289EA84865229E5B /* Sources */ = {
+		26A93A55D33DB265309135DD2503B55F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87D33C533CADB5FC7643A8BD6C34F9E9 /* MaterialKit-dummy.m in Sources */,
-				CEB70C20C2303DEE789B29BE8819BE64 /* MKButton.swift in Sources */,
-				AF86C98A662B452E63F0AB4C594DE76A /* MKColor.swift in Sources */,
-				9F550FA5CF67A6838CECE3C43FE99985 /* MKImageView.swift in Sources */,
-				9F363529BEA9E4C894DC4CA29EFD4C80 /* MKLabel.swift in Sources */,
-				D2B37CEFF5991E1B590324BA9DA0E11F /* MKLayer.swift in Sources */,
-				8506EF3F9C859C6163ED7B7BD8A5E8A6 /* MKTableViewCell.swift in Sources */,
-				98D5B41F041441DB323CFE8A35CAA4E1 /* MKTextField.swift in Sources */,
+				2262A8D1DE4111EF9A112444117D6CE5 /* MaterialKit-dummy.m in Sources */,
+				5FED69EFF406466A322F97374C393272 /* MKButton.swift in Sources */,
+				93A9A976FF339FECDB2A60969340E23A /* MKColor.swift in Sources */,
+				4122F98B7CA22E882FF7697FDD11B6E8 /* MKImageView.swift in Sources */,
+				82A1F692FA63C2CA41D52169479314AA /* MKLabel.swift in Sources */,
+				4FC701DEB9FA55AEE4D5D0290AA2C5E9 /* MKLayer.swift in Sources */,
+				E253B062D79428A67083D858AF6F7DD1 /* MKTableViewCell.swift in Sources */,
+				7D402A94FA17DB40C9AACB3AA3DA1F32 /* MKTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FEBFDB9289AE3E0F467CE68855733F9 /* Sources */ = {
+		3BBC81F73208EF98F2984034C1735963 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E45EDC6B0674F8982159BF6361F976FB /* Pods-dummy.m in Sources */,
+				7DBFC6F53C53BC63911B8ABFBC998D39 /* Dodo-dummy.m in Sources */,
+				8AF8AF1B7597061D2F9F234778A2E5C9 /* Dodo.swift in Sources */,
+				6EBCCA66EC190E298FE138345F45C5F4 /* DodoAnimation.swift in Sources */,
+				14D25376FFDC3EE1E5660CC306B2E750 /* DodoAnimations.swift in Sources */,
+				BA394F33B78D2C77F3287A0AFC31EF86 /* DodoAnimationsHide.swift in Sources */,
+				D5FE87BD76E4C9D730D7BFE58D077817 /* DodoAnimationsShow.swift in Sources */,
+				2E3CFB8377D460A2051D9A42EDB30DBF /* DodoBarDefaultStyles.swift in Sources */,
+				BB3A2FFDF6FAA9E26E5746F9E1B4CC89 /* DodoBarStyle.swift in Sources */,
+				481A4A130CA7F3F8D041C455CB7AE11C /* DodoButtonDefaultStyles.swift in Sources */,
+				5D9EB84E8651A5950EF97E6208F8EDD3 /* DodoButtonOnTap.swift in Sources */,
+				CB3119BEF917930E6874ABDD230D10CF /* DodoButtonStyle.swift in Sources */,
+				6794991475721FB8656B29A6D4D17B2D /* DodoButtonView.swift in Sources */,
+				D79A2FF579936587CFC9234FEA4242EA /* DodoButtonViewDelegate.swift in Sources */,
+				EABF2E9F8DA52465021210648CA8BAF3 /* DodoColor.swift in Sources */,
+				433E27697A25B71492E9CC96E24943CA /* DodoIcons.swift in Sources */,
+				C8C4AD7830F5B3480B7F5A577410DB6F /* DodoInterface.swift in Sources */,
+				50428E5DFC452D381A611239A1451352 /* DodoKeyboardListener.swift in Sources */,
+				63E02AB138964B98151B0085977CCCED /* DodoLabelDefaultStyles.swift in Sources */,
+				36E56BAB390F93F4342FE6FBE5E71C0F /* DodoLabelStyle.swift in Sources */,
+				0FD00C2CC5498AC381E11E588AD8BC2F /* DodoMock.swift in Sources */,
+				CB1EBF5570F766ECC2623B9762D7C2F0 /* DodoMockMessage.swift in Sources */,
+				E6BE8B632E6129565FA3562C4338E018 /* DodoMockResults.swift in Sources */,
+				02AB473EDDA76C8E96A9C7275B50A70C /* DodoPresets.swift in Sources */,
+				8075A8DAC14516F575D89CE9695519AD /* DodoStyle.swift in Sources */,
+				7FF8F43690346DE75C35B440D3AF2757 /* DodoToolbar.swift in Sources */,
+				20CDE42C2B8D6DA99B30AAC4CDE9BDFD /* DodoTouchTarget.swift in Sources */,
+				60767BF2651BD09B7C17577255863A89 /* MoaTimer.swift in Sources */,
+				58D2AD38AB970100925591FCBFEBFB3C /* OnTap.swift in Sources */,
+				227BE5D08B354E78C1841B5C8F4FD8F8 /* SpringAnimationCALayer.swift in Sources */,
+				003D0C8CACC60B308B5784B1D7B12A49 /* TegAutolayoutConstraints.swift in Sources */,
+				C27DA04D62FB596E98C217C40FBBD727 /* UIView+SwiftAlertBar.swift in Sources */,
+				20AB2AD827138B5ADB45E2D51ADDDDA9 /* UnderKeyboardDistrib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6EB812ACA393F4E6F0325A5D453C2258 /* Sources */ = {
+		5DE67BAF1BB4DA4412F08EDD717F1B32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8EE4955B67E7A7A21507B2AA618F5FD /* Magic-dummy.m in Sources */,
-				F0B8F17F0E2246A193B5A0B7300D6588 /* Magic.swift in Sources */,
+				F86AA5254A51F645DE79C069E6DFADCE /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		776A1C2CAB1301AEC750C53F3F40F2D6 /* Sources */ = {
+		C9426CF24D99232DE532F871F2B7B11D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E1BD3D1723DE4FBE9301A004F361C47 /* Dodo-dummy.m in Sources */,
-				5DA94EC98DEEDB94B3999F5ECDA33CE3 /* Dodo.swift in Sources */,
-				029109739A3AAA60BC7B35BD9EBC4C92 /* DodoAnimation.swift in Sources */,
-				4D5307C0061C97D1FA2B036D39AE92F9 /* DodoAnimations.swift in Sources */,
-				EB9874A8837D49DC6AD3E40E4399A545 /* DodoAnimationsHide.swift in Sources */,
-				7D68EF2B3CACF63800B5BE01FB3A15EB /* DodoAnimationsShow.swift in Sources */,
-				8E8893987702F215C8A71CCB03BEA726 /* DodoBarDefaultStyles.swift in Sources */,
-				3446E9E3E77FD474F31B40C409E9BBBC /* DodoBarStyle.swift in Sources */,
-				7F995E2AD0437A48273F2E1C59586DEE /* DodoButtonDefaultStyles.swift in Sources */,
-				CD6E7B6645AFD4989D25CF4712909BBE /* DodoButtonOnTap.swift in Sources */,
-				EDE3036236DDA9676CC85E14E6574869 /* DodoButtonStyle.swift in Sources */,
-				672638E16555B1C75F5C6A5945E6EBF1 /* DodoButtonView.swift in Sources */,
-				6984466423046872CF6B83FD0B126066 /* DodoButtonViewDelegate.swift in Sources */,
-				41CB5FEA719DF4DB57681A34A11DBC2D /* DodoColor.swift in Sources */,
-				97A59905DD9CEB0B06BFCC2BF0FD89DA /* DodoIcons.swift in Sources */,
-				E27AE03F5B8D4B1C67620D12104DA2A8 /* DodoInterface.swift in Sources */,
-				7F4E4753D267DC8A26519C3937162232 /* DodoKeyboardListener.swift in Sources */,
-				FC7A5986D7C0BD19206639BBC36A9DBC /* DodoLabelDefaultStyles.swift in Sources */,
-				5BC1F235304E4DA4E570A475CE255FF2 /* DodoLabelStyle.swift in Sources */,
-				1C5C9E2FC4BA9C4008F804E6613195B3 /* DodoMock.swift in Sources */,
-				7636080906E130295076BAAB41A2041A /* DodoMockMessage.swift in Sources */,
-				9FE72871BCC56860330DFA7E31B7BF6D /* DodoMockResults.swift in Sources */,
-				993E5C113635AE65E569CEF896ADB2C1 /* DodoPresets.swift in Sources */,
-				8474CA276BE120C97C706FB4EE45B22A /* DodoStyle.swift in Sources */,
-				B8C4AD078A258F4FDE03C385B23CC543 /* DodoToolbar.swift in Sources */,
-				72317043273AAEFAEA309EE28C8CA37C /* DodoTouchTarget.swift in Sources */,
-				85295DC209F978667D692FBC11D8859A /* MoaTimer.swift in Sources */,
-				3614641FE4DC44167638C7939FE91FE3 /* OnTap.swift in Sources */,
-				75E9B4164F0C86D8B06A5F61B36A2D64 /* SpringAnimationCALayer.swift in Sources */,
-				58D6B3E331E11C536A4958055658CA83 /* TegAutolayoutConstraints.swift in Sources */,
-				5FCCAAF1FDD776935F98FBF793E3FA42 /* UIView+SwiftAlertBar.swift in Sources */,
-				74FF4F9D52D7525C76F66A0533A6F803 /* UnderKeyboardDistrib.swift in Sources */,
+				D18940A8F2E59EA736DE900EBFBFBFF5 /* BubbleTransition-dummy.m in Sources */,
+				4630FA6189B002E02CC3EBE102EA97EA /* BubbleTransition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0DCEEBA71381831EBCB8B62EF88CF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D49257151920E39A9165CB5F45096C /* Magic-dummy.m in Sources */,
+				2410F2FF92248F4F1C05983496345EC4 /* Magic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00716C2254B6B609C4B9B047769E9BF8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Magic;
-			target = BB62A97A209F5653FB9546AA88A53CE3 /* Magic */;
-			targetProxy = D49A403780125C55D4F2D6ED456B11F0 /* PBXContainerItemProxy */;
-		};
-		4A904E95188E94029BF46FC20458E73E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MaterialKit;
-			target = E09CFD7ABC38BB889AA3EBFCC2D40371 /* MaterialKit */;
-			targetProxy = 95A9C3D0A28B2E2602D4E02EB09FD2F3 /* PBXContainerItemProxy */;
-		};
-		53B59E4E2DF4EE90AE3478EF105EC1D3 /* PBXTargetDependency */ = {
+		682502D8ED1BB14569EB0CF02234C076 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Dodo;
-			target = 6BA70AC9910D0A309F0DB27A39911F6A /* Dodo */;
-			targetProxy = C01D431A7E665C4D9046E2062276DD23 /* PBXContainerItemProxy */;
+			target = D5DFFCE25C205B680BD40296A65945F6 /* Dodo */;
+			targetProxy = 859F69245E9F4C545690F7DCA2F4B21A /* PBXContainerItemProxy */;
 		};
-		B7181E59145849282052012E613C28A0 /* PBXTargetDependency */ = {
+		77E79869FA36B89D9A0D463EFC6A5DB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BubbleTransition;
+			target = ADEC2FABAE7DF4107497C6EA173846A1 /* BubbleTransition */;
+			targetProxy = AA671195B030142E2B849426F8BC7700 /* PBXContainerItemProxy */;
+		};
+		7ED7C8D869A0FD38BFF989D697A53574 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
-			target = 0FAF672A3F3B3D6FBE28D3954E75468B /* Alamofire */;
-			targetProxy = F15F995B70B30E33AE9D7FECFCF6EB1B /* PBXContainerItemProxy */;
+			target = CC9812C1B106FC7F9784688291DBD35E /* Alamofire */;
+			targetProxy = D7EF01995505120354577388579866A6 /* PBXContainerItemProxy */;
+		};
+		9EB0E3422DFA369B5E37BBC0C139DA4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Magic;
+			target = 80D7CD86DC0D82B9E7813A4D96E4E805 /* Magic */;
+			targetProxy = 6FD3712001C87C637E1DE1C9C581E49C /* PBXContainerItemProxy */;
+		};
+		CAD20DDB8E3B57E56214719D21B7901F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MaterialKit;
+			target = C26C297B9E8C4BEBB4965DFD255BB18D /* MaterialKit */;
+			targetProxy = 87DBE479D83BDF6586FDE759E2EE2894 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0A09E47006129F6E3E47987905C7BC8B /* Release */ = {
+		355E86B29BA2920566D9225F41458950 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB59C8E3B0279B761A15835251CEBDFC /* MaterialKit.xcconfig */;
+			baseConfigurationReference = 303D2EA30F9EBB11E641E69119BAFC59 /* Magic.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.0.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Magic/Magic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Magic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Magic/Magic.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Magic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		44C15E7765AE0D23271CC849E746D7DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58F79E6BB99A4B5D2DE806C80F238186 /* BubbleTransition.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.2.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.2.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BubbleTransition/BubbleTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BubbleTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BubbleTransition/BubbleTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BubbleTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		461F307B988CB924AC94BF851B01DB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 303D2EA30F9EBB11E641E69119BAFC59 /* Magic.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.0.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Magic/Magic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Magic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Magic/Magic.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Magic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		463ED7BEF9B7BD2941F5CE55E17C3236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 356575262B68238E68B8DDDAD892652B /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		46B5E5891AC801F2ED435893A8EF699F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FF440EA8A2845B8DB7941401D17C431 /* MaterialKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0.3.5;
@@ -801,9 +1008,9 @@
 			};
 			name = Release;
 		};
-		231A0BDF0B354A8B6CDE683F71A6E3CB /* Debug */ = {
+		55D06B7ACC0B2B1B01F63BC1D9687456 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8424266ABA1E9468E058E7E331418A9A /* Alamofire.xcconfig */;
+			baseConfigurationReference = 528FEC5100FE630F50792BE61966DC8B /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 2.0.0;
@@ -820,61 +1027,6 @@
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		272F9B962DAC8BCCB37AABEC9727535F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10F100CA39EC23EDD15B5BBB48ECAF4A /* Dodo.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.0.10;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Dodo/Dodo-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Dodo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Dodo/Dodo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Dodo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		481CD5699FF68F84700B8A01064750D1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB59C8E3B0279B761A15835251CEBDFC /* MaterialKit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.3.5;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.3.5;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MaterialKit/MaterialKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MaterialKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MaterialKit/MaterialKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MaterialKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -923,63 +1075,6 @@
 			};
 			name = Debug;
 		};
-		6305BE67B9BD6EFC1D1C5D13D067DCBC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE4359B747BDEED38054525CB89799EF /* Pods.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7474E9B7FD2B016C485BE4769845B82E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA180D1ED5A85C8230619E08FCA82CBF /* Magic.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.0.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Magic/Magic-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Magic/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Magic/Magic.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Magic;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1014,9 +1109,93 @@
 			};
 			name = Release;
 		};
-		9234E1BA7C84B1C90BD2DDCC8F6A0B1D /* Release */ = {
+		B38BC698FFC104E49BAE9870EF0104E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8424266ABA1E9468E058E7E331418A9A /* Alamofire.xcconfig */;
+			baseConfigurationReference = C800ED7D5E0EBFF9EB8DD905AA3FBB6E /* Dodo.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.0.10;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Dodo/Dodo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Dodo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Dodo/Dodo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Dodo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7D757462359E6C98A68C4B087F6E23D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FF440EA8A2845B8DB7941401D17C431 /* MaterialKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.3.5;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.3.5;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MaterialKit/MaterialKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MaterialKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MaterialKit/MaterialKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MaterialKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CEA7E366DFB680577E0CE60592EEC034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1428D0A928AE118824C52CE8EEAD0FFC /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D83D2E8DF8EACAE103A7090E19988AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 528FEC5100FE630F50792BE61966DC8B /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 2.0.0;
@@ -1041,9 +1220,36 @@
 			};
 			name = Release;
 		};
-		A1A7CB2F167D10B94C51F7C99CAACC17 /* Debug */ = {
+		DC540156C096EAEB7EAA4A2D617B1EC5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10F100CA39EC23EDD15B5BBB48ECAF4A /* Dodo.xcconfig */;
+			baseConfigurationReference = 58F79E6BB99A4B5D2DE806C80F238186 /* BubbleTransition.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.2.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.2.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BubbleTransition/BubbleTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BubbleTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BubbleTransition/BubbleTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BubbleTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E0EFEB37D3836A560CCA3F02D532557E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C800ED7D5E0EBFF9EB8DD905AA3FBB6E /* Dodo.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 2.0.10;
@@ -1069,75 +1275,9 @@
 			};
 			name = Debug;
 		};
-		C739A0EE187123EF10AC61D36861D486 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A1586234568B7A35F52DCD96784ADD3 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E4BF89D7867861E6C9E6B0CF1987C525 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA180D1ED5A85C8230619E08FCA82CBF /* Magic.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2.0.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 2;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Magic/Magic-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Magic/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Magic/Magic.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Magic;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		141A83B8D344DC4BAE5482565A339149 /* Build configuration list for PBXNativeTarget "Magic" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7474E9B7FD2B016C485BE4769845B82E /* Debug */,
-				E4BF89D7867861E6C9E6B0CF1987C525 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1147,38 +1287,56 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3361C150CD8CA2230B5325B6C6285CBD /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		46A748CA330832186F31B839E5B8EA3C /* Build configuration list for PBXNativeTarget "MaterialKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C739A0EE187123EF10AC61D36861D486 /* Debug */,
-				6305BE67B9BD6EFC1D1C5D13D067DCBC /* Release */,
+				C7D757462359E6C98A68C4B087F6E23D /* Debug */,
+				46B5E5891AC801F2ED435893A8EF699F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		741A4BFB2F450276C3C0E150FDE53CC8 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+		5A6F398B814A3720BDA95CB65FFA1172 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				231A0BDF0B354A8B6CDE683F71A6E3CB /* Debug */,
-				9234E1BA7C84B1C90BD2DDCC8F6A0B1D /* Release */,
+				55D06B7ACC0B2B1B01F63BC1D9687456 /* Debug */,
+				D83D2E8DF8EACAE103A7090E19988AB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92DFFBAC86EAAA72C45E5A4160C1C3CD /* Build configuration list for PBXNativeTarget "MaterialKit" */ = {
+		78EE244BAB8931C4EDAB5223BC9D3A27 /* Build configuration list for PBXNativeTarget "Magic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				481CD5699FF68F84700B8A01064750D1 /* Debug */,
-				0A09E47006129F6E3E47987905C7BC8B /* Release */,
+				461F307B988CB924AC94BF851B01DB54 /* Debug */,
+				355E86B29BA2920566D9225F41458950 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E61C38AB77DE5091672DA4212BAE3400 /* Build configuration list for PBXNativeTarget "Dodo" */ = {
+		948DC523DAA5466783CD7035A50BEA77 /* Build configuration list for PBXNativeTarget "Dodo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A1A7CB2F167D10B94C51F7C99CAACC17 /* Debug */,
-				272F9B962DAC8BCCB37AABEC9727535F /* Release */,
+				E0EFEB37D3836A560CCA3F02D532557E /* Debug */,
+				B38BC698FFC104E49BAE9870EF0104E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA3E667A9C4A7A6A188897008F4E8CE6 /* Build configuration list for PBXNativeTarget "BubbleTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C15E7765AE0D23271CC849E746D7DB /* Debug */,
+				DC540156C096EAEB7EAA4A2D617B1EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2D14D9455D01309D213D25E6A4A800A /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463ED7BEF9B7BD2941F5CE55E17C3236 /* Debug */,
+				CEA7E366DFB680577E0CE60592EEC034 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

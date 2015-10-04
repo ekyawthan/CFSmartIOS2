@@ -99,12 +99,15 @@
                                 <color key="highlightedColor" red="0.54539413609999998" green="1" blue="0.086197258890000003" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oSX-EO-TEe">
-                                <rect key="frame" x="70" y="282" width="460" height="35.5"/>
+                                <rect key="frame" x="70" y="277" width="460" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="kp7-21-mml"/>
+                                </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Begin Questionnaire">
                                             <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="20" name="HelveticaNeue"/>
                                             </attributes>
                                         </fragment>
@@ -112,10 +115,11 @@
                                 </state>
                                 <connections>
                                     <action selector="shouldBeginQuestionaire:" destination="aEP-h1-IS5" eventType="touchUpInside" id="1cm-z0-FJq"/>
+                                    <segue destination="VcM-Oa-yJW" kind="modal" id="CxS-ke-UpP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for completing this questionnaire" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meP-et-lVQ">
-                                <rect key="frame" x="20" y="326" width="552" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thank you for completing this questionnaire" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meP-et-lVQ">
+                                <rect key="frame" x="20" y="330.5" width="552" height="69.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -151,7 +155,7 @@
                     </view>
                     <connections>
                         <outlet property="completeLabel" destination="meP-et-lVQ" id="PZ1-2l-VYR"/>
-                        <segue destination="Y5d-u6-aAF" kind="show" identifier="survey" id="jVy-Ue-7WI"/>
+                        <outlet property="takeSurvey" destination="oSX-EO-TEe" id="6EB-Xg-zcN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YBj-4e-jzY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -170,12 +174,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1 of 12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukj-ae-wT8">
-                                <rect key="frame" x="20" y="72" width="560" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the past week have you had new " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zD-lC-xeO">
                                 <rect key="frame" x="20" y="285" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -226,21 +224,43 @@
                                     </attributedString>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2z-vx-n4H" customClass="MKButton" customModule="MaterialKit">
+                                <rect key="frame" x="530" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7UO-7d-gib"/>
+                                    <constraint firstAttribute="width" constant="50" id="O7j-DE-zyx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickDismiss:" destination="VcM-Oa-yJW" eventType="touchUpInside" id="TMr-34-RTL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1 of 12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukj-ae-wT8">
+                                <rect key="frame" x="20" y="78" width="560" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="faj-eB-AnB" firstAttribute="centerX" secondItem="mop-3K-Bbj" secondAttribute="centerX" id="3zm-08-DyP"/>
+                            <constraint firstItem="ukj-ae-wT8" firstAttribute="top" secondItem="A2z-vx-n4H" secondAttribute="bottom" constant="8" id="4nx-TW-ASw"/>
                             <constraint firstItem="MqT-BM-8pb" firstAttribute="top" secondItem="faj-eB-AnB" secondAttribute="bottom" constant="20" id="6va-rr-34B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ukj-ae-wT8" secondAttribute="trailing" id="7Ez-4R-x06"/>
                             <constraint firstItem="3zD-lC-xeO" firstAttribute="trailing" secondItem="mop-3K-Bbj" secondAttribute="trailingMargin" id="8gV-MX-DKk"/>
+                            <constraint firstItem="A2z-vx-n4H" firstAttribute="top" secondItem="i0w-b5-Qfo" secondAttribute="bottom" id="NkE-6S-Dg8"/>
                             <constraint firstItem="4aW-9f-asg" firstAttribute="bottom" secondItem="faj-eB-AnB" secondAttribute="bottom" id="Np6-5S-3BB"/>
                             <constraint firstItem="5gp-5G-jAi" firstAttribute="leading" secondItem="faj-eB-AnB" secondAttribute="trailing" constant="20" id="RO0-F2-fPP"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ukj-ae-wT8" secondAttribute="leading" id="W9e-bL-0TZ"/>
                             <constraint firstItem="5gp-5G-jAi" firstAttribute="top" secondItem="faj-eB-AnB" secondAttribute="top" id="XBf-HW-JAM"/>
                             <constraint firstItem="4aW-9f-asg" firstAttribute="top" secondItem="faj-eB-AnB" secondAttribute="top" id="YvQ-Ft-vbH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A2z-vx-n4H" secondAttribute="trailing" id="gdH-th-iq8"/>
                             <constraint firstItem="3zD-lC-xeO" firstAttribute="centerX" secondItem="mop-3K-Bbj" secondAttribute="centerX" id="jXs-FA-FQY"/>
                             <constraint firstItem="faj-eB-AnB" firstAttribute="leading" secondItem="4aW-9f-asg" secondAttribute="trailing" constant="10" id="kRD-1z-07E"/>
-                            <constraint firstItem="ukj-ae-wT8" firstAttribute="top" secondItem="i0w-b5-Qfo" secondAttribute="bottom" constant="8" id="nYf-yK-Xlt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ukj-ae-wT8" secondAttribute="trailing" id="p53-KY-0oT"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="ukj-ae-wT8" secondAttribute="leading" id="sXo-lV-Rv7"/>
                             <constraint firstItem="3zD-lC-xeO" firstAttribute="centerY" secondItem="mop-3K-Bbj" secondAttribute="centerY" id="tL5-zt-H32"/>
                             <constraint firstItem="5gp-5G-jAi" firstAttribute="bottom" secondItem="faj-eB-AnB" secondAttribute="bottom" id="tTG-bu-1gs"/>
                             <constraint firstItem="3zD-lC-xeO" firstAttribute="leading" secondItem="mop-3K-Bbj" secondAttribute="leadingMargin" id="tXg-Eu-vRI"/>
@@ -251,30 +271,13 @@
                         <outlet property="NoButton" destination="5gp-5G-jAi" id="VY7-Sg-E3N"/>
                         <outlet property="currentQuestion" destination="3zD-lC-xeO" id="W4m-N8-Sv1"/>
                         <outlet property="currentQuestionBar" destination="ukj-ae-wT8" id="9zp-je-VMd"/>
+                        <outlet property="dismissSurvey" destination="A2z-vx-n4H" id="KZp-zy-JhN"/>
                         <outlet property="yesButton" destination="4aW-9f-asg" id="qp9-ZQ-Gb9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zno-h7-qO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2326" y="22"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="346-pC-7lj">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y5d-u6-aAF" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vgP-L8-Gtk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="VcM-Oa-yJW" kind="relationship" relationship="rootViewController" id="yO5-Ui-Pew"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ME8-b1-KAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1514" y="22"/>
+            <point key="canvasLocation" x="1643" y="43"/>
         </scene>
     </scenes>
 </document>

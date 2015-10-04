@@ -57,7 +57,7 @@ class User {
             "delay_counter": delay
         ]
         
-       Alamofire.request(.POST, "", parameters: parameter, encoding: .JSON)
+       Alamofire.request(.POST, "http://52.7.122.129/survey/", parameters: parameter, encoding: .JSON)
         .response{(_, response, data, error) in
             if let responseData = response {
                 if responseData.statusCode == 201 {
