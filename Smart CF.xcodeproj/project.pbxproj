@@ -20,6 +20,7 @@
 		55CDE1BC1BC02DDD00FAF74B /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1BB1BC02DDD00FAF74B /* SurveyViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		55CDE1BE1BC07C8100FAF74B /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1BD1BC07C8100FAF74B /* Survey.swift */; settings = {ASSET_TAGS = (); }; };
 		55CDE1C01BC18F2600FAF74B /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1BF1BC18F2600FAF74B /* SwiftSpinner.swift */; settings = {ASSET_TAGS = (); }; };
+		55CDE1FC1BC1E71100FAF74B /* SurveyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1FB1BC1E71100FAF74B /* SurveyHandler.swift */; settings = {ASSET_TAGS = (); }; };
 		9ABA551DC383E69C75B79B6D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301924EFDCFAB5F76804FC60 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		55CDE1BB1BC02DDD00FAF74B /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		55CDE1BD1BC07C8100FAF74B /* Survey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		55CDE1BF1BC18F2600FAF74B /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
+		55CDE1FB1BC1E71100FAF74B /* SurveyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyHandler.swift; sourceTree = "<group>"; };
 		A3ECFAD035BD0488205B1694 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E6D4D398575A3F7E5BD2C25A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +160,7 @@
 				559080141BB8F13500BEAD4B /* User.swift */,
 				559080161BB8F3E200BEAD4B /* Settings.swift */,
 				55CDE1BD1BC07C8100FAF74B /* Survey.swift */,
+				55CDE1FB1BC1E71100FAF74B /* SurveyHandler.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				55907FE41BB8F06100BEAD4B /* AppDelegate.swift in Sources */,
 				559080171BB8F3E200BEAD4B /* Settings.swift in Sources */,
 				55CDE1BC1BC02DDD00FAF74B /* SurveyViewController.swift in Sources */,
+				55CDE1FC1BC1E71100FAF74B /* SurveyHandler.swift in Sources */,
 				559080151BB8F13500BEAD4B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

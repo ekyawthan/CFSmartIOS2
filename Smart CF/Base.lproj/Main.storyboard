@@ -107,7 +107,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Begin Questionnaire">
                                             <attributes>
-                                                <color key="NSColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <font key="NSFont" size="20" name="HelveticaNeue"/>
                                             </attributes>
                                         </fragment>
@@ -161,6 +161,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YBj-4e-jzY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="804" y="27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="y6r-xD-mCc">
+            <objects>
+                <viewController id="mHK-m9-LHr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vNo-J8-v4u"/>
+                        <viewControllerLayoutGuide type="bottom" id="0ry-VX-IwN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jdO-VI-wub">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="F6c-ef-9sV">
+                                <rect key="frame" x="20" y="192" width="580" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="466188573.66854203">
+                                    <!--2015-10-10 16:49:33 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Az8-7B-7hV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="435" y="675"/>
         </scene>
         <!--Survey View Controller-->
         <scene sceneID="G98-fp-5Ys">

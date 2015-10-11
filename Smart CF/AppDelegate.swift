@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Magic
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,13 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        
-//        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        
-//        let login : LoginViewController = mainStoryboard.instantiateViewControllerWithIdentifier("loginVC") as! LoginViewController
-//        let home : HomeViewController = mainStoryboard.instantiateViewControllerWithIdentifier("homeVC") as! HomeViewController
-//        UIApplication.sharedApplication().keyWindow?.rootViewController = Settings.sharedInstance.isUserLogin() ? home : login
+
        
         return true
     }
@@ -37,7 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
-        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+      
+        self.setupNotification()
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
@@ -46,6 +43,74 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
+        
+        magic(notificationSettings.description)
+        
+    }
+    
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        magic(notification.alertBody)
+    }
+    
+    func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, withResponseInfo responseInfo: [NSObject : AnyObject], completionHandler: () -> Void) {
+        if identifier == "TakeSurvey" {
+            NSNotificationCenter.defaultCenter().postNotificationName("TakeSurvey", object: nil, userInfo: nil)
+            
+        }else if  identifier == "Snooze" {
+            NSNotificationCenter.defaultCenter().postNotificationName("Snooze", object: nil, userInfo: nil)
+            
+        }else {
+            
+        }
+    }
+    
+    
+    
+    private func setupNotification() {
+        let notification : UIUserNotificationSettings = UIApplication.sharedApplication().currentUserNotificationSettings()!
+        
+        if (notification.types == UIUserNotificationType.None){
+            
+            let notificationType : UIUserNotificationType = [.Alert , .Sound]
+            
+            
+            // take action 
+            
+            let takeSurvey = UIMutableUserNotificationAction()
+            takeSurvey.identifier = "TakeSurvey"
+            takeSurvey.activationMode = .Foreground
+            takeSurvey.destructive = false
+            takeSurvey.title = "Take Survey"
+            takeSurvey.authenticationRequired = false
+            
+            
+            // snooze for 30
+            let snooze30min = UIMutableUserNotificationAction()
+            snooze30min.title = "Snooze for 30 minutes"
+            snooze30min.activationMode = .Background
+            snooze30min.destructive = true
+            snooze30min.identifier = "Snooze"
+            snooze30min.authenticationRequired = false
+            
+            let actionsArray = NSArray(objects: takeSurvey, snooze30min)
+            let actionsArrayMinimal = NSArray(objects: takeSurvey, snooze30min)
+            
+            let cfSmartNotificationCategory = UIMutableUserNotificationCategory()
+            cfSmartNotificationCategory.identifier = "CfSmartNotification"
+            cfSmartNotificationCategory.setActions(actionsArray as? [UIUserNotificationAction], forContext: .Default)
+            cfSmartNotificationCategory.setActions(actionsArrayMinimal as? [UIUserNotificationAction], forContext: .Minimal)
+            let catgoriesForSettings = NSSet(objects: cfSmartNotificationCategory)
+            let registeredNotification = UIUserNotificationSettings(forTypes: notificationType, categories: catgoriesForSettings as? Set<UIUserNotificationCategory>)
+            UIApplication.sharedApplication().registerUserNotificationSettings(registeredNotification)
+            
+
+
+
+        }
+
     }
 
 

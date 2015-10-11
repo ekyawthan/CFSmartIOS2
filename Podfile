@@ -8,3 +8,4 @@ pod 'Magic'
 pod 'Dodo', '~> 2.0'
 pod 'BubbleTransition', '~> 0.1'
 
+
