@@ -19,6 +19,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>IQDropDownTextField.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Magic.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4E7140C28E2ABC0404425AE34A9AF7FC</key>
+		<key>48BC13F3CD4178435A646FA33B7A204C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5071AF37359C3FFABC226D24D5FB8D27</key>
+		<key>5E6D2E666D0BBB7F1E876C1C6CB96FDE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6C7EEB8DEF98FBBE7976C82FEB965337</key>
+		<key>745B4B6907C210AAFB6E375C75B8F26A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8FC1A54E9263EA7ADEA443AF6E275C67</key>
+		<key>943E5EE5A828EB0AE5F992522F80816D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9690D9A917354B14D8C4AB31856D51E6</key>
+		<key>9C9B63D12A281D07E732F85C69300D8B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B9EDAB4E21418020A49C562AE7FE0209</key>
+		<key>D29E20A1F6BA53AEE3EE80BA4C155A70</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DDFB9C35BB330219406073808A1B115F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E64D81AF091C65F6161E28BCD05C13DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

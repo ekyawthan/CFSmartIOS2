@@ -51,7 +51,32 @@ class Settings {
             return "2010-09-01"
         }
         return surveyDate
+    }
+    
+    func setAlertHour(hour : Int = 12) {
+        settings.setInteger(hour, forKey: "hour")
         
+    }
+    
+    func getAlertHour() -> Int {
+        return settings.integerForKey("hour")
+    }
+    
+    func setAlertDay(day : Int ) {
+        settings.setInteger(day, forKey: "day")
+    }
+    
+    
+    func getAlertDay() -> Int {
+        return settings.integerForKey("day")
+    }
+    
+    func setUserJustLoggin(isJustLogin : Bool) {
+        settings.setBool(isJustLogin, forKey: "userLogin")
+    }
+    
+    func isUserJustLoggin() -> Bool {
+        return settings.boolForKey("userLogin")
     }
     
     

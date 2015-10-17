@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551CA0081BCC7EA1008BB15C /* LunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551CA0071BCC7EA1008BB15C /* LunchViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		55907FE41BB8F06100BEAD4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55907FE31BB8F06100BEAD4B /* AppDelegate.swift */; };
 		55907FE91BB8F06100BEAD4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55907FE71BB8F06100BEAD4B /* Main.storyboard */; };
 		55907FEB1BB8F06100BEAD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55907FEA1BB8F06100BEAD4B /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		55CDE1BE1BC07C8100FAF74B /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1BD1BC07C8100FAF74B /* Survey.swift */; settings = {ASSET_TAGS = (); }; };
 		55CDE1C01BC18F2600FAF74B /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1BF1BC18F2600FAF74B /* SwiftSpinner.swift */; settings = {ASSET_TAGS = (); }; };
 		55CDE1FC1BC1E71100FAF74B /* SurveyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1FB1BC1E71100FAF74B /* SurveyHandler.swift */; settings = {ASSET_TAGS = (); }; };
+		55CDE2731BCC444D00FAF74B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE2721BCC444D00FAF74B /* SettingViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9ABA551DC383E69C75B79B6D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301924EFDCFAB5F76804FC60 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		301924EFDCFAB5F76804FC60 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		551CA0071BCC7EA1008BB15C /* LunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchViewController.swift; sourceTree = "<group>"; };
 		55907FE01BB8F06100BEAD4B /* Smart CF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart CF.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55907FE31BB8F06100BEAD4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55907FE81BB8F06100BEAD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		55CDE1BD1BC07C8100FAF74B /* Survey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		55CDE1BF1BC18F2600FAF74B /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
 		55CDE1FB1BC1E71100FAF74B /* SurveyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyHandler.swift; sourceTree = "<group>"; };
+		55CDE2721BCC444D00FAF74B /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A3ECFAD035BD0488205B1694 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E6D4D398575A3F7E5BD2C25A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +176,8 @@
 				55CDE1B91BC0293E00FAF74B /* HomeViewController.swift */,
 				55CDE1BB1BC02DDD00FAF74B /* SurveyViewController.swift */,
 				55CDE1BF1BC18F2600FAF74B /* SwiftSpinner.swift */,
+				55CDE2721BCC444D00FAF74B /* SettingViewController.swift */,
+				551CA0071BCC7EA1008BB15C /* LunchViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -380,10 +386,12 @@
 				559080191BB8F71900BEAD4B /* LoginViewController.swift in Sources */,
 				55CDE1BE1BC07C8100FAF74B /* Survey.swift in Sources */,
 				55907FE41BB8F06100BEAD4B /* AppDelegate.swift in Sources */,
+				55CDE2731BCC444D00FAF74B /* SettingViewController.swift in Sources */,
 				559080171BB8F3E200BEAD4B /* Settings.swift in Sources */,
 				55CDE1BC1BC02DDD00FAF74B /* SurveyViewController.swift in Sources */,
 				55CDE1FC1BC1E71100FAF74B /* SurveyHandler.swift in Sources */,
 				559080151BB8F13500BEAD4B /* User.swift in Sources */,
+				551CA0081BCC7EA1008BB15C /* LunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,10 +532,12 @@
 			baseConfigurationReference = E6D4D398575A3F7E5BD2C25A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: David Putrino (UY9C7TLCKX)";
 				INFOPLIST_FILE = "Smart CF/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "meera.solution.inc.Smart-CF";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 			};
 			name = Debug;
 		};
@@ -536,10 +546,12 @@
 			baseConfigurationReference = A3ECFAD035BD0488205B1694 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: David Putrino (UY9C7TLCKX)";
 				INFOPLIST_FILE = "Smart CF/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "meera.solution.inc.Smart-CF";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 			};
 			name = Release;
 		};

@@ -7,5 +7,9 @@ pod "MaterialKit", :git => "https://github.com/reesemclean/MaterialKit", :branch
 pod 'Magic'
 pod 'Dodo', '~> 2.0'
 pod 'BubbleTransition', '~> 0.1'
+pod 'IQDropDownTextField'
+pod 'IQKeyboardManager'
+
+
 
 

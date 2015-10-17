@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManager
 
 import Magic
 
@@ -17,8 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        IQKeyboardManager.sharedManager().enable = false
 
-       
+        self.setupNotification()
         return true
     }
 
@@ -33,8 +36,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
+        magic("application will enter foreground")
       
-        self.setupNotification()
+       self.setupNotification()
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
@@ -52,7 +56,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
-        magic(notification.alertBody)
+        // Cancelling if user is not login!!
+        if !Settings.sharedInstance.isUserLogin() {
+            UIApplication.sharedApplication().cancelLocalNotification(notification)
+            
+        }
     }
     
     func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, withResponseInfo responseInfo: [NSObject : AnyObject], completionHandler: () -> Void) {
@@ -70,14 +78,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     private func setupNotification() {
+        magic("NOTIFICATION INITIALIZATION")
+
         let notification : UIUserNotificationSettings = UIApplication.sharedApplication().currentUserNotificationSettings()!
         
         if (notification.types == UIUserNotificationType.None){
             
             let notificationType : UIUserNotificationType = [.Alert , .Sound]
             
-            
-            // take action 
+            // take action
             
             let takeSurvey = UIMutableUserNotificationAction()
             takeSurvey.identifier = "TakeSurvey"

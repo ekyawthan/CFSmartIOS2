@@ -47,7 +47,7 @@ class Survey {
     func getDayOfWeek()->Int? {
         let todayDate = NSDate()
         let myCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
-        let myComponents = myCalendar?.components(.NSWeekdayCalendarUnit, fromDate: todayDate)
+        let myComponents = myCalendar?.components(NSCalendarUnit.Weekday, fromDate: todayDate)
         let weekDay = myComponents?.weekday
         print(weekDay)
         return weekDay
@@ -90,16 +90,45 @@ class Survey {
         
     }
     
+    class  func scheduleTime(day : Int , hour : Int ) -> NSDate? {
+        let cal = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
+        let today = NSDate()
+        if let calendarComp = cal?.components([
+            NSCalendarUnit.Year,
+            NSCalendarUnit.Weekday,
+            NSCalendarUnit.Hour,
+            NSCalendarUnit.Minute,
+            NSCalendarUnit.WeekOfYear,
+            
+            ], fromDate: today) {
+                calendarComp.weekday = day
+                calendarComp.weekOfYear = calendarComp.weekOfYear + 1
+                calendarComp.hour = hour
+                calendarComp.second = 0
+        
+                return cal?.dateFromComponents(calendarComp)
+            
+        }
+        return nil
+    }
+    
+
     func wantedDay(day : Day) -> NSDate? {
         let dayInt  = day.rawValue
         print("Raw value of monday  : \(dayInt)")
         let today : NSDate = NSDate()
         let cal = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
-        if let  comp = cal?.components([NSCalendarUnit.NSYearCalendarUnit, NSCalendarUnit.NSWeekdayCalendarUnit, NSCalendarUnit.NSWeekCalendarUnit, NSCalendarUnit.NSHourCalendarUnit, NSCalendarUnit.NSMinuteCalendarUnit, NSCalendarUnit.NSSecondCalendarUnit, NSCalendarUnit.NSWeekOfYearCalendarUnit], fromDate: today) {
+        if let  comp = cal?.components([
+            NSCalendarUnit.Year,
+            NSCalendarUnit.Weekday,
+            NSCalendarUnit.Hour,
+            NSCalendarUnit.Minute,
+            NSCalendarUnit.WeekOfYear,
+            
+            ], fromDate: today) {
             
             
             comp.weekday = dayInt as Int
-            print("\(comp.weekOfYear)")
             comp.weekOfYear = comp.weekOfYear + 1
             comp.hour = 12
             
@@ -114,7 +143,17 @@ class Survey {
         return NSDate()
     }
     
+    class func shouldResetAlertDate () -> Bool {
+        if Settings.sharedInstance.isUserJustLoggin() {
+            return true
+        }
+        
+        return false
+    }
+    
 }
+
+
 
 
 enum Day : Int {

@@ -13,7 +13,6 @@ import Dodo
 
 class LoginViewController: UIViewController {
 
-   
     @IBOutlet weak var userId: MKTextField!
     var settings : Settings = Settings()
     var message = "Smart Cf"
@@ -68,21 +67,19 @@ class LoginViewController: UIViewController {
             }
             
         }
-//        view.dodo.topLayoutGuide = topLayoutGuide
-//        view.dodo.bottomLayoutGuide = bottomLayoutGuide
-//        view.dodo.success("Success is how high you bounce when you hit bottom.")
         
     }
    
-   
+
     @IBAction func didClickOnLogin(sender: AnyObject) {
         
         if let user = userId.text {
             User.login(user, completeHandler: {
                 (response, error) in
                 if error == nil {
-                    magic(response)
                     if Settings.sharedInstance.isUserLogin() {
+                        Settings.sharedInstance.setUserJustLoggin(true)
+                        
                         self.performSegueWithIdentifier("home", sender: self)
                     }
                 }else {

@@ -2,6 +2,8 @@ PODS:
   - Alamofire (2.0.0)
   - BubbleTransition (0.2)
   - Dodo (2.0.10)
+  - IQDropDownTextField (1.0.6)
+  - IQKeyboardManager (3.3.1)
   - Magic (2.0.0)
   - MaterialKit (0.3.5)
 
@@ -9,6 +11,8 @@ DEPENDENCIES:
   - Alamofire (~> 2.0)
   - BubbleTransition (~> 0.1)
   - Dodo (~> 2.0)
+  - IQDropDownTextField
+  - IQKeyboardManager
   - Magic
   - MaterialKit (from `https://github.com/reesemclean/MaterialKit`, branch `swift_2`)
 
@@ -26,6 +30,8 @@ SPEC CHECKSUMS:
   Alamofire: 2f13548b29d25a58ecd91c9225fb51493e2b782b
   BubbleTransition: 6ee83cedb8b9eb2a9489e11b0e0c666f3916bb2c
   Dodo: ac952c82b2180658baccde1ab6d7ec2ac1bec72e
+  IQDropDownTextField: 361e4a4ea879c4ed0c15cbd89aceb5e60aa19d33
+  IQKeyboardManager: 860a5b9df32cc1435a3e967a08ed87de3e59c12e
   Magic: f05ea8d27da5413cd780266ff0152bb9c028bfa9
   MaterialKit: 6f1e9382f89593df768bc0c31ded9952a6d8ad46
 

@@ -16,13 +16,29 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var takeSurvey: UIButton!
     @IBOutlet weak var completeLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        
+        
+        
         completeLabel.lineBreakMode = .ByWordWrapping
         completeLabel.numberOfLines = 0
         toggleSurveyButton()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "toggleSurveyButton", name: "reloadHome", object: nil)
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        if true {
+            magic("Letting user to change survey time")
+            self.performSegueWithIdentifier("customizeAlertTime", sender: self)
+        }
+    }
+    
+    
 
     @IBAction func didClickOnLogOUT(sender : UIButton) {
         Settings.sharedInstance.setUserLoginStatus(isLogin: false)
