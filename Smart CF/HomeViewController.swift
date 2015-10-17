@@ -32,8 +32,7 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        if true {
-            magic("Letting user to change survey time")
+        if !Survey.shouldResetAlertDate() {
             self.performSegueWithIdentifier("customizeAlertTime", sender: self)
         }
     }
@@ -83,8 +82,6 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController : UIViewControllerTransitioningDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-
-            
             let controller = segue.destinationViewController
             controller.transitioningDelegate = self
             controller.modalPresentationStyle = .Custom

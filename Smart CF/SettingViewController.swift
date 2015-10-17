@@ -100,12 +100,15 @@ extension SettingViewController {
                 for (k, v) in item {
                     if k == hourAsKey {
                         magic(v)
-                        Settings.sharedInstance.setAlertDay(v)
+                        Settings.sharedInstance.setAlertHour(v)
                     }
                 }
             }
         }
        // initialAlertTime()
+        
+        
+        magic("day  : \(Settings.sharedInstance.getAlertDay())  Hour : \(Settings.sharedInstance.getAlertHour())")
         
         self.dismissViewControllerAnimated(true, completion: nil)
 

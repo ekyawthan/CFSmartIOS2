@@ -68,26 +68,22 @@ class SurveyHandler {
             }
         }
     }
+    
+    
+    
+    class func cancelAllNotification() {
+        if let notifications = UIApplication.sharedApplication().scheduledLocalNotifications {
+            for notification in notifications {
+                if let userInfo = notification.userInfo {
+                    if userInfo["alarmUser"] as! String == "cf" {
+                        UIApplication.sharedApplication().cancelLocalNotification(notification)
+                    }
+                }
+                
+            }
+        }
+    }
 
-    /*
-    func cancelAlarm(item : SurveyAlarm) {
-    for notification in UIApplication.sharedApplication().scheduledLocalNotifications as! [UILocalNotification] {
-    if (notification.userInfo!["UUID"] as! String == "UUID1"){
-    UIApplication.sharedApplication().cancelLocalNotification(notification)
-    }
-    
-    }
-    
-    
-    }
-*/
-    
-    
-    
-    
-    
-    
-    
-    
+ 
 
 }
