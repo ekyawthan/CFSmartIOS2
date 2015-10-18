@@ -46,7 +46,7 @@ class SurveyHandler {
         notification.timeZone = NSTimeZone.defaultTimeZone()
         notification.alertBody = "Survey Available"
         notification.alertAction = "open"
-        notification.fireDate = item.alarmTime
+        notification.fireDate = NSDate()
         notification.repeatInterval = NSCalendarUnit.Weekday
         notification.soundName = UILocalNotificationDefaultSoundName
         notification.userInfo = ["alarmUser" : "cf_smarter", "UUID" : "First"]

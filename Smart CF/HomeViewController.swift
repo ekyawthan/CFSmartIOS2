@@ -20,14 +20,21 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        
         
         
         completeLabel.lineBreakMode = .ByWordWrapping
         completeLabel.numberOfLines = 0
         toggleSurveyButton()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "toggleSurveyButton", name: "reloadHome", object: nil)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "takeToSurvey", name: "TakeSurvey", object: nil)
+     
+        let item = SurveyAlarm(alarmTime: NSDate(), unitId: "cfsmart")
+        SurveyHandler.scheduleAlarm(item)
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -36,6 +43,12 @@ class HomeViewController: UIViewController {
             self.performSegueWithIdentifier("customizeAlertTime", sender: self)
         }
     }
+    
+    
+    func takeToSurvey() {
+        self.performSegueWithIdentifier("", sender: self)
+    }
+  
     
     
 

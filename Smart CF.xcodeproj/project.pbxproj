@@ -23,7 +23,7 @@
 		55CDE1C01BC18F2600FAF74B /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1BF1BC18F2600FAF74B /* SwiftSpinner.swift */; settings = {ASSET_TAGS = (); }; };
 		55CDE1FC1BC1E71100FAF74B /* SurveyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1FB1BC1E71100FAF74B /* SurveyHandler.swift */; settings = {ASSET_TAGS = (); }; };
 		55CDE2731BCC444D00FAF74B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE2721BCC444D00FAF74B /* SettingViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9ABA551DC383E69C75B79B6D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301924EFDCFAB5F76804FC60 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9ABA551DC383E69C75B79B6D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301924EFDCFAB5F76804FC60 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

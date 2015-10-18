@@ -68,9 +68,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSNotificationCenter.defaultCenter().postNotificationName("TakeSurvey", object: nil, userInfo: nil)
             
         }else if  identifier == "Snooze" {
-            NSNotificationCenter.defaultCenter().postNotificationName("Snooze", object: nil, userInfo: nil)
+            SurveyHandler.rescheduleAlarm("snoozing")
+           // NSNotificationCenter.defaultCenter().postNotificationName("Snooze", object: nil, userInfo: nil)
             
         }else {
+            magic("something went wrong")
             
         }
     }
@@ -84,7 +86,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if (notification.types == UIUserNotificationType.None){
             
-            let notificationType : UIUserNotificationType = [.Alert , .Sound]
+            let notificationType : UIUserNotificationType = [.Alert , .Badge , .Sound]
+           
+
             
             // take action
             
