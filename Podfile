@@ -9,6 +9,8 @@ pod 'Dodo', '~> 2.0'
 pod 'IQDropDownTextField'
 pod 'IQKeyboardManager'
 pod 'BubbleTransition', '~> 0.1'
+pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+
 
 
 

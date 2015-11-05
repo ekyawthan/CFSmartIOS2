@@ -14,11 +14,12 @@ import Magic
 class SurveyViewController: UIViewController {
     
     let SurveyQuestions : [String]  =  [
-        "In the past week have you had an increase in sputum volume or change in colour?",
+        " In the past week have you had worsening sputum volume or colour?",
         
         "In the past week have you had new or increased blood in your sputum?",
         
-        "In the past week have you had increased cough, or new pain on coughing?",
+        "In the past week have you had increased cough?",
+        "In the past week have you had new or increased chest pain?",
         
         "In the past week have you had new or increased wheeze?",
         
@@ -33,7 +34,7 @@ class SurveyViewController: UIViewController {
         "In the past week have you had loss of appetite or weight?",
         
         "In the past week have you had sinus pain or tenderness?",
-        
+        "In the past week do you feel that your health has worsened? ",
         "In the past week have you felt low in mood?",
         
         "In the past week have you felt worried?"
@@ -58,7 +59,7 @@ class SurveyViewController: UIViewController {
     var counter : Int = 0 {
         didSet {
             currentQuestion.text = SurveyQuestions[counter]
-            currentQuestionBar.text = "Question \(counter + 1) of 12 "
+            currentQuestionBar.text = "Question \(counter + 1) of 14 "
         }
     }
     
@@ -101,7 +102,7 @@ class SurveyViewController: UIViewController {
             
         }
         
-        if(counter > 10){
+        if(counter > 12){
             
             yesButton.userInteractionEnabled = false
             NoButton.userInteractionEnabled = false
@@ -114,8 +115,8 @@ class SurveyViewController: UIViewController {
                     SwiftSpinner.hide()
                 }else {
                     SwiftSpinner.hide()
-
-                    magic("Posting survey successfully")
+                    NSNotificationCenter.defaultCenter().postNotificationName("justCompleteSurvey", object: nil)
+                    SurveyHandler.cancelAllNotification()
                     self.dismissViewControllerAnimated(true, completion: nil)
                     
                 }

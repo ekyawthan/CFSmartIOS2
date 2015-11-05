@@ -13,16 +13,10 @@ import Magic
 class SettingViewController: UIViewController {
     
     @IBOutlet weak var HourSelector: IQDropDownTextField!
-    
-    
     @IBOutlet weak var DaySelector: IQDropDownTextField!
-    
     @IBOutlet weak var currentAlertTime: UILabel!
-    
     @IBOutlet weak var resetButton: UIButton!
-    
     @IBOutlet weak var skipButton: UIButton!
-    
     let dayList = ["Monday" , "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     let timeList = [ "8 AM",
         "9 AM ", "10 AM", "11 AM", "12 PM ", "1 PM", "2 PM"
@@ -37,8 +31,7 @@ class SettingViewController: UIViewController {
         super.viewDidLoad()
         HourSelector.delegate = self
         DaySelector.delegate = self
-        HourSelector.text = timeList[4]
-        DaySelector.text = dayList[0]
+       
         HourSelector.itemList = timeList
         HourSelector.isOptionalDropDown = false
         DaySelector.itemList = dayList
@@ -61,13 +54,24 @@ class SettingViewController: UIViewController {
             time.append([item : hourCounter])
             hourCounter++
         }
+        let currentHour = timeList[Settings.sharedInstance.getAlertHour() == 0 ? 4 : Settings.sharedInstance.getAlertHour() - 8]
+        let currentDay = dayList[Settings.sharedInstance.getAlertDay()]
+        HourSelector.text =  currentHour
+        DaySelector.text = currentDay
+        currentAlertTime.text = currentDay + " " + currentHour
         
-        
-        
+
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
+        if self.HourSelector.isFirstResponder() {
+            self.HourSelector.resignFirstResponder()
+        }
+        else if self.DaySelector.isFirstResponder() {
+            self.DaySelector.resignFirstResponder()
+        }
+        
     }
     
 
@@ -88,7 +92,6 @@ extension SettingViewController {
             for item in day {
                 for (k, v) in item  {
                     if k == dayAsKey {
-                        magic(v)
                         Settings.sharedInstance.setAlertDay(v)
                     }
                 }
@@ -99,7 +102,6 @@ extension SettingViewController {
             for item in time {
                 for (k, v) in item {
                     if k == hourAsKey {
-                        magic(v)
                         Settings.sharedInstance.setAlertHour(v)
                     }
                 }
@@ -107,8 +109,11 @@ extension SettingViewController {
         }
        // initialAlertTime()
         
-        
-        magic("day  : \(Settings.sharedInstance.getAlertDay())  Hour : \(Settings.sharedInstance.getAlertHour())")
+        self.view.endEditing(true)
+        let item = SurveyAlarm(alarmTime:
+            Survey.scheduleTime(Settings.sharedInstance.getAlertDay(), hour: Settings.sharedInstance.getAlertHour() == 0 ? 12 : Settings.sharedInstance.getAlertHour())!,
+            unitId: "cf")
+        SurveyHandler.scheduleAlarm(item)
         
         self.dismissViewControllerAnimated(true, completion: nil)
 
@@ -133,14 +138,11 @@ extension SettingViewController {
 extension SettingViewController : IQDropDownTextFieldDelegate {
     func textFieldShouldEndEditing(textField: UITextField) -> Bool {
         if textField == HourSelector as UITextField {
-            
-            magic("hour selector")
             HourSelector.resignFirstResponder()
             DaySelector.becomeFirstResponder()
         }
         
         else if textField == DaySelector as UITextField {
-            magic("day selector")
             DaySelector.resignFirstResponder()
         }
         return true
@@ -152,6 +154,7 @@ extension SettingViewController : IQDropDownTextFieldDelegate {
             currentAlertTime.text = "\(item) \(HourSelector.text!)"
         }else {
             currentAlertTime.text = "\(DaySelector.text!) \(item)"
+            self.view.endEditing(true)
         }
         
        

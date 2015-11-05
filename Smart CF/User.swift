@@ -8,19 +8,23 @@
 
 import Foundation
 import Alamofire
+import Magic
+import SwiftyJSON
+
 
 class User {
-    
+    static let baseURL = "http://54.175.149.177"
     
     class func login(userId : String, completeHandler : (response : AnyObject, error : NSError?)->()) {
         
-        Alamofire.request(.GET,  "http://52.7.122.129/user/\(userId)/")
+        Alamofire.request(.GET,  baseURL + "/user/\(userId)/")
             .response{ (_, response, data , error) in
                 if  let reponseHeader = response  {
                     if reponseHeader.statusCode == 200 {
                         completeHandler(response: "Success", error: nil)
                         Settings.sharedInstance.setUserLoginStatus(isLogin: true)
                         Settings.sharedInstance.setUserId(userId)
+                       
                     }else {
                         completeHandler(response: "failed", error: nil)
                         Settings.sharedInstance.setUserLoginStatus(isLogin: false)
@@ -54,10 +58,13 @@ class User {
             "question10": answerList[9],
             "question11": answerList[10],
             "question12": answerList[11],
+            "question13": answerList[12],
+            "question14": answerList[13],
             "delay_counter": delay
         ]
+        magic(JSON(parameter))
         
-       Alamofire.request(.POST, "http://52.7.122.129/survey/", parameters: parameter, encoding: .JSON)
+       Alamofire.request(.POST, baseURL + "/survey/", parameters: parameter, encoding: .JSON)
         .response{(_, response, data, error) in
             if let responseData = response {
                 if responseData.statusCode == 201 {
@@ -65,6 +72,8 @@ class User {
                     dateFormatter.dateFormat = "yyyy-MM-dd"
                     let surveyDate  = dateFormatter.stringFromDate(NSDate())
                     settings.setLastSurveyDate(surveyDate)
+                    Settings.sharedInstance.setDelayCounter(0)
+                     NotificationHandler().cancelAllNotification()
                     completeHandler(response: "Success", error: nil)
                 
                 }else {

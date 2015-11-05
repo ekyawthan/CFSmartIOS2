@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		551CA0081BCC7EA1008BB15C /* LunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551CA0071BCC7EA1008BB15C /* LunchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		5526C9821BD46EEB008D531E /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5526C9811BD46EEB008D531E /* NotificationHandler.swift */; settings = {ASSET_TAGS = (); }; };
 		55907FE41BB8F06100BEAD4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55907FE31BB8F06100BEAD4B /* AppDelegate.swift */; };
 		55907FE91BB8F06100BEAD4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55907FE71BB8F06100BEAD4B /* Main.storyboard */; };
 		55907FEB1BB8F06100BEAD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55907FEA1BB8F06100BEAD4B /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		301924EFDCFAB5F76804FC60 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		551CA0071BCC7EA1008BB15C /* LunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchViewController.swift; sourceTree = "<group>"; };
+		5526C9811BD46EEB008D531E /* NotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
 		55907FE01BB8F06100BEAD4B /* Smart CF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart CF.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55907FE31BB8F06100BEAD4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55907FE81BB8F06100BEAD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				559080161BB8F3E200BEAD4B /* Settings.swift */,
 				55CDE1BD1BC07C8100FAF74B /* Survey.swift */,
 				55CDE1FB1BC1E71100FAF74B /* SurveyHandler.swift */,
+				5526C9811BD46EEB008D531E /* NotificationHandler.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55CDE1BA1BC0293E00FAF74B /* HomeViewController.swift in Sources */,
+				5526C9821BD46EEB008D531E /* NotificationHandler.swift in Sources */,
 				55CDE1C01BC18F2600FAF74B /* SwiftSpinner.swift in Sources */,
 				559080191BB8F71900BEAD4B /* LoginViewController.swift in Sources */,
 				55CDE1BE1BC07C8100FAF74B /* Survey.swift in Sources */,

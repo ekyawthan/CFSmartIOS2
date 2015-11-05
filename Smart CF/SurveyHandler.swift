@@ -25,7 +25,6 @@ class SurveyHandler {
             Settings.sharedInstance.setDelayCounter(counter + 1)
             let notification                = UILocalNotification()
             notification.alertBody          = "Survey available"
-            notification.alertAction        = "open"
             notification.fireDate           = NSDate().dateByAddingTimeInterval(30 * 60) // 30 minutes from current time
             notification.soundName          = UILocalNotificationDefaultSoundName
             notification.userInfo           = ["alarmUser" : "cf", "UUID" : uuid]
@@ -45,7 +44,6 @@ class SurveyHandler {
         let notification = UILocalNotification()
         notification.timeZone = NSTimeZone.defaultTimeZone()
         notification.alertBody = "Survey Available"
-        notification.alertAction = "open"
         notification.fireDate = NSDate()
         notification.repeatInterval = NSCalendarUnit.Weekday
         notification.soundName = UILocalNotificationDefaultSoundName
@@ -83,6 +81,8 @@ class SurveyHandler {
             }
         }
     }
+    
+    
 
  
 

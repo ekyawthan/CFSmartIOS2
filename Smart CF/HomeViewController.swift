@@ -20,17 +20,20 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController!.navigationBar.barTintColor = UIColor(red: 245 / 255.0, green: 124 / 255.0, blue: 1 / 255.0, alpha: 1)
         
-        
+        UINavigationBar.appearance().titleTextAttributes = [ NSForegroundColorAttributeName : UIColor.blackColor()]
         completeLabel.lineBreakMode = .ByWordWrapping
         completeLabel.numberOfLines = 0
         toggleSurveyButton()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "toggleSurveyButton", name: "reloadHome", object: nil)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "takeToSurvey", name: "TakeSurvey", object: nil)
-     
-        let item = SurveyAlarm(alarmTime: NSDate(), unitId: "cfsmart")
-        SurveyHandler.scheduleAlarm(item)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "toggleSurveyButton", name: "justCompleteSurvey", object: nil)
+        
+        NotificationHandler().setupNotificationSettings()
+       
     }
     
     deinit {
@@ -39,14 +42,14 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        if !Survey.shouldResetAlertDate() {
+        if Survey.shouldResetAlertDate() {
             self.performSegueWithIdentifier("customizeAlertTime", sender: self)
         }
     }
     
     
     func takeToSurvey() {
-        self.performSegueWithIdentifier("", sender: self)
+        self.performSegueWithIdentifier("take_survey", sender: self)
     }
   
     
@@ -90,8 +93,15 @@ class HomeViewController: UIViewController {
     }
     
 
+    @IBAction func didClickOnSettings(sender: AnyObject) {
+        self.performSegueWithIdentifier("customizeAlertTime", sender: self)
+
+    }
 
 }
+
+
+
 
 extension HomeViewController : UIViewControllerTransitioningDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
