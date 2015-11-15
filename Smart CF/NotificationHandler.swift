@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import Magic
 
 
 class NotificationHandler {
     
     
-    func setupNotificationSettings() {
+    class func setupNotificationSettings() {
         let notificationSettings: UIUserNotificationSettings! = UIApplication.sharedApplication().currentUserNotificationSettings()
         
         if (notificationSettings.types == UIUserNotificationType.None){
@@ -63,7 +64,7 @@ class NotificationHandler {
     
     
     
-    func scheduleLocalNotification(fireDate : NSDate) {
+    class func scheduleLocalNotification(fireDate : NSDate) {
         let localNotification = UILocalNotification()
         localNotification.fireDate = fireDate
         localNotification.alertBody = "Survey Available"
@@ -76,18 +77,20 @@ class NotificationHandler {
     }
     
     
-    func rescheduleAlarm(uuid : String) {
+    class func rescheduleAlarm(uuid : String) {
         let counter  = Settings.sharedInstance.getDelayCounter()
         if (counter < 5){
             Settings.sharedInstance.setDelayCounter(counter + 1)
             let notification                = UILocalNotification()
             notification.alertBody          = "Survey Available"
              notification.alertAction = "Survey"
-            notification.fireDate           = NSDate().dateByAddingTimeInterval(30 * 60) // 30 minutes from current time
+            notification.fireDate           = NSDate().dateByAddingTimeInterval(1 * 60) // 30 minutes from current time
             notification.soundName          = UILocalNotificationDefaultSoundName
             notification.userInfo           = ["alarmUser" : "cf", "UUID" : uuid + "\(counter)"]
             notification.category           = "cfsmartNotification"
             UIApplication.sharedApplication().scheduleLocalNotification(notification)
+            magic("current counter : \(counter)")
+            
             
         }
         else {
@@ -97,7 +100,7 @@ class NotificationHandler {
     }
     
     
-    func cancelNotification(uuid : String ) {
+    class func cancelNotification(uuid : String ) {
         if let notifications = UIApplication.sharedApplication().scheduledLocalNotifications {
             for item in notifications {
                 if let userInfo = item.userInfo {
@@ -112,7 +115,7 @@ class NotificationHandler {
     
     
     
-    func cancelAllNotification() {
+    class func cancelAllNotification() {
         if let notifications = UIApplication.sharedApplication().scheduledLocalNotifications {
             for notification in notifications {
                 if let userInfo = notification.userInfo {

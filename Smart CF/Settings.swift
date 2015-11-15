@@ -79,6 +79,13 @@ class Settings {
         return settings.boolForKey("userLogin")
     }
     
+    func isAlarmSet(status : Bool) {
+        settings.setBool(status, forKey: "weeklyAlarm")
+    }
+    func getAlarmStatus() -> Bool {
+        return settings.boolForKey("weeklyAlarm")
+    }
+    
     
     
     func reset(){

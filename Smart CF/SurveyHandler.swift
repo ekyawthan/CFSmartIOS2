@@ -22,10 +22,11 @@ class SurveyHandler {
     class func rescheduleAlarm(uuid : String) {
         let counter  = Settings.sharedInstance.getDelayCounter()
         if (counter < 5){
+            NotificationHandler.cancelAllNotification()
             Settings.sharedInstance.setDelayCounter(counter + 1)
             let notification                = UILocalNotification()
             notification.alertBody          = "Survey available"
-            notification.fireDate           = NSDate().dateByAddingTimeInterval(30 * 60) // 30 minutes from current time
+            notification.fireDate           = NSDate().dateByAddingTimeInterval(1 * 10) // 30 minutes from current time
             notification.soundName          = UILocalNotificationDefaultSoundName
             notification.userInfo           = ["alarmUser" : "cf", "UUID" : uuid]
             notification.category           = "SURVEY_ALARM_CATAGORIES"

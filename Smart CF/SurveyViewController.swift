@@ -102,7 +102,7 @@ class SurveyViewController: UIViewController {
             
         }
         
-        if(counter > 12){
+        if(counter > 14){
             
             yesButton.userInteractionEnabled = false
             NoButton.userInteractionEnabled = false

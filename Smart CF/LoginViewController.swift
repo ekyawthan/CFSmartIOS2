@@ -63,7 +63,6 @@ class LoginViewController: UIViewController {
                 UIView.animateWithDuration(0.5, delay: 0.3, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.0, options: .CurveEaseInOut, animations: {
                         self.loginButton.bounds.origin.x -= self.view.bounds.size.width
                     }, completion: nil)
-                
             }
             
         }

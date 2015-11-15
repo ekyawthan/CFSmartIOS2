@@ -16,23 +16,41 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var takeSurvey: UIButton!
     @IBOutlet weak var completeLabel: UILabel!
+    @IBOutlet weak var resetButton: UIButton!
     
+    @IBOutlet weak var logoutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController!.navigationBar.barTintColor = UIColor(red: 245 / 255.0, green: 124 / 255.0, blue: 1 / 255.0, alpha: 1)
         
+        logoutButton.layer.cornerRadius = 4
+        logoutButton.layer.shadowColor = UIColor.brownColor().CGColor
+        logoutButton.layer.shadowRadius = 5
+        
+        resetButton.layer.cornerRadius = 4
+        resetButton.layer.shadowRadius = 5
+        resetButton.layer.shadowColor = UIColor.brownColor().CGColor
+        
         UINavigationBar.appearance().titleTextAttributes = [ NSForegroundColorAttributeName : UIColor.blackColor()]
         completeLabel.lineBreakMode = .ByWordWrapping
         completeLabel.numberOfLines = 0
         toggleSurveyButton()
+        // notification observers
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "toggleSurveyButton", name: "reloadHome", object: nil)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "takeToSurvey", name: "TakeSurvey", object: nil)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "toggleSurveyButton", name: "justCompleteSurvey", object: nil)
+        // requesting permission if it has been revoked!!
+        NotificationHandler.setupNotificationSettings()
         
-        NotificationHandler().setupNotificationSettings()
+        //Default alarm
+        
+        if let fireTime = Survey.scheduleTime(2, hour: 12) {
+            NotificationHandler.scheduleLocalNotification(fireTime)
+            magic("alarm set on : \(fireTime)")
+        }
        
     }
     
@@ -42,9 +60,10 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        if Survey.shouldResetAlertDate() {
+        if Settings.sharedInstance.getAlarmStatus() {
             self.performSegueWithIdentifier("customizeAlertTime", sender: self)
         }
+        
     }
     
     
@@ -124,6 +143,16 @@ extension HomeViewController : UIViewControllerTransitioningDelegate {
         transition.startingPoint = self.view.center
         transition.bubbleColor = UIColor.whiteColor()
         return transition
+    }
+}
+
+
+extension HomeViewController  {
+    
+    @IBAction func didClickOnResetAlarmTime(sender: AnyObject) {
+        
+        self.performSegueWithIdentifier("customizeAlertTime", sender: self)
+
     }
 }
 

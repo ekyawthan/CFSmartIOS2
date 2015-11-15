@@ -73,7 +73,7 @@ class User {
                     let surveyDate  = dateFormatter.stringFromDate(NSDate())
                     settings.setLastSurveyDate(surveyDate)
                     Settings.sharedInstance.setDelayCounter(0)
-                     NotificationHandler().cancelAllNotification()
+                     NotificationHandler.cancelAllNotification()
                     completeHandler(response: "Success", error: nil)
                 
                 }else {

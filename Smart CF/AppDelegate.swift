@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         IQKeyboardManager.sharedManager().enable = false
+        
+        NotificationHandler.setupNotificationSettings()
 
        /// self.setupNotification()
         return true
@@ -67,7 +69,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSNotificationCenter.defaultCenter().postNotificationName("TakeSurvey", object: nil, userInfo: nil)
             
         }else if  identifier == "snooze" {
-            NotificationHandler().rescheduleAlarm("snoozing")
+            NotificationHandler.rescheduleAlarm("snoozing")
         
             
         }else {
