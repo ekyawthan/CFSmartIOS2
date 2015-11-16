@@ -91,6 +91,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/IQKeyboardManager.framework"
   install_framework "Pods/Magic.framework"
   install_framework "Pods/MaterialKit.framework"
+  install_framework "Pods/ReachabilitySwift.framework"
   install_framework "Pods/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -101,5 +102,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/IQKeyboardManager.framework"
   install_framework "Pods/Magic.framework"
   install_framework "Pods/MaterialKit.framework"
+  install_framework "Pods/ReachabilitySwift.framework"
   install_framework "Pods/SwiftyJSON.framework"
 fi

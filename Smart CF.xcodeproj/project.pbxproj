@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		551CA0081BCC7EA1008BB15C /* LunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551CA0071BCC7EA1008BB15C /* LunchViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		5526C9821BD46EEB008D531E /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5526C9811BD46EEB008D531E /* NotificationHandler.swift */; settings = {ASSET_TAGS = (); }; };
+		551CA0081BCC7EA1008BB15C /* LunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551CA0071BCC7EA1008BB15C /* LunchViewController.swift */; };
+		5526C9821BD46EEB008D531E /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5526C9811BD46EEB008D531E /* NotificationHandler.swift */; };
 		55907FE41BB8F06100BEAD4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55907FE31BB8F06100BEAD4B /* AppDelegate.swift */; };
 		55907FE91BB8F06100BEAD4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55907FE71BB8F06100BEAD4B /* Main.storyboard */; };
 		55907FEB1BB8F06100BEAD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55907FEA1BB8F06100BEAD4B /* Assets.xcassets */; };
 		55907FEE1BB8F06100BEAD4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55907FEC1BB8F06100BEAD4B /* LaunchScreen.storyboard */; };
 		55907FF91BB8F06100BEAD4B /* Smart_CFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55907FF81BB8F06100BEAD4B /* Smart_CFTests.swift */; };
 		559080041BB8F06100BEAD4B /* Smart_CFUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559080031BB8F06100BEAD4B /* Smart_CFUITests.swift */; };
-		559080151BB8F13500BEAD4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559080141BB8F13500BEAD4B /* User.swift */; settings = {ASSET_TAGS = (); }; };
-		559080171BB8F3E200BEAD4B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559080161BB8F3E200BEAD4B /* Settings.swift */; settings = {ASSET_TAGS = (); }; };
-		559080191BB8F71900BEAD4B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559080181BB8F71900BEAD4B /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		55CDE1BA1BC0293E00FAF74B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1B91BC0293E00FAF74B /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		55CDE1BC1BC02DDD00FAF74B /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1BB1BC02DDD00FAF74B /* SurveyViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		55CDE1BE1BC07C8100FAF74B /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1BD1BC07C8100FAF74B /* Survey.swift */; settings = {ASSET_TAGS = (); }; };
-		55CDE1C01BC18F2600FAF74B /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1BF1BC18F2600FAF74B /* SwiftSpinner.swift */; settings = {ASSET_TAGS = (); }; };
-		55CDE1FC1BC1E71100FAF74B /* SurveyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1FB1BC1E71100FAF74B /* SurveyHandler.swift */; settings = {ASSET_TAGS = (); }; };
-		55CDE2731BCC444D00FAF74B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE2721BCC444D00FAF74B /* SettingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		559080151BB8F13500BEAD4B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559080141BB8F13500BEAD4B /* User.swift */; };
+		559080171BB8F3E200BEAD4B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559080161BB8F3E200BEAD4B /* Settings.swift */; };
+		559080191BB8F71900BEAD4B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559080181BB8F71900BEAD4B /* LoginViewController.swift */; };
+		55CDE1BA1BC0293E00FAF74B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1B91BC0293E00FAF74B /* HomeViewController.swift */; };
+		55CDE1BC1BC02DDD00FAF74B /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1BB1BC02DDD00FAF74B /* SurveyViewController.swift */; };
+		55CDE1BE1BC07C8100FAF74B /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1BD1BC07C8100FAF74B /* Survey.swift */; };
+		55CDE1C01BC18F2600FAF74B /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1BF1BC18F2600FAF74B /* SwiftSpinner.swift */; };
+		55CDE1FC1BC1E71100FAF74B /* SurveyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1FB1BC1E71100FAF74B /* SurveyHandler.swift */; };
+		55CDE2731BCC444D00FAF74B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE2721BCC444D00FAF74B /* SettingViewController.swift */; };
 		9ABA551DC383E69C75B79B6D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301924EFDCFAB5F76804FC60 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -273,6 +273,7 @@
 				TargetAttributes = {
 					55907FDF1BB8F06100BEAD4B = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = UX56ED85HW;
 					};
 					55907FF31BB8F06100BEAD4B = {
 						CreatedOnToolsVersion = 7.0;
@@ -536,11 +537,13 @@
 			baseConfigurationReference = E6D4D398575A3F7E5BD2C25A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: David Putrino (UY9C7TLCKX)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David Putrino (UX56ED85HW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Putrino (UX56ED85HW)";
 				INFOPLIST_FILE = "Smart CF/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "meera.solution.inc.Smart-CF";
+				PRODUCT_BUNDLE_IDENTIFIER = meerasolinc.SMARTCF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "dbf0ea61-eb87-4ff8-8bbd-a1f8d13d1e4e";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 			};
 			name = Debug;
@@ -550,11 +553,13 @@
 			baseConfigurationReference = A3ECFAD035BD0488205B1694 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: David Putrino (UY9C7TLCKX)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: David Putrino (UX56ED85HW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Putrino (UX56ED85HW)";
 				INFOPLIST_FILE = "Smart CF/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "meera.solution.inc.Smart-CF";
+				PRODUCT_BUNDLE_IDENTIFIER = meerasolinc.SMARTCF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "dbf0ea61-eb87-4ff8-8bbd-a1f8d13d1e4e";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 			};
 			name = Release;

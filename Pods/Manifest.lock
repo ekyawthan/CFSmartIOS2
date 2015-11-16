@@ -6,6 +6,7 @@ PODS:
   - IQKeyboardManager (3.3.1)
   - Magic (2.0.0)
   - MaterialKit (0.3.5)
+  - ReachabilitySwift (2.1)
   - SwiftyJSON (2.3.0)
 
 DEPENDENCIES:
@@ -16,12 +17,15 @@ DEPENDENCIES:
   - IQKeyboardManager
   - Magic
   - MaterialKit (from `https://github.com/reesemclean/MaterialKit`, branch `swift_2`)
+  - ReachabilitySwift (from `https://github.com/ashleymills/Reachability.swift`)
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
 
 EXTERNAL SOURCES:
   MaterialKit:
     :branch: swift_2
     :git: https://github.com/reesemclean/MaterialKit
+  ReachabilitySwift:
+    :git: https://github.com/ashleymills/Reachability.swift
   SwiftyJSON:
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
@@ -29,6 +33,9 @@ CHECKOUT OPTIONS:
   MaterialKit:
     :commit: 0c1daf9e16894ad46772757148a2a01a4101d4cd
     :git: https://github.com/reesemclean/MaterialKit
+  ReachabilitySwift:
+    :commit: 79db5bad2de77c5c5cb4718e1c793bc461f7b3e2
+    :git: https://github.com/ashleymills/Reachability.swift
   SwiftyJSON:
     :commit: 83dc3138b14571200ea7f070933a2a510491e997
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
@@ -41,6 +48,7 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 860a5b9df32cc1435a3e967a08ed87de3e59c12e
   Magic: f05ea8d27da5413cd780266ff0152bb9c028bfa9
   MaterialKit: 6f1e9382f89593df768bc0c31ded9952a6d8ad46
+  ReachabilitySwift: 6a9167003197e618a4430ee43d79918fae1fcc8c
   SwiftyJSON: cacfe0373d584585716bd1d43202c24cc66afd65
 
 COCOAPODS: 0.39.0

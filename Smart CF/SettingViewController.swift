@@ -31,6 +31,7 @@ class SettingViewController: UIViewController {
         super.viewDidLoad()
         HourSelector.delegate = self
         DaySelector.delegate = self
+        
        
         HourSelector.itemList = timeList
         HourSelector.isOptionalDropDown = false
@@ -69,7 +70,7 @@ class SettingViewController: UIViewController {
             self.HourSelector.resignFirstResponder()
         }
         else if self.DaySelector.isFirstResponder() {
-            self.DaySelector.resignFirstResponder()
+            self.DaySelector.hidden = true
         }
         
     }

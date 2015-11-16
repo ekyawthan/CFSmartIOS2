@@ -15,28 +15,24 @@ class SurveyViewController: UIViewController {
     
     let SurveyQuestions : [String]  =  [
         " In the past week have you had worsening sputum volume or colour?",
-        
         "In the past week have you had new or increased blood in your sputum?",
         
         "In the past week have you had increased cough?",
         "In the past week have you had new or increased chest pain?",
         
         "In the past week have you had new or increased wheeze?",
-        
         "In the past week have you had new or increased chest tightness?",
         
         "In the past week have you had increased shortness of breath or difficulty breathing?",
-        
         "In the past week have you had increased fatigue or lethargy?",
         
         "In the past week have you had a fever?",
-        
         "In the past week have you had loss of appetite or weight?",
         
         "In the past week have you had sinus pain or tenderness?",
         "In the past week do you feel that your health has worsened? ",
-        "In the past week have you felt low in mood?",
         
+        "In the past week have you felt low in mood?",
         "In the past week have you felt worried?"
         
         
@@ -54,10 +50,10 @@ class SurveyViewController: UIViewController {
     @IBOutlet weak var yesButton: MKButton!
     
     @IBOutlet weak var dismissSurvey: MKButton!
-    
-    
+
     var counter : Int = 0 {
         didSet {
+            magic(counter)
             currentQuestion.text = SurveyQuestions[counter]
             currentQuestionBar.text = "Question \(counter + 1) of 14 "
         }
@@ -102,12 +98,11 @@ class SurveyViewController: UIViewController {
             
         }
         
-        if(counter > 14){
+        if(counter == 13){
             
             yesButton.userInteractionEnabled = false
             NoButton.userInteractionEnabled = false
             SwiftSpinner.show("Posting ", animated: true)
-            
             User.postSurvey(collectedAnswer, completeHandler: {(res, error)
                 in
                 if let _ = error {
@@ -118,7 +113,6 @@ class SurveyViewController: UIViewController {
                     NSNotificationCenter.defaultCenter().postNotificationName("justCompleteSurvey", object: nil)
                     SurveyHandler.cancelAllNotification()
                     self.dismissViewControllerAnimated(true, completion: nil)
-                    
                 }
             })
             

@@ -69,6 +69,13 @@ class SurveyHandler {
     }
     
     
+    class func scheduleDefaultAlarm() {
+        let fireDate = Survey.scheduleTime(2, hour: 12)
+        let item = SurveyAlarm(alarmTime: NSDate(), unitId: "")
+        SurveyHandler.scheduleAlarm(item)
+    }
+    
+    
     
     class func cancelAllNotification() {
         if let notifications = UIApplication.sharedApplication().scheduledLocalNotifications {

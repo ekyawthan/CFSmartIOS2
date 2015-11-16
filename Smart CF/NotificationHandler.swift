@@ -12,15 +12,11 @@ import Magic
 
 class NotificationHandler {
     
-    
     class func setupNotificationSettings() {
         let notificationSettings: UIUserNotificationSettings! = UIApplication.sharedApplication().currentUserNotificationSettings()
-        
         if (notificationSettings.types == UIUserNotificationType.None){
             // Specify the notification types.
             let notificationTypes: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Sound]
-            
-            
             // Specify the notification actions.
             let justInformAction = UIMutableUserNotificationAction()
             justInformAction.identifier = "justInform"
@@ -47,13 +43,13 @@ class NotificationHandler {
             let actionsArrayMinimal = NSArray(objects: trashAction, modifyListAction)
             
             // Specify the category related to the above actions.
-            let shoppingListReminderCategory = UIMutableUserNotificationCategory()
-            shoppingListReminderCategory.identifier = "cfsmartNotification"
-            shoppingListReminderCategory.setActions(actionsArray as? [UIUserNotificationAction], forContext: UIUserNotificationActionContext.Default)
-            shoppingListReminderCategory.setActions(actionsArrayMinimal as? [UIUserNotificationAction], forContext: UIUserNotificationActionContext.Minimal)
+            let smartCfNotificationCategory = UIMutableUserNotificationCategory()
+            smartCfNotificationCategory.identifier = "cfsmartNotification"
+            smartCfNotificationCategory.setActions(actionsArray as? [UIUserNotificationAction], forContext: UIUserNotificationActionContext.Default)
+            smartCfNotificationCategory.setActions(actionsArrayMinimal as? [UIUserNotificationAction], forContext: UIUserNotificationActionContext.Minimal)
             
             
-            let categoriesForSettings = NSSet(objects: shoppingListReminderCategory)
+            let categoriesForSettings = NSSet(objects: smartCfNotificationCategory)
             
             
             // Register the notification settings.
@@ -64,7 +60,7 @@ class NotificationHandler {
     
     
     
-    class func scheduleLocalNotification(fireDate : NSDate) {
+    class func scheduleInitialAlarm(fireDate : NSDate) {
         let localNotification = UILocalNotification()
         localNotification.fireDate = fireDate
         localNotification.alertBody = "Survey Available"

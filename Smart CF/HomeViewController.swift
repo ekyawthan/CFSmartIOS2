@@ -43,15 +43,7 @@ class HomeViewController: UIViewController {
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "toggleSurveyButton", name: "justCompleteSurvey", object: nil)
         // requesting permission if it has been revoked!!
-        NotificationHandler.setupNotificationSettings()
-        
-        //Default alarm
-        
-        if let fireTime = Survey.scheduleTime(2, hour: 12) {
-            NotificationHandler.scheduleLocalNotification(fireTime)
-            magic("alarm set on : \(fireTime)")
-        }
-       
+       // NotificationHandler.setupNotificationSettings()
     }
     
     deinit {
@@ -70,9 +62,6 @@ class HomeViewController: UIViewController {
     func takeToSurvey() {
         self.performSegueWithIdentifier("take_survey", sender: self)
     }
-  
-    
-    
 
     @IBAction func didClickOnLogOUT(sender : UIButton) {
         Settings.sharedInstance.setUserLoginStatus(isLogin: false)

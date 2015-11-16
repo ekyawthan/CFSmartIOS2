@@ -35,23 +35,21 @@ class LoginViewController: UIViewController {
         loginButton.bounds.origin.x  += self.view.bounds.size.width
         userId.bounds.origin.x  += self.view.bounds.size.width
         isFirstTime = true
+        userId.delegate = self
         
         
         
     }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-      
-    
-    }
+  
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
         if Settings.sharedInstance.isUserLogin()
         {
-            magic("Yes User Login")
+            // to verify notifiation settings 
+            NotificationHandler.setupNotificationSettings()
+            // redirect to home
             self.performSegueWithIdentifier("home", sender: self)
         }else
         {
@@ -71,23 +69,46 @@ class LoginViewController: UIViewController {
    
 
     @IBAction func didClickOnLogin(sender: AnyObject) {
-        
+        shouldLogin()
+    }
+    
+    private func shouldLogin() {
         if let user = userId.text {
-            User.login(user, completeHandler: {
+            User.login(user, completeHandler: {[weak self]
                 (response, error) in
                 if error == nil {
+                    // Successfully logined, set default alarm , and redirect to home
+                    self!.userId.text = ""
                     if Settings.sharedInstance.isUserLogin() {
                         Settings.sharedInstance.setUserJustLoggin(true)
                         
-                        self.performSegueWithIdentifier("home", sender: self)
+                        let defaultFireDate = Survey.scheduleTime(2, hour: 12)
+                        magic("default alarm time : \(defaultFireDate)")
+                        
+                        NotificationHandler.scheduleInitialAlarm(NSDate())
+                        self!.performSegueWithIdentifier("home", sender: self)
                     }
                 }else {
-                   
+                    
                 }
             })
             
         }
-        
     }
     
 }
+
+extension LoginViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField == userId as UITextField {
+            magic("did click on return on user id")
+            shouldLogin()
+
+        }
+
+        return true
+    }
+}
+
+
+
