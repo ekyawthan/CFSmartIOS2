@@ -139,7 +139,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="didClickOnResetAlarmTime:" destination="aEP-h1-IS5" eventType="touchUpInside" id="xmf-1h-s1m"/>
+                                    <action selector="didClickOnSettings:" destination="aEP-h1-IS5" eventType="touchUpInside" id="bBT-jv-S6a"/>
                                 </connections>
                             </button>
                         </subviews>

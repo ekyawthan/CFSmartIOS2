@@ -84,7 +84,9 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods/ActionSheetPicker_3_0.framework"
   install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/BRYXBanner.framework"
   install_framework "Pods/BubbleTransition.framework"
   install_framework "Pods/Dodo.framework"
   install_framework "Pods/IQDropDownTextField.framework"
@@ -95,7 +97,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods/ActionSheetPicker_3_0.framework"
   install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/BRYXBanner.framework"
   install_framework "Pods/BubbleTransition.framework"
   install_framework "Pods/Dodo.framework"
   install_framework "Pods/IQDropDownTextField.framework"

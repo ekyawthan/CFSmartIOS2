@@ -4,7 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ActionSheetPicker-3.0.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>BRYXBanner-BRYXBanner.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>BRYXBanner.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -57,7 +72,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>007EE79BA9F3E63A9B3F29D2A6A66DD4</key>
+		<key>13CA98C5511D98A62CB326477933C8FF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,6 +97,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>605AAEB6FED82A00DC230176FA748FB4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7239F148A71ED3E7DDFB368CAC0C48F1</key>
 		<dict>
 			<key>primary</key>
@@ -92,17 +112,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>75AEEEFD7E431013E8E60009251D5797</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>908DC381C26CAE9C4E91AD09DB179D4A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9EEC94986DCDA86579B0404FE2E1A5B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A7015ABADF41B4BE8424F2477024B18F</key>
+		<key>CE0A701D8A271EFE0065667D13272921</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C6E3B2424F516203B884B4A633537FEF</key>
+		<key>E45C60E65DC7B25E659C0A735F907FC7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

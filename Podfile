@@ -11,9 +11,7 @@ pod 'IQKeyboardManager'
 pod 'BubbleTransition', '~> 0.1'
 pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
 pod 'ReachabilitySwift', git: 'https://github.com/ashleymills/Reachability.swift'
-
-
-
-
+pod 'ActionSheetPicker-3.0', '~> 2.0.3'
+pod 'BRYXBanner'
 
 

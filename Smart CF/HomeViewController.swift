@@ -9,10 +9,28 @@
 import UIKit
 import BubbleTransition
 import Magic
+import ActionSheetPicker_3_0
+import BRYXBanner
+
+struct BannerColors {
+    static let red = UIColor(red:198.0/255.0, green:26.00/255.0, blue:27.0/255.0, alpha:1.000)
+    static let green = UIColor(red:48.00/255.0, green:174.0/255.0, blue:51.5/255.0, alpha:1.000)
+    static let yellow = UIColor(red:255.0/255.0, green:204.0/255.0, blue:51.0/255.0, alpha:1.000)
+    static let blue = UIColor(red:31.0/255.0, green:136.0/255.0, blue:255.0/255.0, alpha:1.000)
+}
 
 class HomeViewController: UIViewController {
     
     let transition = BubbleTransition()
+    
+    let dayList = ["Monday" , "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    let hourList = [ "8 AM",
+        "9 AM ", "10 AM", "11 AM", "12 PM ", "1 PM", "2 PM"
+        , "3 PM ", "4 PM", "5 PM", "6 PM ", "7 PM", "8 PM"
+    ]
+    var day : [[String :Int]] = []
+    var time : [[String : Int]] = []
+    
 
     @IBOutlet weak var takeSurvey: UIButton!
     @IBOutlet weak var completeLabel: UILabel!
@@ -44,10 +62,26 @@ class HomeViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "toggleSurveyButton", name: "justCompleteSurvey", object: nil)
         // requesting permission if it has been revoked!!
        // NotificationHandler.setupNotificationSettings()
+        
+        var dayCounter =  0
+        for item in dayList {
+            day.append([item : dayCounter])
+            dayCounter++
+        }
+        var hourCounter = 8
+        for item in hourList {
+            time.append([item : hourCounter])
+            hourCounter++
+        }
     }
     
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    
+    func showAction() {
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -102,7 +136,42 @@ class HomeViewController: UIViewController {
     
 
     @IBAction func didClickOnSettings(sender: AnyObject) {
-        self.performSegueWithIdentifier("customizeAlertTime", sender: self)
+//        self.performSegueWithIdentifier("customizeAlertTime", sender: self)
+        
+        
+        ActionSheetMultipleStringPicker.showPickerWithTitle("Select Day, Time", rows: [
+            dayList,
+            hourList,
+            ], initialSelection: [2, 2], doneBlock: {
+                picker, values, indexes in
+                let dayAsKey = indexes[0] as! String
+                let hourAsKey = indexes[1] as! String
+                for item in self.day {
+                    for (k, v) in item  {
+                        if k == dayAsKey {
+                            Settings.sharedInstance.setAlertDay(v)
+                        }
+                    }
+                }
+                for item in self.time {
+                    for (k, v) in item {
+                        if k == hourAsKey {
+                            Settings.sharedInstance.setAlertHour(v)
+                        }
+                    }
+                }
+                magic("\(Settings.sharedInstance.getAlertDay()) hour : \(Settings.sharedInstance.getAlertHour())")
+                if let fireDay = Survey.scheduleTime(Settings.sharedInstance.getAlertDay(), hour: Settings.sharedInstance.getAlertHour()) {
+                    magic(fireDay)
+                    
+                    NotificationHandler.scheduleInitialAlarm(fireDay)
+                    let banner = Banner(title: "Successful!", subtitle: "Reset to \(dayAsKey) : \(hourAsKey)", image: nil, backgroundColor: BannerColors.green)
+                    banner.show(duration: 1.5)
+                }
+              
+                return
+            }, cancelBlock: { ActionMultipleStringCancelBlock in return }, origin: sender)
+        
 
     }
 
