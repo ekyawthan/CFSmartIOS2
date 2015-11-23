@@ -9,7 +9,7 @@
 import UIKit
 import MaterialKit
 import Magic
-import Dodo
+import BRYXBanner
 
 class LoginViewController: UIViewController {
 
@@ -36,22 +36,22 @@ class LoginViewController: UIViewController {
         userId.bounds.origin.x  += self.view.bounds.size.width
         isFirstTime = true
         userId.delegate = self
-        
-        
-        
     }
   
     
+   
     override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
+        super.viewWillAppear(animated)
         if Settings.sharedInstance.isUserLogin()
         {
-            // to verify notifiation settings 
+            // to verify notifiation settings
             NotificationHandler.setupNotificationSettings()
             // redirect to home
-            self.performSegueWithIdentifier("home", sender: self)
-        }else
+            magic("login is true")
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+
+        else
         {
             if isFirstTime {
                 isFirstTime = false
@@ -59,12 +59,11 @@ class LoginViewController: UIViewController {
                     self.userId.bounds.origin.x -= self.view.bounds.size.width
                     }, completion: nil)
                 UIView.animateWithDuration(0.5, delay: 0.3, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.0, options: .CurveEaseInOut, animations: {
-                        self.loginButton.bounds.origin.x -= self.view.bounds.size.width
+                    self.loginButton.bounds.origin.x -= self.view.bounds.size.width
                     }, completion: nil)
             }
             
         }
-        
     }
    
 
@@ -76,19 +75,17 @@ class LoginViewController: UIViewController {
         if let user = userId.text {
             User.login(user, completeHandler: {[weak self]
                 (response, error) in
-                if error == nil {
-                    // Successfully logined, set default alarm , and redirect to home
-                    self!.userId.text = ""
+                if response == 200 {
                     if Settings.sharedInstance.isUserLogin() {
                         Settings.sharedInstance.setUserJustLoggin(true)
+                        Settings.sharedInstance.setUserLoginStatus(isLogin: true)
+                        NotificationHandler.resetAlarmTime(2, hour: 12)
                         
-                        let defaultFireDate = Survey.scheduleTime(2, hour: 12)
-                        magic("default alarm time : \(defaultFireDate)")
-                        
-                        NotificationHandler.scheduleInitialAlarm(NSDate())
-                        self!.performSegueWithIdentifier("home", sender: self)
+                        self?.dismissViewControllerAnimated(true, completion: nil)
                     }
                 }else {
+                    let banner = Banner(title: "login Failed!", subtitle: "Wrong User ID!!!", image: nil, backgroundColor: BannerColors.yellow)
+                    banner.show(duration: 2)
                     
                 }
             })

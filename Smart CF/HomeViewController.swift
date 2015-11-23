@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
     
     let transition = BubbleTransition()
     
-    let dayList = ["Monday" , "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    let dayList = [ "Saturday", "Sunday", "Monday" , "Tuesday", "Wednesday", "Thursday", "Friday"]
     let hourList = [ "8 AM",
         "9 AM ", "10 AM", "11 AM", "12 PM ", "1 PM", "2 PM"
         , "3 PM ", "4 PM", "5 PM", "6 PM ", "7 PM", "8 PM"
@@ -84,12 +84,14 @@ class HomeViewController: UIViewController {
         
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        if Settings.sharedInstance.getAlarmStatus() {
-            self.performSegueWithIdentifier("customizeAlertTime", sender: self)
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        if !Settings.sharedInstance.isUserLogin() {
+            magic("user is not loging")
+            self.performSegueWithIdentifier("loginPage", sender: self)
+            
         }
-        
+       
     }
     
     
@@ -101,7 +103,10 @@ class HomeViewController: UIViewController {
         Settings.sharedInstance.setUserLoginStatus(isLogin: false)
         Settings.sharedInstance.setUserId("")
         Settings.sharedInstance.reset()
-        self.dismissViewControllerAnimated(true, completion: nil)
+    
+        self.performSegueWithIdentifier("loginPage", sender: self)
+
+        
     }
     
     
@@ -142,13 +147,17 @@ class HomeViewController: UIViewController {
         ActionSheetMultipleStringPicker.showPickerWithTitle("Select Day, Time", rows: [
             dayList,
             hourList,
-            ], initialSelection: [2, 2], doneBlock: {
+            ], initialSelection: [2, 4], doneBlock: {
                 picker, values, indexes in
+                var selectedDay = 2
+                var selectedHour = 12
                 let dayAsKey = indexes[0] as! String
                 let hourAsKey = indexes[1] as! String
                 for item in self.day {
                     for (k, v) in item  {
                         if k == dayAsKey {
+                            magic("selected day : \(v)")
+                            selectedDay = v
                             Settings.sharedInstance.setAlertDay(v)
                         }
                     }
@@ -156,6 +165,8 @@ class HomeViewController: UIViewController {
                 for item in self.time {
                     for (k, v) in item {
                         if k == hourAsKey {
+                            magic("selected hour : \(v)")
+                            selectedHour = v
                             Settings.sharedInstance.setAlertHour(v)
                         }
                     }
@@ -164,7 +175,7 @@ class HomeViewController: UIViewController {
                 if let fireDay = Survey.scheduleTime(Settings.sharedInstance.getAlertDay(), hour: Settings.sharedInstance.getAlertHour()) {
                     magic(fireDay)
                     
-                    NotificationHandler.scheduleInitialAlarm(fireDay)
+                    NotificationHandler.resetAlarmTime(selectedDay, hour: selectedHour)
                     let banner = Banner(title: "Successful!", subtitle: "Reset to \(dayAsKey) : \(hourAsKey)", image: nil, backgroundColor: BannerColors.green)
                     banner.show(duration: 1.5)
                 }

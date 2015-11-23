@@ -113,9 +113,9 @@ class Survey {
     }
     
 
-    func wantedDay(day : Day) -> NSDate? {
-        let dayInt  = day.rawValue
-        print("Raw value of monday  : \(dayInt)")
+    func wantedDay(day : Int, hour : Int) -> NSDate? {
+        let dayInt  = day
+        print("Raw value of monday  : \(dayInt) houtr \(hour)")
         let today : NSDate = NSDate()
         let cal = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
         if let  comp = cal?.components([
@@ -126,15 +126,28 @@ class Survey {
             NSCalendarUnit.WeekOfYear,
             
             ], fromDate: today) {
-            
-            
-            comp.weekday = dayInt as Int
-            comp.weekOfYear = comp.weekOfYear + 1
-            comp.hour = 12
+                print(comp.weekday)
+                print(comp.hour)
+               // comp.weekday = dayInt as Int
+                if comp.hour > hour {
+                    if comp.weekday == day {
+                        comp.weekOfYear = comp.weekOfYear + 1
+                    }
+                }
+                else if comp.weekday > day {
+                    comp.weekOfYear = comp.weekOfYear + 1
+
+                }
+                else if comp.weekday == day && comp.hour == hour {
+                    comp.weekOfYear = comp.weekOfYear + 1
+
+                }
+                comp.weekday = dayInt as Int
+
+            comp.hour = hour
             
             comp.minute = 0
             comp.second = 0
-            
             
             return cal?.dateFromComponents(comp)
             

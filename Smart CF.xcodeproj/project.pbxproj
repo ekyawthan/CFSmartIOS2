@@ -23,7 +23,6 @@
 		55CDE1BE1BC07C8100FAF74B /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1BD1BC07C8100FAF74B /* Survey.swift */; };
 		55CDE1C01BC18F2600FAF74B /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1BF1BC18F2600FAF74B /* SwiftSpinner.swift */; };
 		55CDE1FC1BC1E71100FAF74B /* SurveyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE1FB1BC1E71100FAF74B /* SurveyHandler.swift */; };
-		55CDE2731BCC444D00FAF74B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDE2721BCC444D00FAF74B /* SettingViewController.swift */; };
 		9ABA551DC383E69C75B79B6D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301924EFDCFAB5F76804FC60 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +67,6 @@
 		55CDE1BD1BC07C8100FAF74B /* Survey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		55CDE1BF1BC18F2600FAF74B /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
 		55CDE1FB1BC1E71100FAF74B /* SurveyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyHandler.swift; sourceTree = "<group>"; };
-		55CDE2721BCC444D00FAF74B /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A3ECFAD035BD0488205B1694 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E6D4D398575A3F7E5BD2C25A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,7 +177,6 @@
 				55CDE1B91BC0293E00FAF74B /* HomeViewController.swift */,
 				55CDE1BB1BC02DDD00FAF74B /* SurveyViewController.swift */,
 				55CDE1BF1BC18F2600FAF74B /* SwiftSpinner.swift */,
-				55CDE2721BCC444D00FAF74B /* SettingViewController.swift */,
 				551CA0071BCC7EA1008BB15C /* LunchViewController.swift */,
 			);
 			name = Controller;
@@ -216,6 +213,7 @@
 				55907FDE1BB8F06100BEAD4B /* Resources */,
 				7FB7417D37BCD41C3AB5CE55 /* Embed Pods Frameworks */,
 				CCE563B9C3A8CED3C43AEEEB /* Copy Pods Resources */,
+				55A942CF1BFD3E1F00752017 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -348,6 +346,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		55A942CF1BFD3E1F00752017 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/Fabric.framework/run\" cc11d0b8ca720a7a45e8e7420898b0a3c374d487 9aa564350e5968574b3526edc90d6d8a143720646b381edbd723440e7debe39a";
+		};
 		7FB7417D37BCD41C3AB5CE55 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,7 +402,6 @@
 				559080191BB8F71900BEAD4B /* LoginViewController.swift in Sources */,
 				55CDE1BE1BC07C8100FAF74B /* Survey.swift in Sources */,
 				55907FE41BB8F06100BEAD4B /* AppDelegate.swift in Sources */,
-				55CDE2731BCC444D00FAF74B /* SettingViewController.swift in Sources */,
 				559080171BB8F3E200BEAD4B /* Settings.swift in Sources */,
 				55CDE1BC1BC02DDD00FAF74B /* SurveyViewController.swift in Sources */,
 				55CDE1FC1BC1E71100FAF74B /* SurveyHandler.swift in Sources */,

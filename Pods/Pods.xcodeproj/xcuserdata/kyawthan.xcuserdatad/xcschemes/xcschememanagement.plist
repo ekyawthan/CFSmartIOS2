@@ -29,16 +29,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Dodo.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>IQDropDownTextField.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>IQKeyboardManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -72,12 +62,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>13CA98C5511D98A62CB326477933C8FF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3511258FF1DED3401C4B456024D5FA41</key>
+		<key>20B2E6FD71BD2AA4D27CF43B5475D2DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,16 +82,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>605AAEB6FED82A00DC230176FA748FB4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7239F148A71ED3E7DDFB368CAC0C48F1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>7372CA79CE92E7AC032175441663EBE4</key>
 		<dict>
 			<key>primary</key>
@@ -117,7 +92,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>908DC381C26CAE9C4E91AD09DB179D4A</key>
+		<key>89183F30106685D8BD7D604A5069FEAD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E3CEBEE33D90DE1B7C2B26DF5F3701F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

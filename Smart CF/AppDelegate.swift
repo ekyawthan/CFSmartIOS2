@@ -8,7 +8,8 @@
 
 import UIKit
 import IQKeyboardManager
-
+import Fabric
+import Crashlytics
 import Magic
 
 @UIApplicationMain
@@ -24,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NotificationHandler.setupNotificationSettings()
 
        /// self.setupNotification()
+        
+        Fabric.with([Crashlytics.self])
         return true
     }
 

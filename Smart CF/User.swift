@@ -15,18 +15,18 @@ import SwiftyJSON
 class User {
     static let baseURL = "http://54.175.149.177"
     
-    class func login(userId : String, completeHandler : (response : AnyObject, error : NSError?)->()) {
+    class func login(userId : String, completeHandler : (response : Int, error : NSError?)->()) {
         
         Alamofire.request(.GET,  baseURL + "/user/\(userId)/")
             .response{ (_, response, data , error) in
                 if  let reponseHeader = response  {
                     if reponseHeader.statusCode == 200 {
-                        completeHandler(response: "Success", error: nil)
+                        completeHandler(response: reponseHeader.statusCode , error: nil)
                         Settings.sharedInstance.setUserLoginStatus(isLogin: true)
                         Settings.sharedInstance.setUserId(userId)
                        
                     }else {
-                        completeHandler(response: "failed", error: nil)
+                        completeHandler(response: reponseHeader.statusCode , error: nil)
                         Settings.sharedInstance.setUserLoginStatus(isLogin: false)
                         Settings.sharedInstance.setUserId(userId)
                     }

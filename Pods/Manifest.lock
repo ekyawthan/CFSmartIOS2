@@ -3,8 +3,10 @@ PODS:
   - Alamofire (2.0.0)
   - BRYXBanner (0.5.0)
   - BubbleTransition (0.2)
-  - Dodo (2.0.10)
-  - IQDropDownTextField (1.0.6)
+  - Crashlytics (3.3.1)
+  - Fabric (1.5.1):
+    - Fabric/Base (= 1.5.1)
+  - Fabric/Base (1.5.1)
   - IQKeyboardManager (3.3.1)
   - Magic (2.0.0)
   - MaterialKit (0.3.5)
@@ -12,12 +14,12 @@ PODS:
   - SwiftyJSON (2.3.0)
 
 DEPENDENCIES:
-  - ActionSheetPicker-3.0 (~> 2.0.3)
+  - ActionSheetPicker-3.0 (from `https://github.com/skywinder/ActionSheetPicker-3.0.git`)
   - Alamofire (~> 2.0)
-  - BRYXBanner
+  - BRYXBanner (from `https://github.com/bryx-inc/BRYXBanner.git`)
   - BubbleTransition (~> 0.1)
-  - Dodo (~> 2.0)
-  - IQDropDownTextField
+  - Crashlytics
+  - Fabric
   - IQKeyboardManager
   - Magic
   - MaterialKit (from `https://github.com/reesemclean/MaterialKit`, branch `swift_2`)
@@ -25,6 +27,10 @@ DEPENDENCIES:
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
 
 EXTERNAL SOURCES:
+  ActionSheetPicker-3.0:
+    :git: https://github.com/skywinder/ActionSheetPicker-3.0.git
+  BRYXBanner:
+    :git: https://github.com/bryx-inc/BRYXBanner.git
   MaterialKit:
     :branch: swift_2
     :git: https://github.com/reesemclean/MaterialKit
@@ -34,6 +40,12 @@ EXTERNAL SOURCES:
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 CHECKOUT OPTIONS:
+  ActionSheetPicker-3.0:
+    :commit: f1d14a5bb454d9d0675a81a63487cc8b9e94d043
+    :git: https://github.com/skywinder/ActionSheetPicker-3.0.git
+  BRYXBanner:
+    :commit: 149329b33c0e46f76347953907622c4797372b5d
+    :git: https://github.com/bryx-inc/BRYXBanner.git
   MaterialKit:
     :commit: 0c1daf9e16894ad46772757148a2a01a4101d4cd
     :git: https://github.com/reesemclean/MaterialKit
@@ -49,8 +61,8 @@ SPEC CHECKSUMS:
   Alamofire: 2f13548b29d25a58ecd91c9225fb51493e2b782b
   BRYXBanner: a1b87cd80ae9c366af5755b5ea2978802aaff87a
   BubbleTransition: 6ee83cedb8b9eb2a9489e11b0e0c666f3916bb2c
-  Dodo: ac952c82b2180658baccde1ab6d7ec2ac1bec72e
-  IQDropDownTextField: 361e4a4ea879c4ed0c15cbd89aceb5e60aa19d33
+  Crashlytics: 0e61bdda9def51f1e99720f804eebe94865442b2
+  Fabric: 03c3b3fe77e11a2bc31421b989a9c7adaa4779a5
   IQKeyboardManager: 860a5b9df32cc1435a3e967a08ed87de3e59c12e
   Magic: f05ea8d27da5413cd780266ff0152bb9c028bfa9
   MaterialKit: 6f1e9382f89593df768bc0c31ded9952a6d8ad46

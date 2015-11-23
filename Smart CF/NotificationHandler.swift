@@ -80,7 +80,7 @@ class NotificationHandler {
             let notification                = UILocalNotification()
             notification.alertBody          = "Survey Available"
              notification.alertAction = "Survey"
-            notification.fireDate           = NSDate().dateByAddingTimeInterval(1 * 60) // 30 minutes from current time
+            notification.fireDate           = NSDate().dateByAddingTimeInterval(30 * 60) // 30 minutes from current time
             notification.soundName          = UILocalNotificationDefaultSoundName
             notification.userInfo           = ["alarmUser" : "cf", "UUID" : uuid + "\(counter)"]
             notification.category           = "cfsmartNotification"
@@ -107,6 +107,16 @@ class NotificationHandler {
                 
             }
         }
+    }
+    
+    class func resetAlarmTime(day : Int, hour : Int) {
+        UIApplication.sharedApplication().applicationIconBadgeNumber = 0
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
+        if  let fireDay = Survey().wantedDay(day, hour: hour) {
+            magic(fireDay)
+            self.scheduleInitialAlarm(fireDay)
+        }
+        
     }
     
     
